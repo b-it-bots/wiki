@@ -1,6 +1,5 @@
 [Getting started](getting-started)
-
-[Team Members](members)
+* [Working on Jenny](working-on-jenny)
 
 ## Domains
 - [Perception](perception)
@@ -9,3 +8,5 @@
 - [Navigation](navigation)
 - [Planning](planning)
 
+
+[Team Members](members)
