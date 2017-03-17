@@ -1,8 +1,9 @@
 ## Starting and controlling 7DOF arm on Jenny
 
-In order to work with Jenny you need to be connected in care bot developers network.
+In order to work with Jenny you need to be connected in "care-o-bot-developers" network.
 
 Jenny has 3 PCs:
+
 ```
 PC1: Navigation and sensors, arm controller
 
@@ -27,7 +28,6 @@ roslaunch mdr_bringup robot.launch
 Perform emergency stop procedure with controller. 
 
 
-
 3) In third window (your computer):
 ```
  roslaunch mdr_bringup dashboard.launch 
@@ -35,42 +35,71 @@ Perform emergency stop procedure with controller.
 
 This command opens the dashboard.
 
-Press "Initialize all"  and "Recovery all" buttons on dashboard.
-(If emergency stop  is still red, perform emergency stop procedure again. After doing this,  don't use "Initialize all" button any more - use just "Recovery all" button.
+Press "Initialize all"  and "Recovery all" buttons on dashboard. (If emergency stop  is still red, perform emergency stop procedure again. After doing this,  don't use "Initialize all" button any more - use just "Recovery all" button from now on.
 
-Unselect  "confirm command".
+Unselect  "confirm command" to make controlling simple.
 
 # Recommendation:
 - Check if the tray is up 
 - Head always back or back table
 - Torso front or front extreme
 
-Be careful for the gripper!  To go from "Spherical open" to any other position always go to "Cylindrical open" and then other positions, because fingers may collide!
-Avoid collisions such as: from "cyl_closed"   to "spher_open" and vice versa - DANGEROUS!!!
 
-4) other window pc1 roslaunch mdr_lwr lwr.launch (arm controller-launching arm and realicing brakes) (when you hear a click means its unlocked)
+Be careful with the gripper!  To go from "Spherical open" to any other position always go to "Cylindrical open" and then other positions, because fingers may collide! 
+
+Going from "cyl_closed"   to "spher_open" and vice versa - DANGEROUS!!!
+
+4) In additional window also connect to PC1:
+
+```
+  roslaunch mdr_lwr lwr.launch
+
+```
+Arm controller - launching arm and releasing the brakes (When you hear a click means its unlocked).
 
 
-5) other window (your computer) export ROS_MASTER_URI=http://192.168.1.101:11311 (look for any ros command in pc1 to check connection.....such as rostopic list)
-rviz in that console after export
+5) Another window (your computer):
 
-6) other window connect to pc2 and run (arm packages) roslaunch mdr_moveit_cob move_group.launch .....for using movit library
+```
+ export ROS_MASTER_URI=http://192.168.1.101:11311
 
-7)other window connect to pc2: rosrun moveit_commander moveit_commander_cmdline.py (to control the arm from the terminal)
+```
+Look for any ros command in PC1 to check connection, e.g. rostopic list.
 
-Specify what group to use: use arm...all others are in dash board
-go home (home position) (to see available settings rosed mdr_moveit_con3-1.srdf)
-go look_at_table, etc.
+If the connection is working you can use RVIZ:
+```
+rviz
+```
+
+6) In another window connect to PC2 and run arm packages for using "moveit" library:
+
+```
+roslaunch mdr_moveit_cob move_group.launch
+``` 
+
+7)In one more window connect to PC2. Run the command for moving the arm from the terminal: 
+
+```
+rosrun moveit_commander moveit_commander_cmdline.py 
+use arm
+```
+Some of the example commands for positioning arm are (to see more available settings: rosed mdr_moveit_con3-1.srdf):
+
+```
+go home (home position) 
+go look_at_table
 go folded
-
+```
 
 8)
-To turn off: firt move arm folded (go folded)...torso home,   and base in start position......Sudo shutdown now (to turn off jenny) on each cob (1,2,3)
+To turn off everything: first move arm to folded position (go folded), move torso to home position  and move base in start position. To turn off Jenny on each cob (1, 2, 3):
 
-turn the key on jenny to left direction
-
-turn current down 
-pull cable off 
-shutdown power supply
-put down em controller on charging station
+```
+sudo shutdown now 
+```
+*Turn the key on jenny to left direction.
+*Turn current down.
+*Pull cable off.
+*Shutdown power supply.
+*Put down emergency controller on charging station.
 
