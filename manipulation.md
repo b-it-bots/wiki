@@ -16,7 +16,7 @@ PC3: Speech recognition
 
 ```
 ssh username@cob3-1-pc1
-run roscore in pc-1
+roscore
 ```
 
 2)  In second window connect to PC1 (use cob1 alias).
@@ -25,10 +25,14 @@ roslaunch mdr_bringup robot.launch
 ```
 Perform emergency stop procedure with controller. 
 
-3) other window (your computer) roslaunch mdr_bringup dashboard.launch 
-   	opens the dashboard,
+3) Third window (your computer):
+```
+ roslaunch mdr_bringup dashboard.launch 
+```
+This command opens the dashboard.
+
 Press "Intialize all"  and "Recovery all" buttons on dashboard.
-(if em stop  is still red, perform em procedure again..just this time without init all....just recovery all)
+(If emergency stop  is still red, perform emergency stop procedure again. After this don't us "Init all" button any more,  just "Recovery all" button
 
  unselect  "confirm command"
 
