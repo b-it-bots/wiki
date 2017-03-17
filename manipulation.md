@@ -103,14 +103,15 @@ rosed mdr_moveit_con3-1.srdf
 ```
 
 8)
-To turn off everything: first move arm to folded position (go folded), move torso to home position  and move base in start position. To turn off Jenny on each cob (1, 2, 3):
+To turn off everything: 
+- First move arm to folded position (go folded)
+- Move torso to home position  
+- Move base in start position. 
+
+To turn off Jenny on each cob (1, 2, 3):
 
 ```
 sudo shutdown now 
 ```
-- Turn the key on jenny to left direction.
-- Turn current down.
-- Pull cable off.
-- Shutdown power supply.
-- Put down emergency controller on charging station.
+
 
