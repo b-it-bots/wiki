@@ -2,6 +2,7 @@
 
 In order to work with Jenny you need to be connected in care bot developers network.
 
+Jenny has 3 PCs:
 ```
 PC1: Navigation and sensors, arm controller
 
@@ -26,25 +27,26 @@ roslaunch mdr_bringup robot.launch
 Perform emergency stop procedure with controller. 
 
 
+
 3) In third window (your computer):
 ```
  roslaunch mdr_bringup dashboard.launch 
 ```
+
 This command opens the dashboard.
 
 Press "Initialize all"  and "Recovery all" buttons on dashboard.
-(If emergency stop  is still red, perform emergency stop procedure again. After this don't us "Initialize all" button any more,  just "Recovery all" buttons.
+(If emergency stop  is still red, perform emergency stop procedure again. After doing this,  don't use "Initialize all" button any more - use just "Recovery all" button.
 
-Unselect  "confirm command"
+Unselect  "confirm command".
 
-#recomendation:
-	*check if the tray is up 
-	*head always back or back table
-	*torso front or front extreme
+# Recommendation:
+- Check if the tray is up 
+- Head always back or back table
+- Torso front or front extreme
 
-For the gripper:
-To go from spherical open to any other position always go to clilyndrical and then other positions because fingers may collide
-Avoid collitions, e.g. from: cyl_closed   to: spher_open  ......vice versa---DANGEROUS!!!
+Be careful for the gripper!  To go from "Spherical open" to any other position always go to "Cylindrical open" and then other positions, because fingers may collide!
+Avoid collisions such as: from "cyl_closed"   to "spher_open" and vice versa - DANGEROUS!!!
 
 4) other window pc1 roslaunch mdr_lwr lwr.launch (arm controller-launching arm and realicing brakes) (when you hear a click means its unlocked)
 
