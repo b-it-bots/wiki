@@ -12,37 +12,37 @@ PC3: Speech recognition
 ```
 # Procedure:
 
-1) In first window type:
+1) In first window:
 
 ```
 ssh username@cob3-1-pc1
 roscore
 ```
 
-2)  In second window connect to PC1 (use cob1 alias).
+2)  In second window also connect to PC1 (use cob1 alias):
 ``` 
 roslaunch mdr_bringup robot.launch 
 ```
 Perform emergency stop procedure with controller. 
 
-3) Third window (your computer):
+
+3) In third window (your computer):
 ```
  roslaunch mdr_bringup dashboard.launch 
 ```
 This command opens the dashboard.
 
-Press "Intialize all"  and "Recovery all" buttons on dashboard.
-(If emergency stop  is still red, perform emergency stop procedure again. After this don't us "Init all" button any more,  just "Recovery all" button
+Press "Initialize all"  and "Recovery all" buttons on dashboard.
+(If emergency stop  is still red, perform emergency stop procedure again. After this don't us "Initialize all" button any more,  just "Recovery all" buttons.
 
- unselect  "confirm command"
+Unselect  "confirm command"
 
-================================================
-recomendation:
-	check if the tray is up 
-	head always back or back table
-	torso front or front extreme
-=============================================
-for the gripper:
+#recomendation:
+	*check if the tray is up 
+	*head always back or back table
+	*torso front or front extreme
+
+For the gripper:
 To go from spherical open to any other position always go to clilyndrical and then other positions because fingers may collide
 Avoid collitions, e.g. from: cyl_closed   to: spher_open  ......vice versa---DANGEROUS!!!
 
