@@ -3,28 +3,31 @@
 In order to work with Jenny you need to be connected in care bot developers network.
 
 ```
-PC1-navigation and sensors, arm controller
+PC1: Navigation and sensors, arm controller
 
-PC2- arm packages and perception
+PC2: Arm packages and perception
 
-PC3- speech recognition
+PC3: Speech recognition
+
 ```
 # Procedure:
 
 1) In first window type:
+
 ```
 ssh username@cob3-1-pc1
 run roscore in pc-1
-``
+```
 
-2)  in other window connect to pc1.....use cob1 alias 
+2)  In second window connect to PC1 (use cob1 alias).
+``` 
 roslaunch mdr_bringup robot.launch 
-*take em stop 
-*perform em stop procedure 
-(inicialize all  and recovery all.....jenny need to work)
+```
+Perform emergency stop procedure with controller. 
 
 3) other window (your computer) roslaunch mdr_bringup dashboard.launch 
    	opens the dashboard,
+Press "Intialize all"  and "Recovery all" buttons on dashboard.
 (if em stop  is still red, perform em procedure again..just this time without init all....just recovery all)
 
  unselect  "confirm command"
