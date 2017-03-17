@@ -35,7 +35,7 @@ Perform emergency stop procedure with controller before continuing.
 
 This command opens the dashboard.
 
-Press "Initialize all"  and "Recovery all" buttons on dashboard. (If emergency stop  is still red, perform emergency stop procedure again. After doing this,  don't use "Initialize all" button any more -  just use "Recovery all" button from now on.
+Press "Initialize all"  and "Recovery all" buttons on dashboard. (If emergency stop  is still red, perform emergency stop procedure again. After doing this,  don't use "Initialize all" button any more -  just use "Recovery all" button from now on)
 
 Unselect  "confirm command" to make controlling simple.
 
@@ -65,6 +65,7 @@ Starting arm controller - launching arm and releasing the brakes (when you hear 
 ```
 
 Look for any ros command in PC1 to check connection, e.g. 
+
 ```
 rostopic list
 ```
@@ -107,9 +108,9 @@ To turn off everything: first move arm to folded position (go folded), move tors
 ```
 sudo shutdown now 
 ```
--Turn the key on jenny to left direction.
--Turn current down.
--Pull cable off.
--Shutdown power supply.
--Put down emergency controller on charging station.
+- Turn the key on jenny to left direction.
+- Turn current down.
+- Pull cable off.
+- Shutdown power supply.
+- Put down emergency controller on charging station.
 
