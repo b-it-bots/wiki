@@ -92,7 +92,7 @@ use arm
 Some of the example commands for positioning arm are :
 
 ```
-go home (home position) 
+go home 
 go look_at_table
 go folded
 ```
