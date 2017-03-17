@@ -64,7 +64,7 @@ Starting arm controller - launching arm and releasing the brakes (when you hear 
  export ROS_MASTER_URI=http://192.168.1.101:11311
 ```
 
-Look for any ros command in PC1 to check connection, e.g. 
+Look for any  ROS command in PC1 to check connection, e.g. 
 
 ```
 rostopic list
@@ -82,7 +82,7 @@ rviz
 roslaunch mdr_moveit_cob move_group.launch
 ``` 
 
-7) In one more window connect to PC2. Run the command for moving the arm from the terminal: 
+7) In one more window connect to PC2. Run command for moving the arm from the terminal: 
 
 ```
 rosrun moveit_commander moveit_commander_cmdline.py 
