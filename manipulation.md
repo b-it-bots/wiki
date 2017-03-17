@@ -2,14 +2,20 @@
 
 In order to work with Jenny you need to be connected in care bot developers network.
 
-pc1-navigation and sensors, arm controller
-pc2- arm packages and perception
-p3- speech recognition
+```
+PC1-navigation and sensors, arm controller
 
+PC2- arm packages and perception
+
+PC3- speech recognition
+```
 # Procedure:
 
-1) ssh username@cob3-1-pc1 in one window
+1) In first window type:
+```
+ssh username@cob3-1-pc1
 run roscore in pc-1
+``
 
 2)  in other window connect to pc1.....use cob1 alias 
 roslaunch mdr_bringup robot.launch 
