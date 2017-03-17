@@ -25,7 +25,7 @@ roscore
 ``` 
 roslaunch mdr_bringup robot.launch 
 ```
-Perform emergency stop procedure with controller. 
+Perform emergency stop procedure with controller before continuing. 
 
 
 3) In third window (your computer):
@@ -35,7 +35,7 @@ Perform emergency stop procedure with controller.
 
 This command opens the dashboard.
 
-Press "Initialize all"  and "Recovery all" buttons on dashboard. (If emergency stop  is still red, perform emergency stop procedure again. After doing this,  don't use "Initialize all" button any more - use just "Recovery all" button from now on.
+Press "Initialize all"  and "Recovery all" buttons on dashboard. (If emergency stop  is still red, perform emergency stop procedure again. After doing this,  don't use "Initialize all" button any more -  just use "Recovery all" button from now on.
 
 Unselect  "confirm command" to make controlling simple.
 
@@ -45,7 +45,7 @@ Unselect  "confirm command" to make controlling simple.
 - Torso front or front extreme
 
 
-Be careful with the gripper!  To go from "Spherical open" to any other position always go to "Cylindrical open" and then other positions, because fingers may collide! 
+Be careful with the gripper!  To go from "Spherical open" to any other position always go first to "Cylindrical open" and then other positions, because fingers may collide! 
 
 Going from "cyl_closed"   to "spher_open" and vice versa - DANGEROUS!!!
 
@@ -53,42 +53,52 @@ Going from "cyl_closed"   to "spher_open" and vice versa - DANGEROUS!!!
 
 ```
   roslaunch mdr_lwr lwr.launch
-
 ```
-Arm controller - launching arm and releasing the brakes (When you hear a click means its unlocked).
+
+Starting arm controller - launching arm and releasing the brakes (when you hear a click means its unlocked).
 
 
 5) Another window (your computer):
 
 ```
  export ROS_MASTER_URI=http://192.168.1.101:11311
-
 ```
-Look for any ros command in PC1 to check connection, e.g. rostopic list.
+
+Look for any ros command in PC1 to check connection, e.g. 
+```
+rostopic list
+```
 
 If the connection is working you can use RVIZ:
+
 ```
 rviz
 ```
 
-6) In another window connect to PC2 and run arm packages for using "moveit" library:
+6) In another window connect to PC2 and run arm packages for using "MoveIt" library:
 
 ```
 roslaunch mdr_moveit_cob move_group.launch
 ``` 
 
-7)In one more window connect to PC2. Run the command for moving the arm from the terminal: 
+7) In one more window connect to PC2. Run the command for moving the arm from the terminal: 
 
 ```
 rosrun moveit_commander moveit_commander_cmdline.py 
 use arm
 ```
-Some of the example commands for positioning arm are (to see more available settings: rosed mdr_moveit_con3-1.srdf):
+
+Some of the example commands for positioning arm are :
 
 ```
 go home (home position) 
 go look_at_table
 go folded
+```
+
+To see more available settings: 
+```
+rosed mdr_moveit_con3-1.srdf
 ```
 
 8)
@@ -97,9 +107,9 @@ To turn off everything: first move arm to folded position (go folded), move tors
 ```
 sudo shutdown now 
 ```
-*Turn the key on jenny to left direction.
-*Turn current down.
-*Pull cable off.
-*Shutdown power supply.
-*Put down emergency controller on charging station.
+-Turn the key on jenny to left direction.
+-Turn current down.
+-Pull cable off.
+-Shutdown power supply.
+-Put down emergency controller on charging station.
 
