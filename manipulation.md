@@ -105,7 +105,7 @@ To turn off Jenny on each cob (1, 2, 3):
 sudo shutdown now 
 ```
 
-#In case of emergency stop activated:  
+# In case of emergency stop activated:  
 There are three versions to recover LWR - Arm running again after an emergency stop and you need to be connected on new pc1 terminal (it is not possible to recover the arm with dash board):
 
 Version a) Call the recover service of the arm by running the command:
