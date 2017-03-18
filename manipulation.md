@@ -110,7 +110,7 @@ There are three versions to recover LWR - Arm running again after an emergency s
 
 Version a) Call the recover service of the arm by running the command:
 ```
-rosservice call /arm_controller/lwr_node /recover
+rosservice call /arm_controller/lwr_node/recover
 ```
 If you hear that the arm clicks and that means that it is already active. This is to not restart the arm controller.
 
@@ -129,8 +129,13 @@ and reboot using the following the command:
 ```
 reboot
 ```
-Wait until the controller is up and running again. Then open another console and connect to pc1 and then telnet again <l and you expect it to say stable.
-
+Wait until the controller is up and running again.  Then perform the initialization procedure:
+```
+ssh username@cob3-1-pc1
+telnet lbr-box
+<l
+```
+Wait for the line “Stable state RUNNING reached!”. If you do not see this line, contact your robot administrator.
 
 # Recommendation:
 - Check if the tray is up 
