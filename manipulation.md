@@ -39,15 +39,6 @@ Press "Initialize all"  and "Recovery all" buttons on dashboard. (If emergency s
 
 Unselect  "confirm command" to make controlling simple.
 
-# Recommendation:
-- Check if the tray is up 
-- Head always back or back table
-- Torso front or front extreme
-
-
-Be careful with the gripper!  To go from "Spherical open" to any other position always go first to "Cylindrical open" and then other positions, because fingers may collide! 
-
-Going from "cyl_closed"   to "spher_open" and vice versa - DANGEROUS!!!
 
 4) In additional window also connect to PC1:
 
@@ -115,10 +106,9 @@ sudo shutdown now
 ```
 
 
-There are three versions to recover LWR running again after an emergency stop and you need to be connected on new pc1 terminal (it is not possible to recover the arm with dash board):
+There are three versions to recover LWR - Arm running again after an emergency stop and you need to be connected on new pc1 terminal (it is not possible to recover the arm with dash board):
 
-Version a):
-Call the recover service of the arm by running the command:
+Version a) Call the recover service of the arm by running the command:
 ```
 rosservice call /arm_controller/lwr_node /recover
 ```
@@ -126,7 +116,7 @@ If you hear that the arm clicks and that means that it is already active. This i
 
 
 Version b) 
-Sometimes the ROS node which communicates with the LWR loses connec- tion to the controller. In this case restart the node:
+Sometimes the ROS node which communicates with the LWR loses connection to the controller. In this case restart the node:
 ```
 roslaunch mdr_lwr lwr.launch 
 ```
@@ -141,3 +131,13 @@ reboot
 ```
 Wait until the controller is up and running again. Then open another console and connect to pc1 and then telnet again <l and you expect it to say stable.
 
+
+# Recommendation:
+- Check if the tray is up 
+- Head always back or back table
+- Torso front or front extreme
+
+
+Be careful with the gripper!  To go from "Spherical open" to any other position always go first to "Cylindrical open" and then other positions, because fingers may collide! 
+
+Going from "cyl_closed"   to "spher_open" and vice versa - DANGEROUS!!!
