@@ -115,3 +115,29 @@ sudo shutdown now
 ```
 
 
+There are three versions to recover LWR running again after an emergency stop and you need to be connected on new pc1 terminal (it is not possible to recover the arm with dash board):
+
+Version a):
+Call the recover service of the arm by running the command:
+```
+rosservice call /arm_controller/lwr_node /recover
+```
+If you hear that the arm clicks and that means that it is already active. This is to not restart the arm controller.
+
+
+Version b) 
+Sometimes the ROS node which communicates with the LWR loses connec- tion to the controller. In this case restart the node:
+```
+roslaunch mdr_lwr lwr.launch 
+```
+Version c)
+In some cases it is not possible to recover the LWR properly after an emergency stop has been issued. In such a situation the LWR controller must be rebooted and reinitialized. To reboot the controller, login to the lbr-box via telnet with following command:
+```
+telnet lbr-box
+```
+and reboot using the following the command:
+```
+reboot
+```
+Wait until the controller is up and running again. Then open another console and connect to pc1 and then telnet again <l and you expect it to say stable.
+
