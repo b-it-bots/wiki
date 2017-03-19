@@ -1,6 +1,6 @@
 ![jennyupload](/uploads/8de90c344775161f237dc20841af6dd9/jennyupload.jpg)
 
-## Main parts of Jenny
+## Main components on Jenny
 * 3 Personal computers
 * 7 DOF Manipulator
 * 4 DOF Torso + sensor head which can flip
