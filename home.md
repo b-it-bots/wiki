@@ -1,5 +1,8 @@
+[[_TOC_]]
+
 [Getting started](getting-started)
-* [Working on Jenny](working-on-jenny)
+
+[Team Members](members)
 
 ## Domains
 - [Perception](perception)
@@ -8,5 +11,14 @@
 - [Navigation](navigation)
 - [Planning](planning)
 
+## Teams
+### @home
+* [Working on Jenny](working-on-jenny)
 
-[Team Members](members)
+### @work
+
+
+## Tips and Tricks
+* [Aliases](aliases)
+* [Tools](tools)
+* [Tips](tips)
