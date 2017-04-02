@@ -1,5 +1,6 @@
 [[_TOC_]]
 
+# The b-it-bots wiki
 [Getting started](getting-started)
 
 [Team Members](members)
