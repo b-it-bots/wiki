@@ -76,11 +76,11 @@ Maps are stored in `~/catkin_ws/src/mas_common_robotics/mcr_environments/mcr_def
   This will create two files: a `map.pgm` and `map.yml`.
 
 Finally, to use the map that you just created you need to check which map will be loaded by the navigation stack:
-```
-echo $ROBOT_ENV```
+
+    echo $ROBOT_ENV
 
 If you need to change it:
-```
-export ROBOT_ENV=[map_name]```
+
+    export ROBOT_ENV=[map_name]
 
 Note: Usually the `.rosc` script is used to set the environment, among other variables.
