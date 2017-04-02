@@ -9,7 +9,7 @@
 - [Perception](perception)
 - [Manipulation](manipulation)
 - [Speech Recognition](speech)
-- [Navigation](navigation)
+- [Navigation](/domains/navigation/main)
 - [Planning](planning)
 
 ## Teams
