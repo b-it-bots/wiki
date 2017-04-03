@@ -16,7 +16,7 @@ This procedure is to be performed on the big yellow remote.
 3.  Press the black button (one beside the green button) for few seconds. If done correctly, you will hear a faint click on release.
 4.  Turn the key on jenny. Again you should hear a single click. If you do not, perform the procedure again.
 
-After this, you can restart jenny from the console by clicking on the 'init_all' button on the dashboard followed by 'recover_all'. The latter must be performed after every emergency stop release while the former is not required except on starting jenny. (Detailed information about accessing the dashboard can be found on the [Manipulation](manipulation.md) page)
+After this, you can restart jenny from the console by clicking on the 'init_all' button on the dashboard followed by 'recover_all'. The latter must be performed after every emergency stop release while the former is not required except on starting jenny. (Detailed information about accessing the dashboard can be found on the [Manipulation](manipulation) page)
 
 ### Powering jenny off
 1.  Turn the key on jenny.
