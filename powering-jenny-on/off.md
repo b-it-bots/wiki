@@ -2,14 +2,14 @@
 To start jenny, follow the steps provided below -
 1.  Switch ON the power supply after ensuring that the power supply cable is not attached to jenny.
 2.  Turn the current knob until some voltage is displayed then turn the voltage knob until voltage is between the range mentioned on the power supply.
-3.  Attach the cable to jenny. The connector can be recognized by its red colour. 
+3.  Attach the cable to jenny. The connector can be recognized by its red colour.   
 **Note**:  This will cause the voltage to drop. If at any point the voltage drops too low, turn off the power supply and restart from step 1.
 4.  Increase the current until voltage is back in the range. 
 5.  Turn the key on jenny clockwise (hold for a few seconds then release).
 6.  Release the emergency stop. The procedure is listed below.
 
 ### Releasing the emergency stop
-This procedure is to be performed on the big yellow remote.
+This procedure is to be performed on the big yellow remote.  
 **Note**: Always replace the remote on its charging station after you have finished working on jenny.
 1.  Press the big red button.
 2.  Pull the big red button back up.
