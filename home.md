@@ -15,6 +15,7 @@
 ## Teams
 ### @home
 * [Working on Jenny](working-on-jenny)
+* [Turning Jenny on and off](turning-jenny-on-and-off)
 
 ### @work
 
