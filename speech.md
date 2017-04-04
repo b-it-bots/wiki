@@ -24,3 +24,5 @@ Sound source direction is published on the topic: `/manyears/source_direction`
 Parameter file which specifies arrangement of microphones on Jenny and other config: 
 `manyears_ros/data/cob3-1.mes`
 
+A description of the parameters can be found here: https://sourceforge.net/p/manyears/wiki/SoftwareDocumentation/
+
