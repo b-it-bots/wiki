@@ -14,6 +14,8 @@ The default grammar file is specified in:`vocon_speech_recognizer/data/general_p
 
 Recognized speech is published on the topic:`/recognized_speech`
 
+To generate new grammar files see: https://gist.github.com/moriarty/20fbb331d90755a059ad7df30fba16ac
+
 ### Manyears sound localization
 `roslaunch manyears_ros demo_8sounds.launch`
 
