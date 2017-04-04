@@ -1,15 +1,18 @@
 ## Navigation
+
 ###### Bringup the robot
 First export the environment to be used:
-```export ROBOT_ENV=brsu-C025```
+```bash
+export ROBOT_ENV=brsu-C069
+```
 
 Launch the robot:
-```
-roslaunch mir_bringup robot.launch
+```bash
+roslaunch mdr_bringup robot.launch
 ```
 Launch the navigation node
-```
-roslaunch mir_2dnav 2Dnav.launch
+```bash
+roslaunch mdr_2dnav 2Dnav.launch
 ```
 
 ##### Create navigation goals and orientations
@@ -27,15 +30,31 @@ In rviz:
 4. Launch navigation tools (in yb2)
 ```
 roscd mcr_default_env_config
-cd brsu-C025
+cd brsu-C069
 rosrun mcr_navigation_tools save_map_poses_to_file
 ```
+
+### Teleoperate the robot
+
+#### In simulaltion
+```bash
+rosrun gazebo_ros gzclient (this should launch automatically)
+roslaunch mir_teleop teleop_joypad.launch (this should launch automatically)
+```
+### Autonomous
+
+#### Teleoperate the robot
+```
+roslaunch mir_teleop teleop_joypad.launch (this should launch automatically)
+```
+
+#### On the real robot
+TODO: @home version of this?
 Run move_base
 ```
 rosrun mir_move_base_safe move_base_safe_server.py
-rosrun mir_move_base_safe move_base_safe_client_test.py [source] [dest]```
+rosrun mir_move_base_safe move_base_safe_client_test.py [source] [dest]
 
-##### Navigation test
-```
-roslaunch mir_basic_navigation_test refbox_parser.py
+
+
 ```
