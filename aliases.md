@@ -15,9 +15,20 @@ alias cob2='ssh -X username@cob3-1-pc2'
 alias cob3='ssh -X username@cob3-1-pc3'
 ```
 
-### ROS
+#### ROS
 ```
 alias export_cob='export ROS_MASTER_URI=http://cob3-1-pc1:11311/'
+```
+#####PC1
+```
+alias bringup='roslaunch mdr_bringup robot.launch'
+alias arm_bringup='roslaunch mdr_lwr lwr.launch'
+alias recover_arm='rosservice call /arm_controller/lwr_node/recover'
+```
+#####PC2
+```
+alias moveit='roslaunch mdr_moveit_cob move_group.launch'
+alias camera_bringup='roslaunch cob_bringup openni2.launch camera:=cam3d'
 ```
 
 ## @work
