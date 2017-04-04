@@ -25,12 +25,20 @@ alias export_cob='export ROS_MASTER_URI=http://cob3-1-pc1:11311/'
 
 #### ssh
 ```
-alias yb2='ssh -X username@youbot-brsu-1-pc1'
+alias yb1='ssh -X username@youbot-brsu-1-pc1'
 alias yb2='ssh -X username@youbot-brsu-2-pc1'
-alias yb2='ssh -X username@youbot-brsu-3-pc1'
-alias yb2='ssh -X username@youbot-brsu-4-pc1'
+alias yb3='ssh -X username@youbot-brsu-3-pc1'
+alias yb4='ssh -X username@youbot-brsu-4-pc1'
 ```
 
+
+### ROS
+```
+alias export_yb1='export ROS_MASTER_URI=http://youbot-brsu-1-pc1:11311/'
+alias export_yb2='export ROS_MASTER_URI=http://youbot-brsu-2-pc1:11311/'
+alias export_yb3='export ROS_MASTER_URI=http://youbot-brsu-3-pc1:11311/'
+alias export_yb4='export ROS_MASTER_URI=http://youbot-brsu-4-pc1:11311/'
+```
 
 ## See also
 * [Tools](tools)
