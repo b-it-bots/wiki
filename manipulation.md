@@ -67,6 +67,15 @@ If the connection is working you can use RVIZ:
 rviz
 ```
 
+If the OMPL library is not recognized in RVIZ:
+
+```
+export $ROS_IP=ip_adress_of_your_com 
+```
+
+Restart RVIZ
+
+
 6) In another window connect to PC2 and run arm packages for using "MoveIt" library:
 
 ```
