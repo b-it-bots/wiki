@@ -19,6 +19,14 @@ where `username` should be replaced by the username of the workstation you are u
 Now you can follow the instructions in the README files `mas_common_robotics`. For @home you should do the same with the README of `mas_domestic_robotics` and for @work the README in `mas_industrial_robotics`.
 
 
+## Setting up your user in Jenny
+You will need at least four terminals open in your laptop.
+
+1. Look at the [aliases](aliases) section.
+2. Generate and add your shh keys GitHub and Gitgate
+3.  
+
+
 ## Initializing Jenny
 When running code on Jenny, first you need to initialize her. Note that sometimes it may be necessary to run the release the emergency stop procedure before initalizing.
 
@@ -33,4 +41,4 @@ roslaunch mdr_bringup dashboard.launch
   Note: You can also use the joystick with the combination: `Dead man + 10`
 
 # See also
-* Aliases (aliases)
+* [Aliases](aliases)
