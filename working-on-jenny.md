@@ -1,3 +1,5 @@
+[[_TOC_]]
+
 ## ssh to Jenny
 In order to be able to compile the repositories in Jenny, you need to add the following to your /etc/hosts file:
 
@@ -18,7 +20,7 @@ Now you can follow the instructions in the README files `mas_common_robotics`. F
 
 
 ## Initializing Jenny
-When running code on Jenny, first you need to initialize her. Note that sometimes it may be necessary to run the release the emergency stop procedure before initalizing. 
+When running code on Jenny, first you need to initialize her. Note that sometimes it may be necessary to run the release the emergency stop procedure before initalizing.
 
 1. First launch the dashboard:
 ```
@@ -29,3 +31,6 @@ roslaunch mdr_bringup dashboard.launch
 3. Press `Recover all`
 
   Note: You can also use the joystick with the combination: `Dead man + 10`
+
+# See also
+* Aliases (aliases)
