@@ -1,4 +1,20 @@
-In order to be able to run code more smoothly, please use the following aliases:
+In order to be able to run code more smoothly, please use the aliases listed in this README. For your convinience, you can also clone the repository and use the following instructions:
+
+## Using the b-it-bots aliases and scripts
+The repository itself contains a folder with some useful aliases and scripts for your `.bashrc`. To use them, first clone this repository to your home:
+```bash
+cd ~/
+git clone gitgate@mas.b-it-center.de:mas-group/b-it-bots-wiki.git
+```
+
+Finally, simply add this lines to your `.bashrc` file:
+
+```bash
+source ~/b-it-bots-wiki/dotfiles/common.sh
+source ~/b-it-bots-wiki/dotfiles/athome_aliases
+source ~/b-it-bots-wiki/dotfiles/atwork_aliases
+```
+
 
 ## General
 ```
