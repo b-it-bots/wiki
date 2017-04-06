@@ -20,10 +20,12 @@ The state machine receives one of this keys, and looks for the related words, wh
 The default grammar file is specified in:`vocon_speech_recognizer/data/general_purpose.bnf`.
 
 Recognized speech is published on the topic:`/recognized_speech`
+Strings published to `/sound/say` are output to the speaker as audio
 
 ```
 rostopic echo /recognized_speech
 rostopic echo /sound/say
+rostopic pub /sound/say std_msgs/String "hello"
 ```
 
 To generate new grammar files you can:  
@@ -62,7 +64,7 @@ rosrun mdr_speech_and_audio turn_and_answer_test
 ```
 In another terminal:
 ```
-cob1
+cob2
 roslaunch manyears_ros demo_8sounds.launch```
 
 And finally:
@@ -71,7 +73,8 @@ cob1
 roslaunch mdr_speech_and_audio turn_and_answer_test.launch
 ```
 
-If you don't want to bring up the robot:
+Speech synthesis is done on cob3 using the following node (launched with bringup)
+In case you reboot cob3 while bringup is running, relaunch this node:
 ```bash
 cob3
 roslaunch cob_bringup sound.launch
