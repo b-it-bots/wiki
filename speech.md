@@ -74,7 +74,7 @@ cob1
 roslaunch mdr_speech_and_audio turn_and_answer_test.launch
 ```
 
-Speech synthesis is done on cob3 using the following node (launched with bringup)
+Speech synthesis is done on cob3 using the following node. It is launched by default with bringup.
 In case you reboot cob3 while bringup is running, relaunch this node:
 ```bash
 cob3
