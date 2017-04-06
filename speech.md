@@ -65,7 +65,8 @@ rosrun mdr_speech_and_audio turn_and_answer_test
 In another terminal:
 ```
 cob2
-roslaunch manyears_ros demo_8sounds.launch```
+roslaunch manyears_ros demo_8sounds.launch
+```
 
 And finally:
 ```
