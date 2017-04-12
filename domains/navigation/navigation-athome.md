@@ -1,4 +1,5 @@
 ## Navigation
+The navigation stack is run on `cob1`.
 
 ###### Bringup the robot
 First export the environment to be used:
@@ -27,7 +28,7 @@ In rviz:
 1. Select the 2D pose estimate
 2. Click the position near the robot
 3. Move with joystick
-4. Launch navigation tools (in yb2)
+4. Launch navigation tools
 ```
 roscd mcr_default_env_config
 cd brsu-C069
@@ -52,9 +53,11 @@ roslaunch mir_teleop teleop_joypad.launch (this should launch automatically)
 TODO: @home version of this?
 Run move_base
 ```
-rosrun mir_move_base_safe move_base_safe_server.py
-rosrun mir_move_base_safe move_base_safe_client_test.py [source] [dest]
+rosrun mdr_actions move_base_safe
+rosrun mdr_actions move_base_safe_client_test.py [source] [dest]```
 
-
-
+##### Navigation test
 ```
+roslaunch mdr_navigation_test
+```
+and then run the script inside the folder mdr_navigation_test
