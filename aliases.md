@@ -6,6 +6,7 @@ The repository itself contains a folder with some useful aliases and scripts for
 cd ~/
 git clone gitgate@mas.b-it-center.de:mas-group/b-it-bots-wiki.git
 ```
+After you have cloned the repository, update the *`username`* with your username in the PCs.
 
 Finally, simply add this lines to your `.bashrc` file:
 
