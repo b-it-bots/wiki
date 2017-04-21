@@ -22,6 +22,6 @@
 
 
 ## Tips and Tricks
-* [Aliases](aliases)
-* [Tools](tools)
+* [Aliases](setup/aliases)
+* [Tools](setup/tools)
 * [Tips](tips)

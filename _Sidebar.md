@@ -1,6 +1,6 @@
 # Getting started
 * [Joining](joining)
-* [Getting started](getting-started)
+* [Getting started](setup/getting-started)
 
 
 # Domains
@@ -19,6 +19,6 @@
 
 
 ## Tips and Tricks
-* [Aliases](aliases)
-* [Tools](tools)
+* [Aliases](setup/aliases)
+* [Tools](setup/tools)
 * [Tips](tips)

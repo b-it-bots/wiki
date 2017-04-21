@@ -70,4 +70,4 @@ alias export_yb4='export ROS_MASTER_URI=http://youbot-brsu-4-pc1:11311/'
 
 ## See also
 * [Tools](tools)
-* [Using ssh without password](tips)
+* [Using ssh without password](../tips)
