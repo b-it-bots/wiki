@@ -7,7 +7,7 @@
 
 ## Window managers
 ### i3
-* [https://i3wm.org/docs/userguide.html | i3 User guide]
+* [i3 User guide](https://i3wm.org/docs/userguide.html)
 
 ## See also
 * [Aliases](setup/aliases)
