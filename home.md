@@ -1,9 +1,12 @@
 [[_TOC_]]
 
 # The b-it-bots wiki
-[Getting started](getting-started)
 
 [Team Members](members)
+
+## Setup
+[Getting started](setup/getting-started)
+[Setup stable repository](setup/setup-stable)
 
 ## Domains
 - [Perception](perception)
