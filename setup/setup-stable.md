@@ -25,7 +25,8 @@ Note: for `zsh` users, source `setup.zsh` instead of `setup.bash` for all worksp
 
 ### Run `repositories.debs`
 The easiest way to install all packages required by the @Home repositories is to execute the `repositories.debs` file in [mas_domestic_robotics](https://mas.b-it-center.de/gitgate/mas-group/mas_domestic_robotics) repository. This however requires some modification to the script in order to avoid conflict with the stable workspace setup:
-* Clone the MAS repositories first to get the `repositories.debs`. The `wstool` command should create the `src` directory with three `mas_*` repositories.
+
+- Clone the MAS repositories first to get the `repositories.debs`. The `wstool` command should create the `src` directory with three `mas_*` repositories.
 
 ```bash
 export MAS_WORKSPACE_PATH=/path/to/mas/ws   # i.e. ~/catkin_ws/indigo
@@ -34,16 +35,16 @@ cd $MAS_WORKSPACE_PATH
 wstool init src $WS_SETUP_PATH/cob-user/mas-domestic-robotics.rosinstall
 ```
 
-* Edit the `repositories.debs` under the `mas_domestic_robotics` directory:
+- Edit the `repositories.debs` under the `mas_domestic_robotics` directory:
+  * Comment out `rosinstall .. /opt/ros/indigo repository.rosinstall` line (these repositories will be installed with the stable workspace).
+  * `ros-indigo-cob-extern` in `packagelist` will cause errors with `apt` installation (messages about overwriting some README files), so comment it out or resolve this in some other way.
 
 ```bash
 cd src/mas_domestic_robotics
 vim repositories.debs   # or emacs, nano
 ```
 
-  * Comment out `rosinstall .. /opt/ros/indigo repository.rosinstall` line (these repositories will be installed with the stable workspace).
-  * `ros-indigo-cob-extern` in `packagelist` will cause errors with `apt` installation (messages about overwriting some README files), so comment it out or resolve this in some other way.
-* Execute `repositories.debs`
+- Execute `repositories.debs`
 
 ```bash
 ./repositories.debs
