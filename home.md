@@ -5,8 +5,8 @@
 [Team Members](members)
 
 ## Setup
-[Getting started](setup/getting-started)
-[Setup stable repository](setup/setup-stable)
+- [Getting started](setup/getting-started)
+- [Setup stable repository](setup/setup-stable)
 
 ## Domains
 - [Perception](perception)
