@@ -15,6 +15,7 @@ roslint_cpp()     # ROS wrapper of Google's cpplint
 ```
 cd <package_source_directory>; catkin build --get-env <package_name> | catkin env -si  /usr/bin/make roslint --jobserver-fds=6,7 -j; cd -
 ```
+![2017-05-06-205659_900x152_scrot](/uploads/02712b217d380158e2195a79994cbd5e/2017-05-06-205659_900x152_scrot.png)
 
 ## Running Unit Tests
 ```bash
