@@ -19,7 +19,7 @@
 ### Within a session
 The default bind key for tmux is `C-b` (`Ctrl+b`)
 - `C-b + d`: detach (session run as background)
-- `C-d`    : exit (kill session), typing `exit` on all terminals also work
+- `C-d` : exit (kill session), typing `exit` on all terminals also work
 - `C-b + %`: vertical split
 - `C-b + "`: horizontal split
 - `C-b + :`: enter command
@@ -29,6 +29,5 @@ The default bind key for tmux is `C-b` (`Ctrl+b`)
 ## (More) Advanced Usage
 An user-specific config file for tmux should be located at `~/.tmux.conf`
 - Enable scrolling by default: enter following command or add it to config file:
-```
-set -g mode-mouse on
-```
+  - version 2.1 and up: `set -g mouse on`
+  - older versions: `set -g mode-mouse on`
