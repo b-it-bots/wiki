@@ -7,6 +7,7 @@
 ## Setup
 - [Getting started](setup/getting-started)
 - [Setup stable repository](setup/setup-stable)
+- [Tools](setup/tools)
 
 ## Domains
 - [Perception](perception)
@@ -26,5 +27,4 @@
 
 ## Tips and Tricks
 * [Aliases](setup/aliases)
-* [Tools](setup/tools)
 * [Tips](tips)
