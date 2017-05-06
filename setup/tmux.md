@@ -18,13 +18,13 @@
 
 ### Within a session
 The default bind key for tmux is `C-b` (`Ctrl+b`)
-- Detach (session run as background): `C-b + d`
-- Exit (kill session): `C-d` or type `exit` on all terminals
-- Enter scroll/copy mode: `C-b + [`
-- Exit scroll/copy mode: `Esc` or `q`
-- Vertical split: `C-b + %`
-- Horizontal split: `C-b + "`
-- Enter command: `C-b + :`
+- `C-b + d`: detach (session run as background)
+- `C-d`    : exit (kill session), typing `exit` on all terminals also work
+- `C-b + %`: vertical split
+- `C-b + "`: horizontal split
+- `C-b + :`: enter command
+- `C-b + [`: enter scroll/copy mode
+- `Esc` or `q`: exit scroll/copy mode
 
 ## (More) Advanced Usage
 An user-specific config file for tmux should be located at `~/.tmux.conf`
