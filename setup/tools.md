@@ -1,3 +1,6 @@
+## Terminal management
+* [tmux](setup/tmux)
+
 ## Text editors
 ### vim
 
