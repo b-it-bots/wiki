@@ -32,7 +32,7 @@ In rviz:
 ```
 roscd mcr_default_env_config
 cd brsu-C069
-rosrun mcr_navigation_tools save_map_poses_to_file
+rosrun mcr_navigation_tools save_base_map_poses_to_file
 ```
 
 ### Teleoperate the robot
