@@ -9,8 +9,11 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 - [Getting started](setup/getting-started)
 - [Setup stable repository](setup/setup-stable)
 - [Tools](setup/tools)
-* [Aliases](setup/aliases)
-* [Tips](setup/tips)
+- [Aliases](setup/aliases)
+- [Tips](setup/tips)
+
+## Conventions
+- [Testing and linting in ROS](conventions/testing)
 
 ## Domains
 - [Perception](/domains/perception/perception)
