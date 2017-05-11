@@ -14,7 +14,7 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 
 ## Domains
 - [Perception](/domains/perception/perception)
-  - [Object perception](/domains/perception/object-perception.md)
+  - [Object perception](/domains/perception/object-perception)
 - [Manipulation](/domains/manipulation/manipulation)
 - [Speech Recognition](/domains/speech/speech)
 - [Navigation](/domains/navigation/navigation)
@@ -28,7 +28,7 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 ## Teams
 ### @home
 * [Working on Jenny](/athome/jenny/working-on-jenny)
-  * [Getting to know Jenny](/athome/jenny/getting-to-know-jennys)
+  * [Getting to know Jenny](/athome/jenny/getting-to-know-jenny)
   * [Turning Jenny on and off](/athome/jenny/turning-jenny-on-and-off)
 
 ### @work
@@ -39,4 +39,4 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 * Tutorials
 
 ## Templates
-* 
+*
