@@ -59,6 +59,7 @@
 ##### Training SVM classifier
 * roscd mcr_object_recognition_mean_circle/ros/tools && ./train_classifier.py --dataset <datasetname> --output <classifiername>
   * example: ./train_classifier.py --dataset atwork_objects --output atwork_objects
+  * NOTE : The dataset folder should exist in mas_datasets/generic/mds_pointclouds/objects/workspace_setups , where mas_datasets should exist in your catkin_workspace 
 * classifier is saved in common/config/atwork_objects
 * specify classifier name (atwork_objects) in object_recognition.launch
 
