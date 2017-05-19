@@ -43,5 +43,8 @@ roslaunch mdr_bringup dashboard.launch
 
   Note: You can also use the joystick with the combination: `Dead man + 10`
 
+
+## Using the joypad for teleop
+See [image here](http://wiki.ros.org/cob_teleop).
 # See also
 * [Aliases](setup/aliases)
