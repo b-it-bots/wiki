@@ -1,0 +1,36 @@
+"*":
+  core:
+    disabledPackages: [
+      "language-clojure"
+      "language-mustache"
+      "language-perl"
+      "language-php"
+      "language-sass"
+      "language-ruby-on-rails"
+      "language-ruby"
+      "language-toml"
+      "metrics"
+    ]
+    telemetryConsent: "no"
+    excludeVcsIgnoredPaths: true
+  editor:
+    preferredLineLength: 80
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+    tabType: "soft"
+  "git-diff":
+    showIconsInEditorGutter: true
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+
+  '.source.python': # python overrides
+    'editor':
+      'tabLength': 4
+      'softWrap': false
+  '.source.c':
+    'editor':
+        'softWrap': false
