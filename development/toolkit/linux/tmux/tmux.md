@@ -31,3 +31,6 @@ An user-specific config file for tmux should be located at `~/.tmux.conf`
 - Enable scrolling by default: enter following command or add it to config file:
   - version 2.1 and up: `set -g mouse on`
   - older versions: `set -g mode-mouse on`
+
+## See also
+* https://egghead.io/courses/wrangle-your-terminal-with-tmux
