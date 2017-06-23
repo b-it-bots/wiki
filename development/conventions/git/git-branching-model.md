@@ -42,13 +42,13 @@ In *origin*:
   * `release-X.Y`: the release branch, where preparations are made right before merging into `indigo`.
 
 In *your* remote:
-  * `/feature/[meta]/nameoffeature`: New functionality that will be added to the robot.  
+  * `feature/[meta]/nameoffeature`: New functionality that will be added to the robot.  
   * `/fix/X.Y.Z`: Fixing a bug that was found in existing code.  
 
     Where [meta] will refer to the metapackage where your feature or bug belongs.
 
 ### Features
-**Naming Convention**:`/feature/[meta]/nameoffeature`<br/>
+**Naming Convention**:`feature/[meta]/nameoffeature`<br/>
 Where [meta] will refer to the metapackage where your feature will be included:
 * manipulation
 * navigation
@@ -64,7 +64,7 @@ Some basic rules:
 
 To create a feature branch:  
 
-    git checkout -b /feature/[meta]/nameoffeature devel
+    git checkout -b feature/[meta]/nameoffeature devel
 
 To merge a feature branch:
 
@@ -76,7 +76,7 @@ git pull origin devel
 
 2. Merge devel into your branch
 ```shell
-git checkout /feature/[meta]/nameoffeature
+git checkout feature/[meta]/nameoffeature
 git merge devel
 ```
 
@@ -84,7 +84,7 @@ git merge devel
 
 4. Once your merge request is accepted, delete your branch
 ```shell
-git branch -d /feature/[meta]/nameoffeature
+git branch -d feature/[meta]/nameoffeature
 ```
 
 ### Bug fixes
