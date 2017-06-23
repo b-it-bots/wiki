@@ -8,7 +8,7 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 ## Development
 ### Conventions
 #### Git
-- [Git branching model](/development/conventions/git/git)
+- [Git branching model](/development/conventions/git/git-branching-model)
 
 ### Setup
 - [Getting started](development/setup/getting-started)
