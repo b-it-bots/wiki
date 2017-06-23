@@ -124,7 +124,7 @@ git branch -d fix/X.Y.Z
 ```
 
 ### Release branches
-**Naming Convention**: `/release/X.Y.Z`<br/>
+**Naming Convention**: `release/X.Y.Z`<br/>
 Where *X* represents a major release, e.g.
 * migrating to a new ROS version
 * code integrated after a competition
@@ -142,7 +142,7 @@ Some basic rules:
 
 To create a release branch:
 ```shell
-git checkout -b /release/X.Y.Z devel
+git checkout -b release/X.Y.Z devel
 ```
 
 During the next two months after the release, regular testing needs to take place and any bug fixes need to be taken care of. After the release is stable enough, it will be merged back into `indigo`. If you have read this far, send me an email with a picture of your favorite robot to get a candy after our next meeting.
@@ -157,17 +157,17 @@ git commit -a -m "Bumped version number to X.Y.Z"
 Then merge back into `indigo` and `devel`
 ```shell
 git checkout indigo
-git merge --no-ff /release/X.Y.Z
+git merge --no-ff release/X.Y.Z
 git tag -a X.Y
 
 # Merge into devel as well
 git checkout devel
-git merge --no-ff /release/X.Y.Z
+git merge --no-ff release/X.Y.Z
 ```
 In case of merge conflicts or issues (most likely because of the change in version number), fix them, commit your changes and then delete your branch:
 
 ```shell
-git branch -d /release/X.Y.Z
+git branch -d release/X.Y.Z
 ```
 
 ## Merge requests
