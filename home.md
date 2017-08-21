@@ -22,7 +22,7 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 #### [cmake](development/toolkit/cmake/cmake)
 
 #### editors
-* atom
+* [atom](development/toolkit/editors/atom/atom)
 * [vim](development/toolkit/editors/vim/vim)
 
 #### [git](development/toolkit/git/git)
@@ -30,9 +30,9 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 #### Languages and Frameworks
 * [C++](development/toolkit/languages_and_frameworks/cpp/cpp)
 * [Python](development/toolkit/languages_and_frameworks/python/python)
-* [ROS](development/toolkit/ros/ros)
-    * [actionlib](development/toolkit/ros/actionlib)
-    * [smach](development/toolkit/ros/smach)
+* [ROS](development/toolkit/languages_and_frameworks/ros/ros)
+    * [actionlib](development/toolkit/languages_and_frameworks/ros/actionlib)
+    * [smach](development/toolkit/languages_and_frameworks/ros/smach)
 
 #### [Linux](development/toolkit/linux/linux)
 * [Tmux](development/toolkit/linux/tmux/tmux)
