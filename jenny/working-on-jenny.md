@@ -44,4 +44,4 @@ roslaunch mdr_bringup dashboard.launch
   Note: You can also use the joystick with the combination: `Dead man + 10`
 
 # See also
-* [Aliases](setup/aliases)
+* [Aliases](development/setup/aliases)
