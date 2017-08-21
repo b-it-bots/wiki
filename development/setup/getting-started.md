@@ -62,4 +62,4 @@ Now you can follow the instructions in the README files `mas_common_robotics`. F
 
 
 ## See also
-Take a look at [Aliases](aliases) and [Tools](tools)
+Take a look at [Aliases](/development/setup/aliases) and [Tools](/development/toolkit/tools)
