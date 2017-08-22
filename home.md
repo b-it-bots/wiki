@@ -1,45 +1,69 @@
-[[_TOC_]]
-
 # The b-it-bots wiki
 
-[Team Members](members)  
+[Team Members](team)  
 If you want to join the b-it-bots please follow [this](joining) instructions.
 
-## Setup
-- [Getting started](setup/getting-started)
-- [Setup stable repository](setup/setup-stable)
-- [Tools](setup/tools)
-- [Aliases](setup/aliases)
-- [Tips](setup/tips)
+## Development
+### Conventions
+* [Agile Development](/development/conventions/agile-development/agile-development)
+* [Git branching model](/development/conventions/git/git-branching-model)
+* [Linters](/development/conventions/linters/linters)
+* [Testing](/development/conventions/testing/testing)
 
-## Conventions
-- [Testing and linting in ROS](conventions/testing)
+### Setup
+- [Getting started](development/setup/getting-started)
+    * [Tutorials](development/setup/tutorials)
+- [Setup stable repository](development/setup/setup-stable)
+- [Aliases](development/setup/aliases)
+- [Tips](development/setup/tips)
 
-## Domains
-- [Perception](/domains/perception/perception)
-  - [Object perception](/domains/perception/object-perception)
-- [Manipulation](/domains/manipulation/manipulation)
-- [Speech Recognition](/domains/speech/speech)
-- [Navigation](/domains/navigation/navigation)
+### [Toolkit](development/toolkit/tools)
+
+#### [cmake](development/toolkit/cmake/cmake)
+
+#### editors
+* [atom](development/toolkit/editors/atom/atom)
+* [vim](development/toolkit/editors/vim/vim)
+
+#### [git](development/toolkit/git/git)
+
+#### Languages and Frameworks
+* [C++](development/toolkit/languages_and_frameworks/cpp/cpp)
+* [Python](development/toolkit/languages_and_frameworks/python/python)
+* [ROS](development/toolkit/languages_and_frameworks/ros/ros)
+    * [actionlib](development/toolkit/languages_and_frameworks/ros/actionlib)
+    * [smach](development/toolkit/languages_and_frameworks/ros/smach)
+
+#### [Linux](development/toolkit/linux/linux)
+* [Tmux](development/toolkit/linux/tmux/tmux)
+* [i3](development/toolkit/tools#i3)
+
+## Documentation
+To be indexed....
+
+## Guides
+- [Perception](/guides/domains/perception/perception)
+  - [Object perception](/guides/domains/perception/object-perception)
+- [Manipulation](/guides/domains/manipulation/manipulation)
+- [Speech Recognition](/guides/domains/speech/speech)
+- [Navigation](/guides/domains/navigation/navigation)
   - Mapping
-    - [Mapping @home](/domains/navigation/mapping-athome)
+    - [Mapping @home](/guides/domains/navigation/mapping-athome)
   - Navigation
-    - [Navigation @home](/domains/navigation/navigation-athome)
-    - [Navigation @work](/domains/navigation/navigation-atwork)
-- [Planning](domains/planning/planning)
+    - [Navigation @home](/guides/domains/navigation/navigation-athome)
+- [Planning](/guides/domains/planning/planning)
 
-## Teams
-### @home
-* [Working on Jenny](/athome/jenny/working-on-jenny)
-  * [Getting to know Jenny](/athome/jenny/getting-to-know-jenny)
-  * [Turning Jenny on and off](/athome/jenny/turning-jenny-on-and-off)
+## Jenny
+* [Working on Jenny](/jenny/working-on-jenny)
+  * [Getting to know Jenny](/jenny/getting-to-know-jenny)
+  * [Turning Jenny on and off](/jenny/turning-jenny-on-and-off)
 
-### @work
-* [Working with the youBot]()
+## [Research](research/research)
+
+
+## [Templates](templates/templates)
+To be indexed...
 
 ## Resources
 * Rulebooks
 * Tutorials
-
-## Templates
-*
