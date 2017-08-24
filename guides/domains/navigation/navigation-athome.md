@@ -46,16 +46,16 @@ rosrun mcr_navigation_tools save_base_map_poses_to_file
 #### In simulaltion
 
 ```bash
-rosrun gazebo_ros gzclient (this should launch automatically)
-roslaunch mir_teleop teleop_joypad.launch (this should launch automatically)
+rosrun gazebo_ros gzclient #this should launch automatically
+roslaunch mir_teleop teleop_joypad.launch #this should launch automatically
 ```
 
 ### Autonomous
 
 #### Teleoperate the robot
 
-```
-roslaunch mir_teleop teleop_joypad.launch (this should launch automatically)
+```bash
+roslaunch mir_teleop teleop_joypad.launch #this should launch automatically
 ```
 
 #### On the real robot
