@@ -2,10 +2,6 @@
 ## State Machines
 
 ### Scenario state machines
-Should be implemented as classes which inherit `smach.StateMachine`. They will ideally contain only skills of the robot and the minimum number of `smach.State`s as possible.
-
-Ideally, the scenarios will be substituted soon with a proper planner.
-
 The basic structure looks like this:
 ```python
 #!/usr/bin/python
@@ -49,7 +45,7 @@ if __name__ == '__main__':
 ```
 
 ### Skills
-Skills are implemented as smach state machines with an actionlib wrapper. You can read more about them [here](http://wiki.ros.org/smach/Tutorials/Wrapping%20a%20SMACH%20Container%20With%20actionlib).
+Skills are implemented as smach state machines with an actionlib wrapper. You can read more about them [here](http://wiki.ros.org/smach/Tutorials/Wrapping%20a%20SMACH%20Container%20With%20actionlib) and [here](http://wiki.ros.org/actionlib/DetailedDescription).
 
 Skills must:
 * have a timeout with a default value
@@ -147,16 +143,6 @@ if __name__ == '__main__':
 
 ## Launch files
 ### Scenario launch files
-A scenario lunch file must always contain:
-1. The argument with the scenario name as it is written on the package, i.e. `mdr_scenario_name`.  
-This argument corresponds to the name of the speech grammar as well.
-2. Should include arguments for all three of Jenny's computers.  
-NOTE: Does this make sense? Should component launch files handle this instead? Do they have to be arguments?
-1. Will mostly contain `include` tags to other components which have their own launch files
-    * PC1: Navigation, Planning, Data recording
-    * PC2: Manyears, Perception, Manipulation
-    * PC3: Speech
-3. The values of all arguments for all the components launched on the scenario must be specified on this launch file.
 
 The basic structure looks like this:
 ```xml
@@ -200,19 +186,6 @@ The basic structure looks like this:
 ```
 
 ### Component launch files
-1. All the arguments of the component itself and the included files should be defined using at the top of the file:
-```xml
-<arg="" default=""/>
-```
-
-    Then when including the launch file, the arguments defined at the top will be passed like this:
-```xml
-<include="">
-    <arg="" value=""/>
-</include>
-```
-2. Remapping - Convention?
-
 The basic structure looks like this:
 
 ```xml

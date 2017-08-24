@@ -39,16 +39,45 @@ structure:
 │   ├── config
 │   ├── include
 │   │   └── <package_name>
+│   ├── launch
+│   │   |— <package_name>.launch
+│   ├── rviz
+│   │   |— <package_name>.rviz
 │   ├── scripts
 │   │   └── <package_name>
 │   ├── src
-│   │   └── <package_name>_ros
+│   │   └── <package_name>_node
 │   ├── test
 │   └── tools
 ├── CMakeLists.txt
-└── package.xml
+├── package.xml
+└── README.md
 ```
 
+### Messages, services and actions
+If your package defines its own messages, services or actions you should add them to the corresponding meta-package:
+```
+./<package_name>_msgs
+├── action
+│   ├── MyAction.action
+├── msg
+│   ├── MyMessage.msg
+├── srv
+│   └── MyService.srv
+├── CMakeLists.txt
+├── package.xml
+└── README.md
+
+```
+
+### Meta-packages
+```
+./<meta_package_name>
+└── <meta_package_name>
+    ├── CMakeLists.txt
+    ├── package.xml
+    └── README.md
+```
 
 # ROS Nodes
 ## General Rules
@@ -85,6 +114,61 @@ command:
 rosrun rqt_reconfigure rqt_reconfigure
 ```
 
+## Skills and actions
+Components in our repository should be developed using smach state machines with an actionlib wrapper. This way we can guarantee that they are ready for the planner to use them.
+
+Actions must always:
+* have a timeout with a default value
+* provide feedback during the execution
+* the outcome states should include:
+    * REJECTED
+    * RECALLED
+    * PREEMTED
+    * ABORTED
+    * SUCCEEDED
+
+See the  [template](/templates/templates#skills) for more information.
+
+## Scenarios
+Should be implemented as classes which inherit `smach.StateMachine`. They will ideally contain only skills of the robot and the minimum number of `smach.State`s as possible.
+
+Ideally, the scenarios will be substituted soon with a proper planner.
+
+
+## Launch Files
+### Skills and Actions
+1. All the arguments of the component itself and the included files should be defined using at the top of the file:
+```xml
+<arg="" default=""/>
+```
+
+    Then when including the launch file, the arguments defined at the top will be passed like this:
+```xml
+<include="">
+    <arg="" value=""/>
+</include>
+```
+2. Remapping - Convention?
+
+### Scenarios
+A scenario lunch file must always contain:
+1. The argument with the scenario name as it is written on the package, i.e. `mdr_scenario_name`.  
+This argument corresponds to the name of the speech grammar as well.
+2. Should include arguments for all three of Jenny's computers.  
+NOTE: Does this make sense? Should component launch files handle this instead? Do they have to be arguments?
+1. Will mostly contain `include` tags to other components which have their own launch files
+    * PC1: Navigation, Planning, Data recording
+    * PC2: Manyears, Perception, Manipulation
+    * PC3: Speech
+3. The values of all arguments for all the components launched on the scenario must be specified on this launch file.
+
+## READMEs
+### Package
+#### Scenario
+#### Actions and Skills
+### Meta-packages
+### Messages, Services and Action Files
 
 # See Also
 * [Spaces and Tabs]()
+* [Templates](/templates/templates)
