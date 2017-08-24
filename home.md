@@ -11,7 +11,10 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 * [Git branching model](/development/conventions/git/git-branching-model)
 * [Linters](/development/conventions/linters/linters)
 * [Testing](/development/conventions/testing/testing)
-
+* Coding conventions
+    * [ROS](/development/conventions/coding/ROS)
+    * [C++](/development/conventions/coding/cpp)
+    * [Python](/development/conventions/coding/python)
 ### Setup
 - [Getting started](development/setup/getting-started)
     * [Tutorials](development/setup/tutorials)
