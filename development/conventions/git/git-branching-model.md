@@ -109,13 +109,12 @@ catkin_update_changelog
 ```
 
 2. Create a merge request for `indigo` using the web interface of gitgate.
-
-3. Once it is approved, the version number needs to be updated:
+<!--3. Once it is approved, the version number needs to be updated:
 ```shell
 catkin_prepare_release
 git commit -a -m "Bumped version number to X.Y.Z"
 ```
-
+-->
 3. Finally, create a merge request either in the release branch (if it exists) or in `devel`. Note: **DO NOT merge on both**.
 
 4. Once your merge request gets accepted, delete your branch.
