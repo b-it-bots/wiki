@@ -1,5 +1,7 @@
 # The b-it-bots wiki
 
+[[_TOC_]]
+
 Do you want to document a new feature? Have you found something that can be improved? Click [here](CONTRIBUTING) for instructions how to edit the wiki.
 
 If you want to join the b-it-bots please follow [this](joining) instructions.
@@ -7,14 +9,15 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 
 ## Development
 ### Conventions
-* [Agile Development](/development/conventions/agile-development/agile-development)
-* [Git branching model](/development/conventions/git/git-branching-model)
-* [Linters](/development/conventions/linters/linters)
-* [Testing](/development/conventions/testing/testing)
 * Coding conventions
     * [ROS](/development/conventions/coding/ROS)
     * [C++](/development/conventions/coding/cpp)
     * [Python](/development/conventions/coding/python)
+* [Agile Development](/development/conventions/agile-development/agile-development)
+* [Git branching model](/development/conventions/git/git-branching-model)
+* [Linters](/development/conventions/linters/linters)
+* [Testing](/development/conventions/testing/testing)
+
 ### Setup
 - [Getting started](development/setup/getting-started)
     * [Tutorials](development/setup/tutorials)
@@ -24,24 +27,21 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 
 ### [Toolkit](development/toolkit/tools)
 
-#### [cmake](development/toolkit/cmake/cmake)
-
-#### editors
-* [atom](development/toolkit/editors/atom/atom)
-* [vim](development/toolkit/editors/vim/vim)
-
-#### [git](development/toolkit/git/git)
-
-#### Languages and Frameworks
-* [C++](development/toolkit/languages_and_frameworks/cpp/cpp)
-* [Python](development/toolkit/languages_and_frameworks/python/python)
-* [ROS](development/toolkit/languages_and_frameworks/ros/ros)
-    * [actionlib](development/toolkit/languages_and_frameworks/ros/actionlib)
-    * [smach](development/toolkit/languages_and_frameworks/ros/smach)
-
-#### [Linux](development/toolkit/linux/linux)
-* [Tmux](development/toolkit/linux/tmux/tmux)
-* [i3](development/toolkit/tools#i3)
+* [Linux](development/toolkit/linux/linux)
+    * [Terminator](development/toolkit/tools#terminator)
+    * [Tmux](development/toolkit/linux/tmux/tmux)
+    * [i3](development/toolkit/tools#i3)
+* [git](development/toolkit/git/git)
+* Editors
+    * [atom](development/toolkit/editors/atom/atom)
+    * [vim](development/toolkit/editors/vim/vim)
+* Languages and Frameworks
+    * [C++](development/toolkit/languages_and_frameworks/cpp/cpp)
+    * [Python](development/toolkit/languages_and_frameworks/python/python)
+    * [ROS](development/toolkit/languages_and_frameworks/ros/ros)
+        * [actionlib](development/toolkit/languages_and_frameworks/ros/actionlib)
+        * [smach](development/toolkit/languages_and_frameworks/ros/smach)
+* [cmake](development/toolkit/cmake/cmake)
 
 ## Documentation
 To be indexed....
@@ -58,10 +58,13 @@ To be indexed....
     - [Navigation @home](/guides/domains/navigation/navigation-athome)
 - [Planning](/guides/domains/planning/planning)
 
-## Jenny
+## Robots
+### Jenny
 * [Working on Jenny](/jenny/working-on-jenny)
   * [Getting to know Jenny](/jenny/getting-to-know-jenny)
   * [Turning Jenny on and off](/jenny/turning-jenny-on-and-off)
+
+### youBot
 
 ## [Research](research/research)
 
