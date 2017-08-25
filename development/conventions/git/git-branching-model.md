@@ -79,6 +79,10 @@ git pull origin devel
 git checkout feature/[meta]/nameoffeature
 git merge devel
 ```
+1. Update the changelog:
+```shell
+catkin_update_changelog
+```
 
 3. Create a merge request using the web version of gitgate.
 
