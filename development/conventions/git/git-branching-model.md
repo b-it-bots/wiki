@@ -92,8 +92,8 @@ git branch -d feature/[meta]/nameoffeature
 ```
 
 ### Bug fixes
-**Naming Convention**: `fix/X.Y.Z`<br/>
-Where *X* and *Y* will not change, and *Z* will be increased to reflect the patch version number.  
+**Naming Convention**: `fix/issue-NNN`<br/>
+Where *NNN* is the issue number reflecting the bug.  
 
 Some basic rules:
 * Every bug gets its own branch.
@@ -102,7 +102,7 @@ Some basic rules:
 
 To create a fix branch:
 ```shell
-git checkout -b fix/X.Y.Z indigo
+git checkout -b fix/issue-NNN indigo
 ```
 
 Work on your bug fix and commit your changes. When you have tested and have satisfactory results, create merge requests to both `indigo` and `devel`:
@@ -123,7 +123,7 @@ git commit -a -m "Bumped version number to X.Y.Z"
 
 4. Once your merge request gets accepted, delete your branch.
 ```shell
-git branch -d fix/X.Y.Z
+git branch -d fix/issue-NNN
 ```
 
 ### Release branches
