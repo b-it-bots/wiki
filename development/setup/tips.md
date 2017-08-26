@@ -1,3 +1,4 @@
+# Tips and Tricks
 ## SSH
 
 ### Login without entering password
