@@ -1,5 +1,7 @@
-## Terminal management
+# Toolkit
+## Terminal
 * [tmux](setup/tmux)
+* [Terminator](https://gnometerminator.blogspot.de/p/introduction.html)
 
 ## Text editors
 ### vim
