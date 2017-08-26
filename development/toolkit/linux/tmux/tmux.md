@@ -5,10 +5,10 @@
 - [Manual Page](http://man.openbsd.org/OpenBSD-current/man1/tmux.1)
 
 ## Why tmux
-- Allow starting process in `ssh` sessions that continue to run when the user logout
+- Allow starting process in `ssh` sessions that continue to run when the user logsout
 - Open the same session on multiple computers
 - Hide irrelevant sessions to unclutter the terminal
-- and many others...
+- and many other things...
 
 ## Essential Usage
 ### In the terminal
