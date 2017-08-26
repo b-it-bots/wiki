@@ -1,49 +1,78 @@
-# Starting up the Jenny
-- Open a **terminal** in Ubuntu from the PC that is connected to the Jenny
+# Starting up Jenny
 
-* Access the first PC of Jenny from the computer by using the command "ssh -X username@cob3-1-pc1" (Alias **cob1**)
+## In PC1
+1. Access the first PC of Jenny from the computer by using the command
 
-Note: for all the alias list [Aliases] (https://mas.b-it-center.de/gitgate/b-it-bots/bitbots_athome/wikis/development/setup/aliases)
+    ```shell
+    ssh -X username@cob3-1-pc1
+    ```
 
-* Then start the roscore using the command "**roscore**"
+ **Alias:** `cob1`.
 
-- Open the **second terminal**
+2. Start the `roscore` using the command
 
-* Locate the master using the command " export ROS_MASTER_URI=http://cob3-1-pc1:11311/ " (alias **export_cob**)
+    ```shell
+    roscore
+    ```
 
-* Set the IP address of the PC using the command "export ROS_MASTER_URI=http://cob3-1-pc1:11311/" (alias **export_rosip**)
-Note: "ifconfig" command will display all the information about the IP address of the PC
+### Bringing up the robot
+1. Access Jenny'S PC1 using ssh (alias **cob1**).
 
-* Launch the "Dashboard" GUI which is used to control the Jenny robot using the command "Roslaunch mdr_bringup dashboard.launch " (alias **dashboard**)
+2. Bring up the robot using the following command:
 
-* Open the **third terminal**
+    ```shell
+    roslaunch mdr_bringup robot.launch
+    ```
 
-* Access the Jenny from the computer you can use the command "ssh -X username@cob3-1-pc1" (Alias **cob1**)
+    **Alias:** `bringup`
 
-* Launch the "bringup" file using the command  "mdr_bringup robot.launch" (alias **bringup**)
+
+## In your PC
+
+1. Open a second terminal and in order to tell your computer where the ROS master is located, set the variable `ROS_MASTER_URI` to Jenny's first PC:
+
+    ```shell
+    export ROS_MASTER_URI=http://cob3-1-pc1:11311/
+    ```
+
+    **Alias:** `export_cob`
+
+2. To let the ROS master know where youre node is running, set the `ROS_IP` variable to the IP of the PC you are using
+
+    ```shell
+    export ROS_IP=<Your IP address>
+    ```
+
+    **Alias:** `export_rosip`
+
+    Note: The `ifconfig` command can be used to get your computer's IP address.
+
+3. Launch the "Dashboard" GUI, used to initialize Jenny
+
+```shell
+roslaunch mdr_bringup dashboard.launch
+```
+**Alias:** `dashboard`
+
+
 
 ### In the Dashboard GUI
 
-* First click on "**Init all**" button in the GUI
+1. First click on "**Init all**" button in the GUI  
+Note: Emergency switches have to be released ( [procedure for releasing the emergency switch](https://mas.b-it-center.de/gitgate/b-it-bots/bitbots_athome/wikis/jenny/turning-jenny-on-and-off) ) before the pressing "Init all"
 
-Note: Emergency switches have to be released ( [procedure for releasing the emergency switch] (https://mas.b-it-center.de/gitgate/b-it-bots/bitbots_athome/wikis/jenny/turning-jenny-on-and-off) ) before the pressing "Init all"
+ The wheels will rotate above its z axis and the torso and camera will move to its initial position.
 
-* Check for wheels (wheels will rotate above its z axis symbolizing the initialization is done properly)
-
-* Then click **recover all**
-
-* After few seconds check mark on the GUI should be green
-
-* Now the robot is all set for navigation
+2. Then click **Recover all**  
+After few seconds check mark on the GUI should be green
 
 
-### Turning off the computer in the robot
+# Turning off the computers in Jenny
 
-* Access the First PC of Jenny  (alias cob1)
-* Shut down the computer using the alias **sudo shutdown now**
+Access each of the PCs in Jenny (alias `cob1`, `cob2`, `cob3`) and shut down the computer
 
-* Access the Second PC of Jenny (alias cob2)
-* Shut down the computer using the alias **sudo shutdown now**
+```shell
+sudo shutdown now
+```
 
-* Access the Third PC of Jenny (alias cob3)
-* Shut down the computer using the alias **sudo shutdown now**
+Note: for all the alias list click [here](https://mas.b-it-center.de/gitgate/b-it-bots/bitbots_athome/wikis/development/setup/aliases)
