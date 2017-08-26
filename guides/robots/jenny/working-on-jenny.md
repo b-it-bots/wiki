@@ -1,3 +1,7 @@
+# Remotely accessing Jenny's computers
+
+[[_TOC_]]
+
 ## Using ssh for Jenny's PCs
 In order to be able to compile the repositories in Jenny, you need to add the following to your /etc/hosts file:
 
