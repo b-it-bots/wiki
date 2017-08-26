@@ -1,1 +1,1 @@
-[Object perception](object-perception)
+[Object perception](./object-perception)
