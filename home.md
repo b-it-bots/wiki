@@ -35,6 +35,7 @@ Note: This is for advanced users only. If you are only starting, please use the 
     * [Tmux](development/toolkit/linux/tmux/tmux)
     * [i3](development/toolkit/tools#i3)
 * [git](development/toolkit/git/git)
+    * [Git Aliases](/development/toolkit/git/git-aliases)
 * Editors
     * [atom](development/toolkit/editors/atom/atom)
     * [vim](development/toolkit/editors/vim/vim)
