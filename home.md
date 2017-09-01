@@ -63,7 +63,7 @@ To be indexed....
 * [Getting to know Jenny](/guides/robots/jenny/getting-to-know-jenny)
 * [Remotely accessing Jenny](/guides/robots/jenny/working-on-jenny)
     * [Configuring your ssh keys](/guides/robots/jenny/working-on-jenny)
-* [Initializing Jenny](/guides/jenny/robots/how-to-start-jenny)
+* [Initializing Jenny](/guides/robots/jenny/how-to-start-jenny)
 * [Turning Jenny on and off](/guides/robots/jenny/turning-jenny-on-and-off)
 
 ### youBot
