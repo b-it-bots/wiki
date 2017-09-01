@@ -60,10 +60,11 @@ To be indexed....
 
 ## Robots
 ### Jenny
-* [Getting to know Jenny](/guides/jenny/getting-to-know-jenny)
-* [Remotely accessing Jenny](/guides/jenny/working-on-jenny)
-* [Initializing Jenny](/guides/jenny/how-to-start-jenny)
-* [Turning Jenny on and off](/guides/jenny/turning-jenny-on-and-off)
+* [Getting to know Jenny](/guides/robots/jenny/getting-to-know-jenny)
+* [Remotely accessing Jenny](/guides/robots/jenny/working-on-jenny)
+    * [Configuring your ssh keys](/guides/robots/jenny/working-on-jenny)
+* [Initializing Jenny](/guides/jenny/robots/how-to-start-jenny)
+* [Turning Jenny on and off](/guides/robots/jenny/turning-jenny-on-and-off)
 
 ### youBot
 
