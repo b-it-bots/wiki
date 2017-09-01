@@ -1,5 +1,4 @@
 # Atom
-
 ## Installation
 ### Option 1: Following their [official instructions](https://flight-manual.atom.io/getting-started/sections/installing-atom/).
 
@@ -23,23 +22,33 @@ sudo apt-get install atom
 
 ## Configuration
 You can easily open your settings by pressing `ctrl`+`,`. (Also found in Edit>Preferences).
-After that select `Editor` on the menu to your left.
 
-## Minimal setup
-After you have installed atom, there are a few additional packages that you should install. You can do this by using the command `apm install <package name>`, going to *Install* in the settings section or by runnig the script `atom-minimum.sh` found in this wiki.
-* minimap
-* highlight-selected
+### Minimal setup
+After you have installed atom, there are a few additional packages that you should install. You can do this by runnig the script `atom-minimum.sh` found in the [dotfiles](https://mas.b-it-center.de/gitgate/b-it-bots/dotfiles) repository in your terminal. This will install the following packages:
 * language-ini
 * language-cmake
-* atom-ros (shameless plug, @argenos developed this package, but feel free to contribute!)
+* atom-ros
+* linter-pycodestyle
+* linter
+* linter-ui-default
+* linter-clang
+* intentions
+* busy-signal
 
 Other recommended packages include (there is an `atom-recommended.sh` script to install them):
+* minimap
+* highlight-selected
 * minimap-highlight-selected
 * minimap-git-diff
 * minimap-find-and-replace
 * minimap-selection
 
-### Indentation
-To configure your indentation accoridng to [PEP 8](https://www.python.org/dev/peps/pep-0008/#indentation).
+### Updating your config file
+Copy the contents of the `config.cson` file in this repository to your atom config.
+Assuming you cloned the [dotfiles](https://mas.b-it-center.de/gitgate/b-it-bots/dotfiles) repository on your home folder:
 
-###
+```shell
+cp -f ~/dotfiles/atom/config.cson ~/.atom/config.cson
+```
+# Contributors
+* Argentina Ortega - **Original author**
