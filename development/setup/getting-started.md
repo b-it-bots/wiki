@@ -52,14 +52,11 @@ In order to understand at least the different core components of ROS, you have t
 ### Set up a catkin workspace
 
     source /opt/ros/indigo/setup.bash
-    mkdir -p ~/catkin_ws/src; cd ~/catkin_ws/src
+    mkdir -p ~/indigo/src; cd ~/indigo/src
     catkin_init_workspace
     catkin build
 
-## Running the MAS software
-Now you can follow the instructions in the README files `mas_common_robotics`. For @home you should do the same with the README of `mas_domestic_robotics` and for @work the README in `mas_industrial_robotics`.
-
-
-
-## See also
-Take a look at [Aliases](/development/setup/aliases) and [Tools](/development/toolkit/tools)
+# See also
+* [Running MAS Software](/development/setup/running-mas-software)
+* [Settung up aliases](/development/setup/aliases)
+* [Recommended tools](/development/toolkit/tools)

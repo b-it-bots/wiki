@@ -20,10 +20,13 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 
 ### Setup
 - [Getting started](development/setup/getting-started)
+    * [Running MAS Software](/development/setup/running-mas-software.md)
     * [Tutorials](development/setup/tutorials)
-- [Setup stable repository](development/setup/setup-stable)
 - [Aliases](development/setup/aliases)
 - [Tips](development/setup/tips)
+#### For the robots (Advanced)
+- [Setup a stable repository](/development/setup/setup-stable)  
+Note: This is for advanced users only. If you are only starting, please use the steps listed under [setup](/home#setup).
 
 ### [Toolkit](development/toolkit/tools)
 
