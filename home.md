@@ -24,6 +24,7 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
     * [Tutorials](development/setup/tutorials)
 - [Aliases](development/setup/aliases)
 - [Tips](development/setup/tips)
+
 #### For the robots (Advanced)
 - [Setup a stable repository](/development/setup/setup-stable)  
 Note: This is for advanced users only. If you are only starting, please use the steps listed under [setup](/home#setup).
