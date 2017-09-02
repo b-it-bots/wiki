@@ -45,3 +45,4 @@ Once it's done installing the plugins, in your `.vimrc` file go to line 17 and u
 
 # See Also
 * https://egghead.io/courses/learn-to-use-vim
+*[Vim the cheat sheet method](https://www.ibm.com/developerworks/linux/tutorials/l-vi/index.html)
