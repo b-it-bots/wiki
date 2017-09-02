@@ -20,7 +20,7 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
 
 ### Setup
 - [Getting started](development/setup/getting-started)
-    * [Running MAS Software](/development/setup/running-mas-software.md)
+    * [Running MAS Software](/development/setup/running-mas-software)
     * [Tutorials](development/setup/tutorials)
 - [Aliases](development/setup/aliases)
 - [Tips](development/setup/tips)
