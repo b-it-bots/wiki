@@ -1,4 +1,7 @@
 # Vim
+## Introductory Material
+[The vim cheatsheet and introductory tutorial](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
+
 ## Installation
 First of all make sure that vim is installed
 ```bash
