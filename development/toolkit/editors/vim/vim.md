@@ -1,4 +1,6 @@
 # Vim
+"Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient."
+
 ## Learning Materials
 [The vim cheatsheet](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html) Hands down the best vim cheatsheet there is. Print it out and keep in an arm's reach at all time!
 The creators of the cheatsheet also provide introductory slides to get you started and learn everything covered by the cheatsheet step-by-step.
@@ -55,6 +57,3 @@ Once it's done installing the plugins, in your `.vimrc` file go to line 17 and u
 # Contributors
 * Octavio Arriaga - **Original author**
 * Argentina Ortega - **Formatting**
-
-# See Also
-* https://egghead.io/courses/learn-to-use-vim
