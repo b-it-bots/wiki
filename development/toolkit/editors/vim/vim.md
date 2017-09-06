@@ -1,4 +1,19 @@
 # Vim
+"Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient."
+
+## Learning Materials
+[The vim cheatsheet](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html) Hands down the best vim cheatsheet there is. Print it out and keep in an arm's reach at all time!
+The creators of the cheatsheet also provide introductory slides to get you started and learn everything covered by the cheatsheet step-by-step.
+
+[Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki) A big collection of useful vim-topics in wiki form. Good source of information to anything from basic stuff like keymappings to more specific vim-topics. Browse it directly or get flushed there during deep google-searches.
+
+[Vim Awesome](https://vimawesome.com/) Site that advertises and describes basically all popular vim-plugins.
+
+[Learn vimscript the hard way](http://learnvimscriptthehardway.stevelosh.com/) If you want to get really deep down and dirty with vim, this is the way to go. The site teaches vimscript: The language used to customize vim. The .vimrc file uses vimscript to setup vim during start and pugins can be written in vimscript too.
+
+[Introductory videos](https://egghead.io/courses/learn-to-use-vim) The basic things to get you to momentum in self contained course-like videos.
+
+
 ## Installation
 First of all make sure that vim is installed
 ```bash
