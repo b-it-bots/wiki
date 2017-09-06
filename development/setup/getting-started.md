@@ -24,6 +24,8 @@ Git also saves your email address into the commits you make.
 
      git config --global user.email "your-email@youremail.com"
 
+### Add your ssh key to gitgate
+You can follow Gitlab's documentation on ssh [here](https://docs.gitlab.com/ce/ssh/README.html). Make sure that you are following the instructions for Linux.
 
 ### GIT Tutorial
 If you have never worked with git before, we recommend to go through the following basic git tutorial:
