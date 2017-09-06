@@ -57,6 +57,7 @@ Once it's done installing the plugins, in your `.vimrc` file go to line 17 and u
 # Contributors
 * Octavio Arriaga - **Original author**
 * Argentina Ortega - **Formatting**
+* Maximilian Schöbel - **Learning materials**
 
 # See Also
 * https://egghead.io/courses/learn-to-use-vim
