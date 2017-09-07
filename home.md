@@ -1,4 +1,4 @@
-# The b-it-bots wiki
+[PlanningForRoboCup.pdf](/uploads/a5b162dcab892b7dfb4c9f0b0a1bdb34/PlanningForRoboCup.pdf)# The b-it-bots wiki
 
 [[_TOC_]]
 
