@@ -61,7 +61,7 @@ To be indexed....
     - [Mapping @home](/guides/domains/navigation/mapping-athome)
   - Navigation
     - [Navigation @home](/guides/domains/navigation/navigation-athome)
-- [Planning](/guides/domains/planning/planning)
+- [Planning](/guides/domains/planning/planning) [PlanningForRoboCup.pdf](/uploads/a5b162dcab892b7dfb4c9f0b0a1bdb34/PlanningForRoboCup.pdf)
 
 ## Robots
 ### Jenny
