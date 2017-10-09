@@ -6,7 +6,7 @@ In order to adjust the settings to all PCs on Jenny, you need at least four term
 
 ## Overview
 1. Generate a ssh key in your workstation.
-2. Look at the [Aliases] section.
+2. Look at the [Aliases](development/setup/aliases) section.
 3. Connect via ssh to each of the PCs by using `cob1`, `cob2`, `cob3`.
 4. Create on each PC in directory _~/.ssh/_ a file called _authorized_keys_.
 5. Copy the public part of your ssh key into the authorized_keys-file of each PC.
@@ -16,9 +16,9 @@ In order to adjust the settings to all PCs on Jenny, you need at least four term
 $ ssh-keygen -t rsa
 ```
 
-### 2. Look at the [Aliases] section.
+### 2. Look at the [Aliases](development/setup/aliases) section
 
-### 3. Connect via ssh to each of the PCs by using `cob1`, `cob2`, `cob3`.
+### 3. Connect via ssh to each of the PCs by using `cob1`, `cob2`, `cob3`
 
 ### 4. Create _authorized\_keys_-files
 Execute in each of the PCs the following code in order to create the _authorized\_keys_-file at the right place.
@@ -26,9 +26,10 @@ Execute in each of the PCs the following code in order to create the _authorized
 $ touch ~/.ssh/authorized_keys
 ```
 
-### 5. Copy public part of ssh key into authorized_keys-files of each PC
+### 5. Copy the public part of your ssh key into authorized_keys-files of each PC
 
-Being in the terminal of your workstation execute the following lines of code. After each line you will need to enter your individual password one last time.
+Being in the terminal of your workstation execute the following lines of code (**Note: _username_ needs to be replaced by your own username**).
+After each line you will need to enter your individual password one last time.
 
 ```bash
 $ scp ~/.ssh/id_rsa.pub username@cob3-1-pc1:~/.ssh/authorized_keys
