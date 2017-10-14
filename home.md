@@ -70,7 +70,7 @@ To be indexed....
     * [Configuring your ssh keys](/guides/robots/jenny/working-on-jenny)
 * [Initializing Jenny](/guides/robots/jenny/how-to-start-jenny)
 * [Turning Jenny on and off](/guides/robots/jenny/turning-jenny-on-and-off)
-* [Common errors and solutions to those](/guides/robots/jenny/common-errors)
+* [Common errors and solutions to those](/guides/robots/jenny/Common-errors-and-solutions-to-those)
 
 ### youBot
 
