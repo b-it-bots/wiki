@@ -1,6 +1,6 @@
 # Connect to Jenny via ssh without entering a password
 
-In order to adjust the settings to all PCs on Jenny, you need at least four terminals open in your laptop.
+In order to adjust the settings to all PCs on Jenny, you need at least four terminals open in your workstation.
 
 ## Overview
 1. Generate a ssh key in your workstation.
