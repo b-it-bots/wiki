@@ -61,7 +61,7 @@ To be indexed....
     - [Mapping @home](/guides/domains/navigation/mapping-athome)
   - Navigation
     - [Navigation @home](/guides/domains/navigation/navigation-athome)
-- [Planning](/guides/domains/planning/planning)
+- [Planning](/guides/domains/planning/planning) [PlanningForRoboCup.pdf](/uploads/a5b162dcab892b7dfb4c9f0b0a1bdb34/PlanningForRoboCup.pdf)
 
 ## Robots
 ### Jenny
@@ -70,6 +70,7 @@ To be indexed....
     * [Configuring your ssh keys](/guides/robots/jenny/working-on-jenny)
 * [Initializing Jenny](/guides/robots/jenny/how-to-start-jenny)
 * [Turning Jenny on and off](/guides/robots/jenny/turning-jenny-on-and-off)
+* [Common errors and solutions to those](/guides/robots/jenny/Common-errors-and-solutions-to-those)
 
 ### youBot
 
