@@ -28,7 +28,7 @@ You will need at least four terminals open in your laptop.
 2. In each of the PCs, you need to generate shh keys following [these instructions](https://help.github.com/articles/generating-ssh-keys).
 1. Add them to GitHub and Gitgate in the ssh keys section.
 
-You may want to take a look at [how to use your ssh key without entering a password](tips#ssh).
+You may want to take a look at [how to use your ssh key without entering a password](guides/robots/use-ssh-without-password).
 
 
 # See also
