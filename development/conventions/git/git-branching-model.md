@@ -81,7 +81,7 @@ git merge devel
 ```
 1. Update the changelog:
 ```shell
-catkin_generate_changelog
+catkin_generate_changelog --skip-merge
 ```
 
 3. Create a merge request using the web version of gitgate.
@@ -109,7 +109,7 @@ Work on your bug fix and commit your changes. When you have tested and have sati
 
 1. To merge a fix branch, first update the changelog:
 ```shell
-catkin_generate_changelog
+catkin_generate_changelog --skip-merge
 ```
 
 2. Create a merge request for `indigo` using the web interface of gitgate.
@@ -152,7 +152,7 @@ During the next two months after the release, regular testing needs to take plac
 
 To merge a release branch, first update the changelog:
 ```shell
-catkin_generate_changelog
+catkin_generate_changelog --skip-merge
 catkin_prepare_release --bump <major, minor, patch>
 git commit -a -m "Bumped version number to X.Y.Z"
 ```
