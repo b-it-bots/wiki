@@ -30,6 +30,13 @@ cd <package_source_directory>; catkin build --get-env <package_name> | catkin en
 ![2017-05-06-205659_900x152_scrot](2017-05-06-205659_900x152_scrot.png)
 
 
+## Running `catkin_lint`
+
+You should also make sure that the `catkin_lint` tests pass; running it from the root of your catkin workspace you can run:
+
+```
+catkin_lint --strict --ignore CRITICAL_VAR_APPEND,LINK_DIRECTORY src/mas_domestic_robotics
+```
 Proposed linters:
 - [C++](http://clang.llvm.org/extra/clang-tidy/)
 - [Python](https://pypi.python.org/pypi/pep8)
