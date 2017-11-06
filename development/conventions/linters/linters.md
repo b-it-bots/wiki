@@ -37,6 +37,11 @@ You should also make sure that the `catkin_lint` tests pass; running it from the
 ```
 catkin_lint --strict --ignore CRITICAL_VAR_APPEND,LINK_DIRECTORY src/mas_domestic_robotics
 ```
+
+## See Also
+* [roslint](http://wiki.ros.org/roslint)
+* [catkin_lint](http://fkie.github.io/catkin_lint/)
+
 Proposed linters:
 - [C++](http://clang.llvm.org/extra/clang-tidy/)
 - [Python](https://pypi.python.org/pypi/pep8)
