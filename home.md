@@ -15,6 +15,7 @@ If you want to join the b-it-bots please follow [this](joining) instructions.
     * [Python](/development/conventions/coding/python)
 * [Agile Development](/development/conventions/agile-development/agile-development)
 * [Git branching model](/development/conventions/git/git-branching-model)
+    * [Changelogs](/development/conventions/git/changelogs)
 * [Linters](/development/conventions/linters/linters)
 * [Testing](/development/conventions/testing/testing)
 
