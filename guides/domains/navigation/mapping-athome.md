@@ -45,8 +45,9 @@ Note: When using Jenny, mapping is run on `cob1`
   roslaunch mdr_2dslam 2dslam.launch```
 
   Note: the map is built using the front laser's only.
+2. Set the global frame in Rviz to map
 
-2. Move the robot around either by using the joystick or by teleoperation.  
+3. Move the robot around either by using the joystick or by teleoperation.  
 
 ##### To save the map
 Maps are stored in `~/catkin_ws/src/mas_common_robotics/mcr_environments/mcr_default_env_config`. An environment, such as `brsu-C025` or `brsu-C069`, is a folder in this directory. Within this folder, the maps, goals and parameters are stored.  
