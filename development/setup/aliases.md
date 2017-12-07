@@ -2,19 +2,19 @@
 In order to be able to run code more smoothly, please use the aliases listed in this README. For your convinience, you can also clone the repository and use the following instructions:
 
 ## Using the b-it-bots aliases and scripts
-The repository itself contains a folder with some useful aliases and scripts for your `.bashrc`. To use them, first clone this repository to your home:
+The repository b-it-bots/dotfiles contains a folder with some useful aliases and scripts for your `.bashrc`. To use them, first clone this repository to your home:
 ```bash
 cd ~/
-git clone gitgate@mas.b-it-center.de:mas-group/b-it-bots-wiki.git
+git clone gitgate@mas.b-it-center.de:b-it-bots/dotfiles.git
 ```
 After you have cloned the repository, update the *`username`* with your username in the PCs.
 
 Finally, simply add this lines to your `.bashrc` file:
 
 ```bash
-source ~/b-it-bots-wiki/dotfiles/common.sh
-source ~/b-it-bots-wiki/dotfiles/athome_aliases
-source ~/b-it-bots-wiki/dotfiles/atwork_aliases
+source ~/dotfiles/alias/common.sh
+source ~/dotfiles/alias/athome_aliases
+source ~/dotfiles/alias/atwork_aliases
 ```
 
 
