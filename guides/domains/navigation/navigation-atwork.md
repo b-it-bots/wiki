@@ -1,4 +1,28 @@
 ## Mapping
+
+#### For simulation
+
+Run roscore
+```
+roscore
+```
+
+Launch the robot
+```
+roslaunch mir_bringup_sim robot.launch
+```
+
+Run gazebo simulator
+```
+rosrun gazebo_ros gzclient
+```
+
+Run rviz
+```
+rosrun rviz rviz
+```
+Note : If RViz is not setup then add robot model, laser scanners and 
+#### For real
 Export the youbot ssh alias
 
 ```
