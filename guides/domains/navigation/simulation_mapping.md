@@ -1,5 +1,6 @@
-## Mapping for simulation
+# Mapping and Navigating for simulation
 
+## Mapping
 
 #### Run simulation related nodes
 Run roscore
@@ -16,12 +17,15 @@ Run gazebo simulator (In another terminal)
 ```
 rosrun gazebo_ros gzclient
 ```
+![alt_text](https://github.com/DharminB/wiki/blob/atwork_mapping/guides/domains/navigation/gazebo.png)
 
 Run rviz (In another terminal)
 ```
 rosrun rviz rviz
 ```
-[To setup the RViz, please go to the bottom of this page.]
+![alt_text](https://github.com/DharminB/wiki/blob/atwork_mapping/guides/domains/navigation/rviz.png)
+
+(To setup the RViz, please go to the bottom of this page.)
 
 #### Generate map
 Run 2D SLAM (In another terminal)
@@ -35,9 +39,9 @@ Move the robot around the map. (In another terminal)
 ```
 roslaunch mir_teleop teleop_keyboard.launch
 ```
-[WSAD keys set the robot in motion and "Space bar" stops that motion.]
-As you move the robot around, you should be able to see walls appearing in the map in RViz and all the other area will be free.
-After you have mapped the whole environment, you can save the map in config map directory.
+(WSAD keys set the robot in motion and "Space bar" stops that motion.)
+
+As you move the robot around, you should be able to see walls appearing in the map in RViz and all the other area will be free. After you have mapped the whole environment, you can save the map in config map directory.
 
 Move to map config directory (In another terminal)
 ```
@@ -99,8 +103,52 @@ Once the the robot is reasonably localised, you can navigate the robot around in
 #### 1. GUI (RViz)
 Click on the `2D Nav Goal` and select a goal on the map.
 
-#### 2. Terminal based (ROS)
-Please refer `navigation-atwork.md`
+#### 2. Terminal based (ROS Action Server Client)
+For Action server client, the robot first needs name of position for source and destination places (It cannot use `x, y, theta` values)
+
+To name the poses, you have to execute `save_base_map_poses_to_file`
+```
+roscd mcr_default_env_config
+cd test_map
+rosrun mcr_navigation_tools save_base_map_poses_to_file
+```
+This program is terminal based interactive program. The program will ask you to name the position.
+1. You can now navigate the robot to your desired position (using GUI of RViz or `mir_teleop`).
+2. Once your robot is at the desired position, you can enter a name and press enter. 
+(Note : The name of the location should be ALL CAPS. For example, CORNER_1, MAIN_DOOR, etc. If the name contains any lower case character, the server will not work)
+You will see pose of the robot inside square brackets in the next line and prompted for another name.
+3. Repeat step 1 and 2 to add multiple names to different locations inside the map.
+4. To close this interactive program, press `Ctrl + z`. (Note : `Ctrl + c` won't work.)
+  Then kill this process.
+  ```
+  ps
+  ```
+  take a note of the `pid` of python process.
+  ```
+  kill -9 <pid_number>
+  ```
+Now stop `mir_2dnav` and start it again.
+
+Launch move base launch file (In another terminal)
+```
+roslaunch mir_move_base_safe move_base.launch 
+```
+Run the server file. (In another terminal)
+```
+rosrun mir_move_base_safe move_base_safe_server.py
+```
+
+You can test everything by running client test file. (In another terminal)
+```
+rosrun mir_move_base_safe move_base_safe_client_test.py SOURCE_NAME DESTINATION_NAME
+```
+For example, if you want to move the robot from MAIN_DOOR to CORNER_1, then
+```
+rosrun mir_move_base_safe move_base_safe_client_test.py MAIN_DOOR CORNER_1
+```
+(Note : The source location is irrelevant for the client test file. Your robot can be anywhere and the program will still work correctly. Just give some valid location name as a place holder.)
+
+The client will print `success : True`, if it was able to successfully navigate to the destination position.
 
 
 ## RViz setup
