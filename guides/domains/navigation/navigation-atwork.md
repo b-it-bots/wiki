@@ -1,6 +1,6 @@
 ## Mapping
 
-Note : For simulation please check [simulation_mapping.md](simulation_mapping.md)
+Note : For simulation please check [simulation_mapping.md](/guides/domains/navigation/simulation_mapping.md)
 
 
 Export the youbot ssh alias
