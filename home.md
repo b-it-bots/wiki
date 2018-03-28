@@ -1,7 +1,5 @@
 # The b-it-bots wiki
 
-[[_TOC_]]
-
 Do you want to document a new feature? Have you found something that can be improved? Click [here](CONTRIBUTING) for instructions how to edit the wiki.
 
 If you want to join the b-it-bots please follow [this](joining) instructions.
