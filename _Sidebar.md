@@ -1,5 +1,5 @@
 # Development
-#### Conventions
+## Conventions
 * Coding conventions
     * [ROS](/development/conventions/coding/ROS)
     * [C++](/development/conventions/coding/cpp)
@@ -9,14 +9,14 @@
 * [Linters](/development/conventions/linters/linters)
 * [Testing](/development/conventions/testing/testing)
 
-#### Setup
+## Setup
 - [Getting started](/development/setup/getting-started)
     * [Tutorials](/development/setup/tutorials)
 - [Setup stable repository](/development/setup/setup-stable)
 - [Aliases](/development/setup/aliases)
 - [Tips](/development/setup/tips)
 
-#### [Toolkit](/development/toolkit/tools)
+## [Toolkit](/development/toolkit/tools)
 
 * [Linux](/development/toolkit/linux/linux)
     * [Terminator](/development/toolkit/tools#terminator)
@@ -34,10 +34,10 @@
         * [smach](/development/toolkit/languages_and_frameworks/ros/smach)
 * [cmake](/development/toolkit/cmake/cmake)
 
-### Documentation
+# Documentation
 To be indexed....
 
-### Guides
+# Guides
 - [Perception](/guides/domains/perception/perception)
   - [Object perception](/guides/domains/perception/object-perception)
 - [Manipulation](/guides/domains/manipulation/manipulation)
@@ -49,20 +49,20 @@ To be indexed....
     - [Navigation @home](/guides/domains/navigation/navigation-athome)
 - [Planning](/guides/domains/planning/planning)
 
-### Robots
-#### Jenny
+# Robots
+## Jenny
 * [Working on Jenny](/jenny/working-on-jenny)
   * [Getting to know Jenny](/jenny/getting-to-know-jenny)
   * [Turning Jenny on and off](/jenny/turning-jenny-on-and-off)
 
-#### youBot
+## youBot
 
-### [Research](/research/research)
+# [Research](/research/research)
 
 
-### [Templates](/templates/templates)
+# [Templates](/templates/templates)
 To be indexed...
 
-### Resources
+# Resources
 * Rulebooks
 * Tutorials
