@@ -75,4 +75,4 @@ Access each of the PCs in Jenny (alias `cob1`, `cob2`, `cob3`) and shut down the
 sudo shutdown now
 ```
 
-Note: for all the alias list click [here](development/setup/aliases)
+Note: for all the alias list click [here](wiki/development/setup/aliases)

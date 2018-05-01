@@ -18,7 +18,7 @@ This procedure is to be performed using the remote emergency stop (the big yello
 3.  Press the topmost black button for a few seconds. If done correctly, you will hear a faint click on release.
 4.  Turn the key on Jenny to the right. You should again hear a single click; if you do not, perform the procedure again.
 
-After this, you can restart Jenny from the console by pressing the 'init_all' button on the dashboard followed by 'recover_all'. The latter must be performed after every emergency stop release, while the former is not required except on starting Jenny. (Detailed information about accessing the dashboard can be found on the [Manipulation](manipulation) page)
+After this, you can restart Jenny from the console by pressing the 'init_all' button on the dashboard followed by 'recover_all'. The latter must be performed after every emergency stop release, while the former is not required except on starting Jenny. (Detailed information about accessing the dashboard can be found on the [Manipulation](wiki/guides/domains/manipulation/manipulation) page)
 
 **Note**: Always place the remote on its charging station after you have finished working on Jenny.
 

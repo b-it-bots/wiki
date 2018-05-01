@@ -12,7 +12,7 @@ There are templates available in the [templates]() folder.
 - [ ] scenarios
 
 ## Your code
-The code must follow the [conventions](development/conventions/).
+The code must follow the [conventions](wiki/development/conventions/).
 
 We will be using roslint to check for code quality.
 

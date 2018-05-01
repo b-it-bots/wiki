@@ -59,6 +59,6 @@ In order to understand at least the different core components of ROS, you have t
     catkin build
 
 # See also
-* [Running MAS Software](/development/setup/running-mas-software)
-* [Settung up aliases](/development/setup/aliases)
-* [Recommended tools](/development/toolkit/tools)
+* [Running MAS Software](wiki/development/setup/running-mas-software)
+* [Settung up aliases](wiki/development/setup/aliases)
+* [Recommended tools](wiki/development/toolkit/tools)

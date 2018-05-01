@@ -1,6 +1,6 @@
 # Toolkit
 ## Terminal
-* [tmux](setup/tmux)
+* [tmux](wiki/setup/tmux)
 * [Terminator](https://gnometerminator.blogspot.de/p/introduction.html)
 
 ## Text editors
@@ -15,4 +15,4 @@
 * [i3 User guide](https://i3wm.org/docs/userguide.html)
 
 ## See also
-* [Aliases](setup/aliases)
+* [Aliases](wiki/setup/aliases)

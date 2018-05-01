@@ -3,7 +3,7 @@ Now you can follow the instructions in the README files `mas_common_robotics`. F
 
 # Summer Camp 2017
 
-After following the instructions for [getting started](/development/setup/getting-started), you should clone the summer camp repository to your workspace:
+After following the instructions for [getting started](wiki/development/setup/getting-started), you should clone the summer camp repository to your workspace:
 
 ```shell
 cd ~/indigo/src

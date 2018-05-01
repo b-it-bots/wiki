@@ -1,38 +1,38 @@
 # Development
 ## Conventions
 * Coding conventions
-    * [ROS](/development/conventions/coding/ROS)
-    * [C++](/development/conventions/coding/cpp)
-    * [Python](/development/conventions/coding/python)
-* [Agile Development](/development/conventions/agile-development/agile-development)
-* [Git branching model](/development/conventions/git/git-branching-model)
-* [Linters](/development/conventions/linters/linters)
-* [Testing](/development/conventions/testing/testing)
+    * [ROS](wiki/development/conventions/coding/ROS)
+    * [C++](wiki/development/conventions/coding/cpp)
+    * [Python](wiki/development/conventions/coding/python)
+* [Agile Development](wiki/development/conventions/agile-development/agile-development)
+* [Git branching model](wiki/development/conventions/git/git-branching-model)
+* [Linters](wiki/development/conventions/linters/linters)
+* [Testing](wiki/development/conventions/testing/testing)
 
-## Setup
-- [Getting started](/development/setup/getting-started)
-    * [Tutorials](/development/setup/tutorials)
-- [Setup stable repository](/development/setup/setup-stable)
-- [Aliases](/development/setup/aliases)
-- [Tips](/development/setup/tips)
+#### Setup
+- [Getting started](wiki/development/setup/getting-started)
+    * [Tutorials](wiki/development/setup/tutorials)
+- [Setup stable repository](wiki/development/setup/setup-stable)
+- [Aliases](wiki/development/setup/aliases)
+- [Tips](wiki/development/setup/tips)
 
-## [Toolkit](/development/toolkit/tools)
+#### [Toolkit](wiki/development/toolkit/tools)
 
-* [Linux](/development/toolkit/linux/linux)
-    * [Terminator](/development/toolkit/tools#terminator)
-    * [Tmux](/development/toolkit/linux/tmux/tmux)
-    * [i3](/development/toolkit/tools#i3)
-* [git](/development/toolkit/git/git)
+* [Linux](wiki/development/toolkit/linux/linux)
+    * [Terminator](wiki/development/toolkit/tools#terminator)
+    * [Tmux](wiki/development/toolkit/linux/tmux/tmux)
+    * [i3](wiki/development/toolkit/tools#i3)
+* [git](wiki/development/toolkit/git/git)
 * Editors
-    * [atom](/development/toolkit/editors/atom/atom)
-    * [vim](/development/toolkit/editors/vim/vim)
+    * [atom](wiki/development/toolkit/editors/atom/atom)
+    * [vim](wiki/development/toolkit/editors/vim/vim)
 * Languages and Frameworks
-    * [C++](/development/toolkit/languages_and_frameworks/cpp/cpp)
-    * [Python](/development/toolkit/languages_and_frameworks/python/python)
-    * [ROS](/development/toolkit/languages_and_frameworks/ros/ros)
-        * [actionlib](/development/toolkit/languages_and_frameworks/ros/actionlib)
-        * [smach](/development/toolkit/languages_and_frameworks/ros/smach)
-* [cmake](/development/toolkit/cmake/cmake)
+    * [C++](wiki/development/toolkit/languages_and_frameworks/cpp/cpp)
+    * [Python](wiki/development/toolkit/languages_and_frameworks/python/python)
+    * [ROS](wiki/development/toolkit/languages_and_frameworks/ros/ros)
+        * [actionlib](wiki/development/toolkit/languages_and_frameworks/ros/actionlib)
+        * [smach](wiki/development/toolkit/languages_and_frameworks/ros/smach)
+* [cmake](wiki/development/toolkit/cmake/cmake)
 
 # Documentation
 To be indexed....

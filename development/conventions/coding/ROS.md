@@ -127,7 +127,7 @@ Actions must always:
     * ABORTED
     * SUCCEEDED
 
-See the  [template](/templates/templates#skills) for more information.
+See the  [template](wiki/templates/templates#skills) for more information.
 
 ## Scenarios
 Should be implemented as classes which inherit `smach.StateMachine`. They will ideally contain only skills of the robot and the minimum number of `smach.State`s as possible.
@@ -171,4 +171,4 @@ NOTE: Does this make sense? Should component launch files handle this instead? D
 
 # See Also
 * [Spaces and Tabs]()
-* [Templates](/templates/templates)
+* [Templates](wiki/templates/templates)
