@@ -1,4 +1,6 @@
-# Research@Home
+---
+title: "b-it-bots@Home research"
+---
 
 The things we work on in the @Home team should be scientifically sound and relevant. The methods we implement for solving the problems in the @Home scenarios need to reflect the current cutting edge of the respective fields; in other words, our work should not consist of simple hacks that may work in some cases, but may not work in general.
 
