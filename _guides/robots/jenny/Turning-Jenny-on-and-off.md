@@ -1,3 +1,9 @@
+---
+title: Turning Jenny On and Off
+tags:
+  - Care-O-Bot
+---
+
 ### Powering Jenny on
 To start Jenny, follow the steps provided below:
 

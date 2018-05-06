@@ -1,4 +1,11 @@
-## Navigation
+---
+title: Navigation @Home
+tags:
+  - navigation
+  - Care-O-Bot
+---
+
+
 The navigation stack is run on `cob1`.
 
 ###### Bringup the robot
@@ -60,7 +67,7 @@ roslaunch mir_teleop teleop_joypad.launch #this should launch automatically
 
 #### On the real robot
 <!--TODO: @home version of this?-->
-  
+
 Run `move_base`
 
 ```

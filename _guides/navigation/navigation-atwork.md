@@ -1,4 +1,8 @@
-## Mapping
+---
+title: Mapping @Work
+tags:
+  - navigation
+---
 
 Note : For simulation please check [simulation_mapping.md](/guides/domains/navigation/simulation_mapping.md)
 

@@ -1,3 +1,9 @@
+---
+title: Getting to know Jenny
+tags:
+  - Care-O-Bot
+---
+
 ![jennyupload](jennyupload.jpg)
 
 ## Main components on Jenny

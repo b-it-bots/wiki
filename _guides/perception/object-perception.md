@@ -1,3 +1,10 @@
+---
+title: Object Perception
+tags:
+  - perception
+---
+
+
 # Object Perception
 
 ### Scene Segmentation (mcr_scene_segmentation)

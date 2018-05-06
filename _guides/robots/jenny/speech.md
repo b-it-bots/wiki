@@ -1,4 +1,8 @@
-[[_TOC_]]
+---
+title: Using speech recognition on Jenny
+tags:
+  - Care-O-Bot
+---
 
 # Speech
 The speech package is run on Jenny's PC3

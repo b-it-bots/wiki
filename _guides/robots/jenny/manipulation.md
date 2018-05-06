@@ -1,5 +1,7 @@
 ---
 title: "Manipulation using the 7DOF Kuka Lighweight Arm"
+tags:
+  - Care-O-Bot
 ---
 
 ## Starting and controlling 7DOF arm on Jenny

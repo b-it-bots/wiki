@@ -1,4 +1,8 @@
-# Git
+---
+title: Learning git
+tags:
+  - git
+---
 
 [Git basics](https://egghead.io/courses/practical-git-for-everyday-professional-use)
 [How you usually Branch](http://nvie.com/posts/a-successful-git-branching-model/)

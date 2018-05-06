@@ -1,4 +1,8 @@
-# How to document your packages
+---
+title: How to document your packages
+tags:
+  - documentation
+---
 
 ## Your package.xml
 It is **extremely** important to maintain your `package.xml` up to date with its dependencies. Not doing so results in the need of specialized tools or manual inspection of launch files and source code to discover your package dependencies.

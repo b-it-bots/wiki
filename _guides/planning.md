@@ -1,3 +1,5 @@
 ---
 title: Planning
+tags:
+  - planning
 ---

@@ -1,5 +1,7 @@
 ---
 title: "Aliases"
+tags:
+  - dotfiles
 ---
 
 In order to be able to run code more smoothly, please use the aliases listed in this README. For your convinience, you can also clone the repository and use the following instructions:

@@ -1,4 +1,8 @@
-# git aliases
+---
+title: git aliases
+tags:
+  - git
+---
 
 The `.gitconfig` file in the `b-it-bots/dotfiles` repository contains some useful aliases to use with git.
 

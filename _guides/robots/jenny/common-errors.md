@@ -1,6 +1,10 @@
-This document lists various common errors on Jenny and working solutions to those.
+---
+title: Common Errors
+tags:
+  - Care-O-Bot
+---
 
-# CAN Devices Not Recognised
+### CAN Devices Not Recognised
 
 This error might appear after upgrading the kernel on Jenny's PCs.
 

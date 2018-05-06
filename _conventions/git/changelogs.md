@@ -2,6 +2,8 @@
 title: "Generating changelogs"
 layout: single
 excerpt: Generating package changelogs before merging
+tags:
+  - git
 ---
 
 In order to create or update the `CHANGELOG.rst` file automatically,

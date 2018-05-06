@@ -1,4 +1,8 @@
-# Mapping and Navigating for simulation
+---
+title: Mapping and Navigation for Simulation
+tags:
+  - navigation
+---
 
 ## Mapping
 

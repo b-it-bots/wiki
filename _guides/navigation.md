@@ -1,5 +1,7 @@
 ---
 title: Navigation
+tags:
+  - navigation
 ---
 
 ## Packages

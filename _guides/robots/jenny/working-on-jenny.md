@@ -1,6 +1,11 @@
-# Remotely accessing Jenny's computers
+---
+title: Remotely accessing Jenny's computers
+tags:
+  - Care-O-Bot
+---
 
-[[_TOC_]]
+
+# Remotely accessing Jenny's computers
 
 ## Using ssh for Jenny's PCs
 In order to be able to compile the repositories in Jenny, you need to add the following to your /etc/hosts file:

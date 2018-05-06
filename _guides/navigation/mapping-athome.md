@@ -1,4 +1,9 @@
-## Mapping
+---
+title: Mapping @Home
+tags:
+  - navigation
+---
+
 Note: When using Jenny, mapping is run on `cob1`
 
 ### Bringup the robot

@@ -1,3 +1,8 @@
+---
+title: "Setting up a catkin workspace"
+tags:
+  - ROS
+---
 # Setup And Install A Seperated Workspace for Stable Repositories
 
 Motivation: move repositories which are rarely modified to a separated location to avoid building them everytime with your `$ROS_WORKSPACE`.

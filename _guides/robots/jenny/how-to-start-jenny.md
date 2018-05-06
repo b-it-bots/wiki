@@ -1,4 +1,8 @@
-# Starting up Jenny
+---
+title: Starting up Jenny
+tags:
+  - Care-O-Bot
+---
 
 ## In PC1
 1. Access the first PC of Jenny from the computer by using the command

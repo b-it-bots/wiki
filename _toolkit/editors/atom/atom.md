@@ -1,4 +1,9 @@
-# Atom
+---
+title: Atom
+tags:
+  - editors
+---
+
 ## Installation
 ### Option 1: Following their [official instructions](https://flight-manual.atom.io/getting-started/sections/installing-atom/).
 

@@ -1,4 +1,8 @@
-# Connect to Jenny via ssh without entering a password
+---
+title: Connect to Jenny via ssh without entering a password
+tags:
+  - Care-O-Bot
+---
 
 In order to adjust the settings to all PCs on Jenny, you need at least four terminals open in your workstation.
 
