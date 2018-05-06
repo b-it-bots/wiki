@@ -1,4 +1,12 @@
-# ROS packages
+---
+title: "ROS packages"
+layout: single
+tags:
+  - ROS
+categories:
+  - conventions
+---
+<!-- # ROS packages -->
 
 In order to create a new ROS package for one of the repositories some rules need
 to be considered:

@@ -1,4 +1,8 @@
-# Generating package changelogs before merging
+---
+title: "Generating changelogs"
+layout: single
+excerpt: Generating package changelogs before merging
+---
 
 In order to create or update the `CHANGELOG.rst` file automatically,
 the following command should be run at the root of the repository (e.g. `mas_domestic_robotics`)

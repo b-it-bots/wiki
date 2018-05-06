@@ -1,3 +1,11 @@
+---
+title: "C/C++ Coding Conventions"
+tags:
+  - c++
+categories:
+  - conventions
+---
+
 # C/C++ Coding Guidelines
 **Make sure that your text editor is properly configured to use spaces instead of tabs.**
 
