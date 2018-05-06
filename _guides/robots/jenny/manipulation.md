@@ -1,3 +1,7 @@
+---
+title: "Manipulation using the 7DOF Kuka Lighweight Arm"
+---
+
 ## Starting and controlling 7DOF arm on Jenny
 
 In order to work with Jenny you need to be connected in "care-o-bot-developers" network.
@@ -22,15 +26,15 @@ roscore
 ```
 
 2)  In second window also connect to PC1 (use cob1 alias):
-``` 
-roslaunch mdr_bringup robot.launch 
 ```
-Perform emergency stop procedure with controller before continuing. 
+roslaunch mdr_bringup robot.launch
+```
+Perform emergency stop procedure with controller before continuing.
 
 
 3) In third window (your computer):
 ```
- roslaunch mdr_bringup dashboard.launch 
+ roslaunch mdr_bringup dashboard.launch
 ```
 
 This command opens the dashboard.
@@ -55,7 +59,7 @@ Starting arm controller - launching arm and releasing the brakes (when you hear 
  export ROS_MASTER_URI=http://192.168.1.101:11311
 ```
 
-Look for any  ROS command in PC1 to check connection, e.g. 
+Look for any  ROS command in PC1 to check connection, e.g.
 
 ```
 rostopic list
@@ -70,7 +74,7 @@ rviz
 If the OMPL library is not recognized in RVIZ:
 
 ```
-export $ROS_IP=ip_adress_of_your_com 
+export $ROS_IP=ip_adress_of_your_com
 ```
 
 Restart RVIZ
@@ -80,38 +84,38 @@ Restart RVIZ
 
 ```
 roslaunch mdr_moveit_cob move_group.launch
-``` 
+```
 
-7) In one more window connect to PC2. Run command for moving the arm from the terminal: 
+7) In one more window connect to PC2. Run command for moving the arm from the terminal:
 
 ```
-rosrun moveit_commander moveit_commander_cmdline.py 
+rosrun moveit_commander moveit_commander_cmdline.py
 use arm
 ```
 
 Some of the example commands for positioning arm are :
 
 ```
-go home 
+go home
 go look_at_table
 go folded
 ```
 
-To see more available settings: 
+To see more available settings:
 ```
 rosed mdr_moveit_con3-1.srdf
 ```
 
 8)
-To turn off everything: 
+To turn off everything:
 - First move arm to folded position (go folded)
 - Move torso to home position  
-- Move base in start position. 
+- Move base in start position.
 
 To turn off Jenny on each cob (1, 2, 3):
 
 ```
-sudo shutdown now 
+sudo shutdown now
 ```
 
 # In case of emergency stop activated:  
@@ -124,10 +128,10 @@ rosservice call /arm_controller/lwr_node/recover
 If you hear that the arm clicks and that means that it is already active. This is to not restart the arm controller.
 
 
-Version b) 
+Version b)
 Sometimes the ROS node which communicates with the LWR loses connection to the controller. In this case restart the node:
 ```
-roslaunch mdr_lwr lwr.launch 
+roslaunch mdr_lwr lwr.launch
 ```
 Version c)
 In some cases it is not possible to recover the LWR properly after an emergency stop has been issued. In such a situation the LWR controller must be rebooted and reinitialized. To reboot the controller, login to the lbr-box via telnet with following command:
@@ -147,11 +151,11 @@ telnet lbr-box
 Wait for the line “Stable state RUNNING reached!”. If you do not see this line, contact your robot administrator.
 
 # Recommendation:
-- Check if the tray is up 
+- Check if the tray is up
 - Head always back or back table
 - Torso front or front extreme
 
 
-Be careful with the gripper!  To go from "Spherical open" to any other position always go first to "Cylindrical open" and then other positions, because fingers may collide! 
+Be careful with the gripper!  To go from "Spherical open" to any other position always go first to "Cylindrical open" and then other positions, because fingers may collide!
 
 Going from "cyl_closed"   to "spher_open" and vice versa - DANGEROUS!!!

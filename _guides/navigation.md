@@ -1,6 +1,6 @@
-[[_TOC_]]
-
-# Navigation
+---
+title: Navigation
+---
 
 ## Packages
 * `mas_common_robotics`: Contains the core software common to @home and @work.
