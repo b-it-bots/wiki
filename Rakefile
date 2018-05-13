@@ -9,7 +9,3 @@ namespace :assets do
     sh "bundle exec jekyll-auth build"
   end
 end
-
-task "assets:precompile" do
-  exec("jekyll build")
-end
