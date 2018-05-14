@@ -162,6 +162,8 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - _site/bin
+  - /app/_site/bin
 keep_files:
   - .git
   - .svn
