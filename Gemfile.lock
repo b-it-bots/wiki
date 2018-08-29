@@ -289,7 +289,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages
+  jekyll (~> 3.7.0)
   jekyll-auth
   jekyll-feed (~> 0.6)
   minimal-mistakes-jekyll
