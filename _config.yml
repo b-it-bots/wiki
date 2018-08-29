@@ -101,11 +101,11 @@ analytics:
 # Site Author
 author:
   name             : "b-it-bots"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/b-it-bots_logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "RoboCup teams from the MAS program at HBRS."
   location         : "Sankt Augustin, Germany"
   email            :
-  uri              :
+  uri              : "www.b-it-bots.de"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
