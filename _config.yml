@@ -293,6 +293,52 @@ defaults:
       related: true
       author_profile: false
       breadcrumbs: true
+  - scope:
+      path: ""
+      type: setup
+    values:
+      layout: single
+      read_time: true
+      related: true
+      author_profile: false
+      breadcrumbs: true
+  - scope:
+      path: ""
+      type: toolkit
+    values:
+      layout: single
+      read_time: true
+      related: true
+      author_profile: false
+      breadcrumbs: true
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: single
+      read_time: true
+      related: true
+      author_profile: false
+      breadcrumbs: true
+  - scope:
+      path: ""
+      type: guides
+    values:
+      layout: single
+      read_time: true
+      related: true
+      author_profile: false
+      breadcrumbs: true
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: single
+      read_time: true
+      related: true
+      author_profile: false
+      breadcrumbs: true
+
 
 collections:
   conventions:
