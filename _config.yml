@@ -281,6 +281,15 @@ defaults:
       related: true
       author_profile: false
       breadcrumbs: true
+  - scope:
+      path: ""
+      type: faq
+    values:
+      layout: single
+      read_time: true
+      related: true
+      author_profile: false
+      breadcrumbs: true
 
 collections:
   conventions:
