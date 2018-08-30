@@ -1,4 +1,6 @@
-# Tips and Tricks
+---
+title: Tips and Tricks
+---
 ## SSH
 
 ### Login without entering password

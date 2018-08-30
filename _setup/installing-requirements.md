@@ -1,9 +1,12 @@
-# Getting started
+---
+title: Requirements
+
+---
 
 ## Install Ubuntu
 The repository and its related components have been tested under the following Ubuntu distributions:
 
-- ROS Indigo: Ubuntu 14.04
+- ROS Kinetic: Ubuntu 16.04
 
 If you do not have a Ubuntu distribution on your computer you can download it here
 
@@ -24,8 +27,8 @@ Git also saves your email address into the commits you make.
 
      git config --global user.email "your-email@youremail.com"
 
-### Add your ssh key to gitgate
-You can follow Gitlab's documentation on ssh [here](https://docs.gitlab.com/ce/ssh/README.html). Make sure that you are following the instructions for Linux.
+### Add your ssh key to GitHub
+You can follow GitHub's documentation on ssh [here](https://help.github.com/articles/connecting-to-github-with-ssh/). Make sure that you are following the instructions for Linux.
 
 ### GIT Tutorial
 If you have never worked with git before, we recommend to go through the following basic git tutorial:
@@ -38,7 +41,7 @@ If you have never worked with git before, we recommend to go through the followi
 The repository has been tested successfully with the following ROS distributions. Use the link behind a ROS distribution to get to the particular ROS installation instructions.
 
 
-- ROS Indigo - http://wiki.ros.org/indigo/Installation/Ubuntu
+- ROS Kinetic - http://wiki.ros.org/kinetic/Installation/Ubuntu
 
 NOTE: Do not forget to update your .bashrc!
 
@@ -49,16 +52,3 @@ If you have never worked with ROS before, we recommend to go through the beginne
      http://wiki.ros.org/ROS/Tutorials
 
 In order to understand at least the different core components of ROS, you have to start from tutorial 1 ("Installing and Configuring Your ROS Environment") till tutorial 7 ("Understanding ROS Services and Parameters").
-
-
-### Set up a catkin workspace
-
-    source /opt/ros/indigo/setup.bash
-    mkdir -p ~/indigo/src; cd ~/indigo/src
-    catkin_init_workspace
-    catkin build
-
-# See also
-* [Running MAS Software](wiki/development/setup/running-mas-software)
-* [Settung up aliases](wiki/development/setup/aliases)
-* [Recommended tools](wiki/development/toolkit/tools)
