@@ -14,6 +14,23 @@ main:
     url: /contributing/
   - title: "About"
     url: /about
+getting-started:
+  - title: "First steps"
+    url: /getting-started#requirements
+  - title: "Locally"
+    children:
+      - title: "Stable setup"
+        url: /getting-started#using-the-stable-setup
+      - title: "Manually"
+        url: /getting-started#manually
+  - title: "On the robots"
+    children:
+      - title: "Care-O-Bot"
+        url: /getting-started#care-o-bot
+      - title: "Toyota HSR"
+        url: /getting-started#toyota-hsr
+      - title: "YouBot"
+        url: /getting-started#youbot
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
