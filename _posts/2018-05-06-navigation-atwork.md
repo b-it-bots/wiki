@@ -2,6 +2,7 @@
 title: Mapping @Work
 tags:
   - navigation
+  - youBot
 ---
 
 Note : For simulation please check [simulation_mapping.md](/guides/domains/navigation/simulation_mapping.md)

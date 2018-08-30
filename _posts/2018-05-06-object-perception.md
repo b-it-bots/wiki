@@ -11,13 +11,13 @@ tags:
 * `roslaunch mcr_scene_segmentation scene_segmentation.launch`
 * Components:
   * workspace finder: Finds planes of (usually horizontal) workspaces
-    * `workspace_finder.launch`: set of PCL nodelets for plane segmentation 
-    * `workspace_finder_node`: combines PolygonStamped and ModelCoefficients messages into PlanarPolygon (representation of planar workspace) 
+    * `workspace_finder.launch`: set of PCL nodelets for plane segmentation
+    * `workspace_finder_node`: combines PolygonStamped and ModelCoefficients messages into PlanarPolygon (representation of planar workspace)
   * `tabletop_cloud_accumulator_node`: Segments points above given PlanarPolygon and accumulates points from multiple frames (should be separated into two components)
   * `tabletop_cloud_clusterer_node`: Clusters given pointcloud based on Euclidean distance
   * `bounding_box_maker_node`: visualizes bounding box of clusters
 * Important parameters:
-  * `workspace_constraints.yaml`: 
+  * `workspace_constraints.yaml`:
     * transform: filter_limit_max: points further than this from the camera are filtered out
     * voxel_filter: filter_limit_min/max: range in z-axis of base_link in which points are considered
     * passthrough_x: filter_limit_min/max: range in x-axis of base_link in which points are considered
@@ -68,4 +68,3 @@ tags:
   * example: ./train_classifier.py --dataset atwork_objects --output atwork_objects
 * classifier is saved in common/config/atwork_objects
 * specify classifier name (atwork_objects) in object_recognition.launch
-

@@ -2,6 +2,7 @@
 title: Mapping and Navigation for Simulation
 tags:
   - navigation
+  - simulation
 ---
 
 ## Mapping
@@ -62,7 +63,7 @@ rosrun map_server map_saver
 ```
 This will ideally create 2 files namely `map.pgm` and `map.yml`.
 Now you can exit out of `mir_2dslam` execution.
-You can also exit from `mir_teleop`, `gazebo`, `mir_bringup_sim` 
+You can also exit from `mir_teleop`, `gazebo`, `mir_bringup_sim`
 
 #### Making the map usable
 In order to use this map in future to navigate, follow the following steps
@@ -94,8 +95,8 @@ Launch the navigation node
 roslaunch mir_2dnav 2Dnav.launch
 ```
 
-Add `PoseArray` in RViz and change its topic to `/particlecloud`. 
-Now you will be able to see red arrows around the robot. These arrow show the pose of the robot. 
+Add `PoseArray` in RViz and change its topic to `/particlecloud`.
+Now you will be able to see red arrows around the robot. These arrow show the pose of the robot.
 You now need to localize the robot to get its correct pose.
 Move the robot around the map. (In another terminal)
 ```
@@ -118,7 +119,7 @@ rosrun mcr_navigation_tools save_base_map_poses_to_file
 ```
 This program is terminal based interactive program. The program will ask you to name the position.
 1. You can now navigate the robot to your desired position (using GUI of RViz or `mir_teleop`).
-2. Once your robot is at the desired position, you can enter a name and press enter. 
+2. Once your robot is at the desired position, you can enter a name and press enter.
 (Note : The name of the location should be ALL CAPS. For example, CORNER_1, MAIN_DOOR, etc. If the name contains any lower case character, the server will not work)
 You will see pose of the robot inside square brackets in the next line and prompted for another name.
 3. Repeat step 1 and 2 to add multiple names to different locations inside the map.
@@ -135,7 +136,7 @@ Now stop `mir_2dnav` and start it again.
 
 Launch move base launch file (In another terminal)
 ```
-roslaunch mir_move_base_safe move_base.launch 
+roslaunch mir_move_base_safe move_base.launch
 ```
 Run the server file. (In another terminal)
 ```
@@ -167,4 +168,3 @@ In `LaserScan`, change the topic to `/scan_front`. Add another `LaserScan` and c
 In global option, change the `Fixed Frame` to `map`.
 
 You can also add another `PoseArray` and change its topic to `/move_base/GlobalPlannerWithOrientation` to visualise the plan created by the `mir_2Dnav` node.
-

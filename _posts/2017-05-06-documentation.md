@@ -11,12 +11,12 @@ It is **extremely** important to maintain your `package.xml` up to date with its
 Each component should have its own README file.
 
 There are templates available in the [templates]() folder.
-- [x] components or packages  
-- [x] metapackages
+- [ ] components or packages  
+- [ ] metapackages
 - [ ] scenarios
 
 ## Your code
-The code must follow the [conventions](wiki/development/conventions/).
+The code must follow the [conventions](/conventions/).
 
 We will be using roslint to check for code quality.
 

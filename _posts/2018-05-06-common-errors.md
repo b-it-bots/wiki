@@ -1,7 +1,8 @@
 ---
-title: Common Errors
+title: Care-O-Bot Common Errors
 tags:
   - Care-O-Bot
+  - troubleshooting
 ---
 
 ### CAN Devices Not Recognised

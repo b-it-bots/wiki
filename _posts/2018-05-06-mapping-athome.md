@@ -2,6 +2,7 @@
 title: Mapping @Home
 tags:
   - navigation
+  - Care-O-Bot
 ---
 
 Note: When using Jenny, mapping is run on `cob1`

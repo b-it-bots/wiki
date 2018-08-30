@@ -1,3 +1,7 @@
+---
+date: April 27th, 2017
+---
+
 # Toolkit
 ## Terminal
 * [tmux](wiki/setup/tmux)
