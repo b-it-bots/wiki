@@ -2,18 +2,16 @@
 main:
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Getting Started"
+    url: /getting-started
   - title: "Conventions"
     url: /conventions
-  - title: "Setup"
-    url: /setup
-  - title: "Toolkit"
-    url: /toolkit
-  - title: "Guides"
-    url: /guides
-  - title: "Tutorials"
-    url: /tutorials
   - title: "Research"
     url: /research
+  - title: "FAQ"
+    url: /faq
+  - title: "Contributing"
+    url: /contributing/
   - title: "About"
     url: /about
   # - title: "Sample Posts"
