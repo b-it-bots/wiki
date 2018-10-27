@@ -105,19 +105,19 @@ author:
   bio              : "RoboCup teams from the MAS program at HBRS."
   location         : "Sankt Augustin, Germany"
   email            :
-  uri              : "www.b-it-bots.de"
+  uri              : "https://www.b-it-bots.de"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : brsu.bitbots
+  facebook         : thebitbots
   foursquare       :
   github           : b-it-bots
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : thebitbots
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
@@ -125,7 +125,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : b_it_bots
+  twitter          : thebitbots
   vine             :
   weibo            :
   xing             :
