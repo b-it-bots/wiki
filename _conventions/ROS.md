@@ -98,12 +98,14 @@ repository specific prefix.
 3. In the launch file of a node, the namespace tag (`ns="..."`) needs to be added.
 The name of the meta-package in which the concerned package is located
 in, has to be used as this namespace. For instance:
+
 ```xml
 <node pkg="mcr arm cartesian control " type="
 arm_cartesian_control" name="
 mcr_arm_cartesian_control " ns="mcr_manipulation "
 output="screen" respawn="false"/>
 ```
+
 In general, the algorithmic part of a component has to be developed framework
 independent (i.e. without any ROS specific artefacts), e.g. in C++ classes. In
 case of a framework change it is much easier to port a component with strict
@@ -118,6 +120,7 @@ an easy to use functionality called [dynamic reconfigure](http://wiki.ros.org/dy
 parametrization (through a GUI) while the component is already running. Therefore it is recommended, if an algorithm/component has configuration parameters,
 to use this embedded functionality. The GUI can be launched with the following
 command:
+
 ```bash
 rosrun rqt_reconfigure rqt_reconfigure
 ```
@@ -146,16 +149,19 @@ Ideally, the scenarios will be substituted soon with a proper planner.
 ## Launch Files
 ### Skills and Actions
 1. All the arguments of the component itself and the included files should be defined using at the top of the file:
-```xml
-<arg="" default=""/>
-```
+
+    ```xml
+    <arg="" default=""/>
+    ```
 
     Then when including the launch file, the arguments defined at the top will be passed like this:
-```xml
-<include="">
-    <arg="" value=""/>
-</include>
-```
+
+    ```xml
+    <include="">
+        <arg="" value=""/>
+    </include>
+    ```
+
 2. Remapping - Convention?
 
 ### Scenarios
