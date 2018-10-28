@@ -2,7 +2,12 @@
 title: "Aliases"
 tags:
   - dotfiles
+classes: wide
 ---
+
+
+{: .notice--danger}
+This page is out of date. To set up your aliases, please follow the README in [b-it-bots/dev-env](https://github.com/b-it-bots/dev-env)
 
 In order to be able to run code more smoothly, please use the aliases listed in this README. For your convinience, you can also clone the repository and use the following instructions:
 

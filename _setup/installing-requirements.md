@@ -1,6 +1,6 @@
 ---
 title: Requirements
-
+toc: true
 ---
 
 ## Install Ubuntu
@@ -10,7 +10,7 @@ The repository and its related components have been tested under the following U
 
 If you do not have a Ubuntu distribution on your computer you can download it here
 
-     http://www.ubuntu.com/download
+http://www.ubuntu.com/download
 
 ## Git - Version Control
 ### Install Git Software
@@ -30,12 +30,6 @@ Git also saves your email address into the commits you make.
 ### Add your ssh key to GitHub
 You can follow GitHub's documentation on ssh [here](https://help.github.com/articles/connecting-to-github-with-ssh/). Make sure that you are following the instructions for Linux.
 
-### GIT Tutorial
-If you have never worked with git before, we recommend to go through the following basic git tutorial:
-
-     http://excess.org/article/2008/07/ogre-git-tutorial/
-
-
 ## ROS - Robot Operating System
 ### Install ROS
 The repository has been tested successfully with the following ROS distributions. Use the link behind a ROS distribution to get to the particular ROS installation instructions.
@@ -44,11 +38,3 @@ The repository has been tested successfully with the following ROS distributions
 - ROS Kinetic - http://wiki.ros.org/kinetic/Installation/Ubuntu
 
 NOTE: Do not forget to update your .bashrc!
-
-
-### ROS Tutorials
-If you have never worked with ROS before, we recommend to go through the beginner tutorials provided by ROS:
-
-     http://wiki.ros.org/ROS/Tutorials
-
-In order to understand at least the different core components of ROS, you have to start from tutorial 1 ("Installing and Configuring Your ROS Environment") till tutorial 7 ("Understanding ROS Services and Parameters").

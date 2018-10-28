@@ -1,30 +1,52 @@
 ---
 title: Running the MAS software
-
+classes: wide
+toc: true
 ---
-Now you can follow the instructions in the README files `mas_common_robotics`. For @home you should do the same with the README of `mas_domestic_robotics` and for @work the README in `mas_industrial_robotics`.
+If you are an @home member, you can setup your [development environment](https://github.com/b-it-bots/dev-env) by using the scripts as described in the `dev-env` README.
 
-# Summer Camp 2017
+## Setting up a catkin workspace
 
-After following the instructions for [getting started](/setup/getting-started), you should clone the summer camp repository to your workspace:
+After following the instructions for [installing the requirements](/setup/installing-requirements), you should create a catkin workspace. By convention, we recommend naming your workspace `kinetic`
 
-```shell
-cd ~/kinetic/src
-git clone gitgate@mas.b-it-center.de:b-it-bots/summer_2017.git
+```
+mkdir -p ~/kinetic/src && cd ~/kinetic
 ```
 
-Source your catkin workspace
+Next we'll use [wstool](http://wiki.ros.org/wstool) to specify which b-it-bots repositories should be cloned your workspace. In the case of @home, for example:
 
-```shell
-source ~/kinetic/devel/setup.bash
+```
+wstool init src
+wstool merge -t src https://raw.githubusercontent.com/b-it-bots/mas_domestic_robotics/kinetic/mas-domestic.rosinstall
 ```
 
-The last command should be added to the ~/.bashrc file so that they do not need to be executed everytime you open a new terminal.
+## Get the code and dependencies
+
+Using wstool, we clone all the repositories to your workspace:
+
+```
+  wstool update -t src
+```
+
+Next we use `rosdep` to install all the dependencies required by the packages to your system:
+
+```
+  rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
+```
 
 
-And finally compile the repository:
+## Building your workspace
+You'll first need to install [catkin-tools](https://catkin-tools.readthedocs.io/en/latest/) and finally compile the repository:
 
 ```shell
 cd ~/kinetic
 catkin build
 ```
+
+In order to be able to run what you just compiled, you should source your catkin workspace:
+
+```shell
+source ~/kinetic/devel/setup.bash
+```
+
+The last command should be added to the ~/.bashrc file so that they do not need to be executed every time you open a new terminal.
