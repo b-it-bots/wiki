@@ -1,6 +1,13 @@
 ---
-title: "Linters"
+title: "Linting"
+layout: single
+tags:
+  - ROS
+categories:
+  - conventions
+classes: wide
 ---
+
 
 ## Running `roslint` with catkin
 Before merging into the main repository `roslint` is ran on all merge requests. Unless all errors are resolved the merge request will be rejected. To test if your changes would pass the `roslint` test locally:

@@ -1,5 +1,9 @@
 ---
 title: "Testing your code"
+tags:
+    - ROS
+categories:
+    - conventions
 ---
 ## Testing in ROS
 
