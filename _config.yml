@@ -298,7 +298,7 @@ defaults:
       breadcrumbs: true
   - scope:
       path: ""
-      type: setup
+      type: getting-started
     values:
       layout: single
       read_time: true
@@ -318,7 +318,7 @@ defaults:
 
 
 collections:
-  setup:
+  getting-started:
     output: true
     permalink: /:collection/:path/
   conventions:

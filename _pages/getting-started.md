@@ -11,9 +11,9 @@ toc: true
 
 ## First steps
 
-* [Installing the required software](setup/installing-requirements/)
-* [Running the MAS software](setup/running-mas-software)
-* [Get a fork of our code base](setup/forking-our-repos)
+* [Installing the required software](installing-requirements/)
+* [Running the MAS software](running-mas-software)
+* [Get a fork of our code base](forking-our-repos)
 
 ## Tutorials
 Here is a list of useful tutorials to get you started:
@@ -53,7 +53,7 @@ You should also follow the instructions provided in our [introduction to ROS](ht
 
 <!-- ## Locally
 ### Using the stable setup
-* [Setup a stable repository](setup/setup-stable)
+* [Setup a stable repository](setup-stable)
 
 ### Manually
 
