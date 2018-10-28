@@ -1,12 +1,12 @@
 ---
-title: "C/C++ Coding Conventions"
+title: "C/C++ Coding Guidelines"
 tags:
   - c++
 categories:
   - conventions
+classes: wide
 ---
 
-# C/C++ Coding Guidelines
 **Make sure that your text editor is properly configured to use spaces instead of tabs.**
 
 ## Filenames
