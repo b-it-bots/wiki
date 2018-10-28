@@ -7,7 +7,7 @@ If you are an @home member, you can setup your [development environment](https:/
 
 ## Setting up a catkin workspace
 
-After following the instructions for [installing the requirements](/setup/installing-requirements), you should create a catkin workspace. By convention, we recommend naming your workspace `kinetic`
+After following the instructions for [installing the requirements](setup/installing-requirements), you should create a catkin workspace. By convention, we recommend naming your workspace `kinetic`
 
 ```
 mkdir -p ~/kinetic/src && cd ~/kinetic
