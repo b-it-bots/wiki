@@ -16,6 +16,8 @@ main:
     url: /contributing/
   - title: "About"
     url: /about
+  - title: "Search"
+    url: /search
 getting-started:
   - title: "First steps"
     url: /getting-started#requirements
