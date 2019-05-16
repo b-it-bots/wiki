@@ -1,5 +1,0 @@
----
-title: Planning
-tags:
-  - planning
----
