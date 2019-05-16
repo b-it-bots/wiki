@@ -1,5 +1,2 @@
----
-title: SSH
-tags:
-  - ssh
----
+# ssh
+

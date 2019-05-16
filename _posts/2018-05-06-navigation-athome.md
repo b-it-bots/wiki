@@ -5,10 +5,12 @@ tags:
   - Care-O-Bot
 ---
 
+# 2018-05-06-navigation-athome
 
 The navigation stack is run on `cob1`.
 
-###### Bringup the robot
+**Bringup the robot**
+
 First export the environment to be used:
 
 ```bash
@@ -27,58 +29,56 @@ Launch the navigation node
 roslaunch mdr_2dnav 2Dnav.launch
 ```
 
-##### Create navigation goals and orientations
+#### Create navigation goals and orientations
 
 First you need to create the files where goals will be saved:
 
-```
+```text
 touch navigigation_goals.yaml
 touch orientation_goals.yaml
 ```
-##### Localize the robot
-In rviz:
-1. Select the 2D pose estimate
-2. Click the position near the robot
-3. Move with joystick
-4. Launch navigation tools:
 
-```
+#### Localize the robot
+
+In rviz: 1. Select the 2D pose estimate 2. Click the position near the robot 3. Move with joystick 4. Launch navigation tools:
+
+```text
 roscd mcr_default_env_config
 cd brsu-C069
 rosrun mcr_navigation_tools save_base_map_poses_to_file
 ```
 
-### Teleoperate the robot
+## Teleoperate the robot
 
-#### In simulaltion
+### In simulaltion
 
 ```bash
 rosrun gazebo_ros gzclient #this should launch automatically
 roslaunch mir_teleop teleop_joypad.launch #this should launch automatically
 ```
 
-### Autonomous
+## Autonomous
 
-#### Teleoperate the robot
+### Teleoperate the robot
 
 ```bash
 roslaunch mir_teleop teleop_joypad.launch #this should launch automatically
 ```
 
-#### On the real robot
-<!--TODO: @home version of this?-->
+### On the real robot
 
 Run `move_base`
 
-```
+```text
 rosrun mdr_actions move_base_safe
 rosrun mdr_actions move_base_safe_client_test.py [source] [dest]
 ```
 
-##### Navigation test
+#### Navigation test
 
-```
+```text
 roslaunch mdr_navigation_test
 ```
 
 and then run the script inside the folder `mdr_navigation_test`
+

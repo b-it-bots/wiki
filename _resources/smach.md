@@ -1,8 +1,10 @@
 ---
-title: smach 
+title: smach
 tags:
   - ROS
 ---
 
-http://wiki.ros.org/smach/Documentation
-http://wiki.ros.org/smach/Tutorials
+# smach
+
+[http://wiki.ros.org/smach/Documentation](http://wiki.ros.org/smach/Documentation) [http://wiki.ros.org/smach/Tutorials](http://wiki.ros.org/smach/Tutorials)
+

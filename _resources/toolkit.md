@@ -1,13 +1,16 @@
 ---
-date: April 27th, 2017
+date: 'April 27th, 2017'
 ---
 
 # Toolkit
+
 ## Terminal
-* [tmux](wiki/setup/tmux)
+
+* [tmux](https://github.com/b-it-bots/wiki/tree/021d5ee127ac33c704fd5bbda1545cbcdf191bdc/_resources/wiki/setup/tmux/README.md)
 * [Terminator](https://gnometerminator.blogspot.de/p/introduction.html)
 
 ## Text editors
+
 ### vim
 
 ### emacs
@@ -15,8 +18,12 @@ date: April 27th, 2017
 ### atom
 
 ## Window managers
+
 ### i3
+
 * [i3 User guide](https://i3wm.org/docs/userguide.html)
 
 ## See also
-* [Aliases](wiki/setup/aliases)
+
+* [Aliases](https://github.com/b-it-bots/wiki/tree/021d5ee127ac33c704fd5bbda1545cbcdf191bdc/_resources/wiki/setup/aliases/README.md)
+

@@ -4,5 +4,7 @@ tags:
   - programming languages
 ---
 
-http://en.cppreference.com/w/cpp
-https://github.com/lefticus/cppbestpractices
+# cpp
+
+[http://en.cppreference.com/w/cpp](http://en.cppreference.com/w/cpp) [https://github.com/lefticus/cppbestpractices](https://github.com/lefticus/cppbestpractices)
+
