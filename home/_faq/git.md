@@ -1,5 +1,11 @@
 # git
 
+## What is the difference between git and GitHub?
+
+> Git is a distributed version control tool that can manage a development project's source code history, while GitHub is a cloud based platform built around the Git tool. Git is a tool a developer installs locally on their computer, while GitHub is an online service that stores code pushed to it from computers running the Git tool. The key difference between Git and GitHub is that Git is an open-source tool developers install locally to manage source code, while GitHub is an online service to which developers who use Git can connect and upload or download resources.
+
+This quote was taken from [this article](https://www.theserverside.com/video/Git-vs-GitHub-What-is-the-difference-between-them).
+
 ## Why should I avoid making commits to the `kinetic` or `devel` branch?
 
 The main idea is that the `kinetic` and `devel` branches should be the same for all the team members. This allows us to test each other's code more easily. 

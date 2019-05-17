@@ -17,6 +17,8 @@ description: Resources to learn on your own
 
 ## Git
 
+It is recommended that you are comfortable with _at least_ the Git Basics described [here](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) \(that is, 2.1 through 2.8\). Although, chapter 3 is highly recommended as well.
+
 * [Git basics](https://egghead.io/courses/practical-git-for-everyday-professional-use)
 * [How you usually Branch](http://nvie.com/posts/a-successful-git-branching-model/)
 

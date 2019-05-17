@@ -14,7 +14,7 @@ You can also get the Springer ROS Reference through the library here are the lin
 
 
 
-## What is the difference between git and GitHub?
+
 
 
 

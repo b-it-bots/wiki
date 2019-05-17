@@ -8,6 +8,8 @@ tags:
 
 # Creating a release
 
+This is often done by one of the staff members whenever a tag is created in the repository.
+
 ## Branching model
 
 ### Release branches

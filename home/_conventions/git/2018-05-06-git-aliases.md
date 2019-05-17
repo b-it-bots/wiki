@@ -7,11 +7,11 @@ tags:
 
 # Adding git aliases to make your life easier
 
-The `.gitconfig` file in the `b-it-bots/dev-env` repository contains some useful aliases to use with git.
-
 ## Installation
 
-You can copy the contents of the file to the global `~/.gitconfig` if you want to use them in all your repositories \(recommended\).
+The `.gitconfig` file in the `b-it-bots/dev-env` repository contains some useful aliases to use with git.
+
+You can copy the contents of [the .gitconfig file](https://github.com/b-it-bots/dev-env/blob/master/git/.gitconfig) to the global `~/.gitconfig` in your laptop if you want to use them in all your repositories \(recommended\).
 
 If you only want to use them in the MAS repositories, copy them to the `.git/config` wherever you cloned one of the `mas_*` repositories.
 
