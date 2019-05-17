@@ -70,7 +70,7 @@ Git also saves your email address into the commits you make.
 
 #### Add your ssh key to GitHub
 
-It is recommended that you use ssh to connect to GitHub. You can follow GitHub's documentation on ssh [here](https://help.github.com/articles/connecting-to-github-with-ssh/). 
+It is recommended that you use ssh to connect to GitHub. For more information read our guide to [Create an ssh key](running-mas-software/tips.md#creating-your-ssh-key) or you can read GitHub's documentation on ssh [here](https://help.github.com/articles/connecting-to-github-with-ssh/). 
 
 {% hint style="warning" %}
 Make sure that you are following the instructions for Linux.
