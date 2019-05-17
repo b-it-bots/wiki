@@ -40,3 +40,13 @@ Avoid vague names and undescriptive branches, some examples include:
 * fix/bugs
 {% endhint %}
 
+## What is the difference between origin and upstream?
+
+We'll use two quotes to try an explain this. First, let's answer what a remote is, quoting from [this post](https://www.atlassian.com/git/tutorials/syncing):
+
+> Remote connections are more like bookmarks rather than direct links into other repositories. Instead of providing real-time access to another repository, they serve as convenient names that can be used to reference a not-so-convenient URL.
+
+This means that `origin` and `upstream` are aliases for the URLs of your fork and the b-it-bot's repo, respectively.  To explain which one is which, we'll quote  from [this post](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams):
+
+> In a standard setup, you generally have an `origin` and an `upstream` [remote](https://www.atlassian.com/git/tutorials/syncing/git-remote) — the latter being the gatekeeper of the project or the source of truth to which you wish to contribute.
+

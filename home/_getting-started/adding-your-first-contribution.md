@@ -44,15 +44,47 @@ For more information please look into the [branching model guide](../_convention
 
 Start working on your new task. From time to time, commit your work \(and try to [make good commits](../_conventions/git/#how-to-write-good-commits)\).
 
-Once you have made some progress, [create a pull request](https://help.github.com/en/articles/creating-a-pull-request) \(often abbreviated PR\) from your fork to `b-it-bots/mas_domestic_robotics`'s `devel` branch:
+### Add a new remote
+
+You will eventually need to push your changes to your own fork. For that, you need to [add a new remote in your laptop](https://help.github.com/en/articles/adding-a-remote).
+
+You can list the remotes in your repository with the following command:
+
+```text
+git remote -v
+```
+
+By convention, the base repository \(in this case, the b-it-bot's one\) is called the _upstream_. Your fork is called _origin_.
+
+First, let's rename the b-it-bots remote to match that:
+
+```text
+git remote rename origin upstream
+```
+
+Now let's add your fork as origin:
+
+```text
+git remote add origin git@github.com:<your GitHub user name>/<name of repository>.git 
+```
+
+Here is an example with the `mas_domestic_robotics` repository:
+
+![](../../.gitbook/assets/screenshot-from-2019-05-17-10-08-48.png)
+
+{% hint style="info" %}
+See [what is the difference between origin and upstream?](../_faq/git.md#what-is-the-difference-between-origin-and-upstream)
+{% endhint %}
+
+### Create a pull request
+
+Once you have made some progress, [create a pull request](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) \(often abbreviated PR\) from your fork to `b-it-bots/mas_domestic_robotics`'s `devel` branch:
 
 ![](../../.gitbook/assets/screenshot-from-2019-05-16-19-14-42.png)
 
+Once you press the create pull request button, a form will appear. Try to follow the guidelines below:
 
-
-Once you press the create pull request, a form will appear. Try to follow the guidelines below:
-
-* Make the title of your PR descriptive. If it's not ready to be merged yet, it's convention to add **WIP:** at the beginning of the title.
+* Make the title of your PR descriptive. If it's not ready to be merged yet, it's convention to add **WIP:** at the beginning of the title. You can also [mark your PR as a draft](https://github.blog/2019-02-14-introducing-draft-pull-requests/).
 * Add a \(small\) text describing what your changes are doing
 * Apply any labels that apply
 * Request a review from the senior members \(GitHub will add some of them automatically, and will suggest some others\). 
