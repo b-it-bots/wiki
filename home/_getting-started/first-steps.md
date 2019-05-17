@@ -7,6 +7,22 @@ toc: true
 
 ## Installing the requirements
 
+#### Ubuntu Xenial 16.04 LTS
+
+We recommend you use Ubuntu 16.04 for your development environment. In general, our repository and its related components have been tested using Ubuntu Xenial. Keep in mind that the robots in the lab will also be setup with the latest compatible Ubuntu distribution.
+
+{% hint style="info" %}
+If you are not currently using Ubuntu, you can download it to your computer from [http://www.ubuntu.com/download](http://www.ubuntu.com/download)
+
+ROS Kinetic officially supports Ubuntu Wily \(15.10\) and Ubuntu Xenial \(16.04 LTS\). To see other supported platforms please see the [ROS Kinetic installation instructions](http://wiki.ros.org/kinetic/Installation).
+{% endhint %}
+
+It is possible to set up a different operating system for your development environment. However is the support for those options very limited or not given at all. In the following you find an approach for Arch-Linux that has been applied by some students, already.
+
+#### Arch-linux
+
+It is possible to setup your development environment by using a Docker-based setup locally. 
+
 ### ROS - Robot Operating System
 
 The current supported version of ROS is Kinetic Kame. To install ROS, follow the official installation instructions found here:
@@ -27,22 +43,6 @@ Finally, a few recommended tools that you can install include [wstool](http://wi
 ```text
 sudo apt install python-wstool python-catkin-tools 
 ```
-
-#### Ubuntu Xenial 16.04 LTS
-
-We recommend you use Ubuntu 16.04 for your development environment. In general, our repository and its related components have been tested using Ubuntu Xenial. Keep in mind that the robots in the lab will also be setup with the latest compatible Ubuntu distribution.
-
-{% hint style="info" %}
-If you are not currently using Ubuntu, you can download it to your computer from [http://www.ubuntu.com/download](http://www.ubuntu.com/download)
-
-ROS Kinetic officially supports Ubuntu Wily \(15.10\) and Ubuntu Xenial \(16.04 LTS\). To see other supported platforms please see the [ROS Kinetic installation instructions](http://wiki.ros.org/kinetic/Installation).
-{% endhint %}
-
-While other setups are possible, we cannot guarantee any additional support. 
-
-#### Arch-linux
-
-It is possible to setup your development environment by using a Docker-based setup locally. 
 
 ### Git - Version Control
 
