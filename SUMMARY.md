@@ -28,6 +28,7 @@
     * [C++](home/_conventions/coding-conventions/cpp.md)
     * [Python](home/_conventions/coding-conventions/python.md)
   * [Toolkit](home/_conventions/toolkit/README.md)
+    * [CLion](home/_conventions/toolkit/clion.md)
     * [Atom configuration](home/_conventions/toolkit/2018-05-06-atom.md)
     * [Using vim](home/_conventions/toolkit/2018-05-06-vim.md)
     * [TMUX - Terminal Multiplexer](home/_conventions/toolkit/2018-05-13-tmux.md)
