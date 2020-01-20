@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Planning core &mdash; MAS Industrial Robotics latest (Kinetic) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Task planning" href="task_planning.html" />
+    <link rel="prev" title="Planning bringup" href="planning_bringup.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> MAS Industrial Robotics
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest (Kinetic)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mir_perception/index.html">Perception</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_manipulation/index.html">Manipulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_navigation/index.html">Navigation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Planning</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="refbox_parser.html">Refbox parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="planning_bringup.html">Planning bringup</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Planning core</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="task_planning.html">Task planning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="planner_executor.html">Planner executor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pddl_problem_generator.html">PDDL problem generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="knowledge_base_analyzer.html">Knowledge base analyzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mir_knowledge.html">MIR Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mir_actions.html">Actions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_simulation/index.html">Simulation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MAS Industrial Robotics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Planning</a> &raquo;</li>
+        
+      <li>Planning core</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/mir_planning/planning_core.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="planning-core">
+<span id="mir-planning-core"></span><h1>Planning core<a class="headerlink" href="#planning-core" title="Permalink to this headline">¶</a></h1>
+<p>Handles plan generation, execution, monitoring and replanning (if needed)</p>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">mir_planning_msgs</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">mir_states</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">mir_pddl_problem_generator</span></code> (<a class="reference internal" href="pddl_problem_generator.html#mir-pddl-problem-generator"><span class="std std-ref">PDDL problem generator</span></a>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">mir_task_planning</span></code> (<a class="reference internal" href="task_planning.html#mir-task-planning-pkg"><span class="std std-ref">Task planning</span></a>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">mir_planner_executor</span></code> (<a class="reference internal" href="planner_executor.html#mir-planner-executor"><span class="std std-ref">Planner executor</span></a>)</li>
+<li>Optionally (with real robot) <code class="docutils literal notranslate"><span class="pre">mir_actions</span></code> (<a class="reference internal" href="mir_actions.html#mir-actions"><span class="std std-ref">Actions</span></a>)</li>
+</ul>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>This is not a standalone package (but it acts like a coordinator) and thus it
+should not be executed without its dependencies.</p>
+<p>To test with mockup action servers without a robot</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roscore
+roslaunch mir_planning_core task_planning_components.launch
+rosrun mir_task_executor task_executor_mockup
+roslaunch mir_task_planning upload_problem.launch
+roslaunch mir_planning_core task_planning_sm.launch
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="task_planning.html" class="btn btn-neutral float-right" title="Task planning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="planning_bringup.html" class="btn btn-neutral float-left" title="Planning bringup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, www.b-it-bots.de
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Robot Operating System (ROS) &mdash; MAS Industrial Robotics latest (Kinetic) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Coding style" href="coding_style.html" />
+    <link rel="prev" title="Contributing" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> MAS Industrial Robotics
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest (Kinetic)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Contributing</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Robot Operating System (ROS)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ros-packages-naming-and-structure">ROS packages naming and structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#creating-a-new-package">Creating a new package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#meta-packages">Meta-packages</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#messages-services-and-actions">Messages, services and actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linting">Linting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#running-roslint-with-catkin">Running <strong>roslint</strong> with catkin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#running-catkin-lint">Running <strong>catkin_lint</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coding_style.html">Coding style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toolkit.html">Toolkit</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../mir_perception/index.html">Perception</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_manipulation/index.html">Manipulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_navigation/index.html">Navigation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_planning/index.html">Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_simulation/index.html">Simulation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MAS Industrial Robotics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Contributing</a> &raquo;</li>
+        
+      <li>Robot Operating System (ROS)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/contributing/ros.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="robot-operating-system-ros">
+<span id="contributing-ros"></span><h1>Robot Operating System (ROS)<a class="headerlink" href="#robot-operating-system-ros" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ros-packages-naming-and-structure">
+<h2>ROS packages naming and structure<a class="headerlink" href="#ros-packages-naming-and-structure" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-a-new-package">
+<h3>Creating a new package<a class="headerlink" href="#creating-a-new-package" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Naming</p>
+<p>In order to create a new ROS package for one of the repositories some rules need to be considered:</p>
+<ol class="arabic simple">
+<li>The package name has always the following format:</li>
+</ol>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>prefix_my_package_name
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Use the right prefix for every repository:</li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li>mas_domestic_robotics: <em>mdr_</em></li>
+<li>mas_industrial_robotics: <em>mir_</em></li>
+<li>mas_common_robotics: <em>mcr_</em></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Use lowercase.</li>
+<li>Separate words in the package name by underscores (_).</li>
+</ol>
+<p>Examples for creating packages according to the above described rules are as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>catkin create_pkg mdr_grasp_planning
+catkin create_pkg mir_whole_body_control
+catkin create_pkg mcr_object_detection
+</pre></div>
+</div>
+</li>
+<li><p class="first">Folder structure</p>
+<p>Every ROS package within our repositories has to strictly match the following structure:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.
+├── common
+│   ├── config
+│   ├── include
+│   │   └── &lt;package_name&gt;
+│   ├── src
+│   │   └── &lt;package_name&gt;
+│   ├── <span class="nb">test</span>
+│   └── tools
+├── ros
+│   ├── config
+│   ├── include
+│   │   └── &lt;package_name&gt;
+│   ├── launch
+│   │   <span class="p">|</span>— &lt;package_name&gt;.launch
+│   ├── rviz
+│   │   <span class="p">|</span>— &lt;package_name&gt;.rviz
+│   ├── scripts
+│   │   └── &lt;package_name&gt;
+│   ├── src
+│   │   └── &lt;package_name&gt;_node
+│   ├── <span class="nb">test</span>
+│   └── tools
+├── CMakeLists.txt
+├── package.xml
+├── setup.py
+└── README.md
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>In short:</dt>
+<dd><ul class="first last simple">
+<li>ROS-independent code goes into the <cite>common</cite> folder</li>
+<li>the <cite>ros</cite> folder contains a ROS-wrapper for the functionality you are adding</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="meta-packages">
+<h3>Meta-packages<a class="headerlink" href="#meta-packages" title="Permalink to this headline">¶</a></h3>
+<p>If the package you are creating is meant to contain other packages inside of it, it needs to have instead the following structure:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./&lt;meta_package_name&gt;
+└── &lt;meta_package_name&gt;
+    ├── CMakeLists.txt
+    ├── package.xml
+    └── README.md
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It is <strong>extremely</strong> important to maintain your <em>package.xml</em> up to date with its dependencies.
+Not doing so results in the need of specialized tools or manual inspection of launch files and
+source code to discover your package dependencies.</p>
+</div>
+</div>
+</div>
+<div class="section" id="messages-services-and-actions">
+<h2>Messages, services and actions<a class="headerlink" href="#messages-services-and-actions" title="Permalink to this headline">¶</a></h2>
+<p>Creating a new message, service or action.
+If your package defines its own messages, services or actions you should add them to the corresponding meta-package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./&lt;package_name&gt;_msgs
+├── action
+│   ├── MyAction.action
+├── msg
+│   ├── MyMessage.msg
+├── srv
+│   └── MyService.srv
+├── CMakeLists.txt
+├── package.xml
+└── README.md
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <em>srv</em> file name should start with verb i.e. <em>RecognizeImage.srv</em></p>
+</div>
+<p>Depending on the repository you are working on, the meta-package is related to the domain, e.g. <em>mdr_planning_msgs</em> or <em>mdr_navigation_actions</em></p>
+</div>
+<div class="section" id="linting">
+<h2>Linting<a class="headerlink" href="#linting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="running-roslint-with-catkin">
+<h3>Running <strong>roslint</strong> with catkin<a class="headerlink" href="#running-roslint-with-catkin" title="Permalink to this headline">¶</a></h3>
+<p>Before merging into the main repository <em>roslint</em> is ran on all merge requests.
+Unless all errors are resolved the merge request will be rejected. To test if your changes would pass the <em>roslint</em> test locally:</p>
+<ul>
+<li><p class="first">Add the following lines to your <cite>CMakelists.txt</cite>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find_package<span class="o">(</span>catkin REQUIRED COMPONENTS roslint ...<span class="o">)</span>
+
+roslint_python<span class="o">()</span>  <span class="c1"># pep8 linting</span>
+roslint_cpp<span class="o">()</span>     <span class="c1"># ROS wrapper of Google&#39;s cpplint</span>
+</pre></div>
+</div>
+<p>Your <em>package.xm</em> should include <em>roslint</em> as a build dependency:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;build_depend&gt;roslint&lt;/build_depend&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">Build target roslint:</p>
+<ul>
+<li><p class="first">with <cite>catkin_make</cite>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>catkin_make roslint_&lt;package_name&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">with <cite>catkin_tools</cite>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>catkin build --no-deps &lt;package_name&gt; --make-args roslint_&lt;package_name&gt;
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p class="first">If build fail copy and execute the gray line that looks something like the following to see more detailed errors:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;package_source_directory&gt;
+catkin build --get-env &lt;package_name&gt; <span class="p">|</span> catkin env -si  /usr/bin/make roslint --jobserver-fds<span class="o">=</span><span class="m">6</span>,7 -j<span class="p">;</span> <span class="nb">cd</span> -
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="running-catkin-lint">
+<h3>Running <strong>catkin_lint</strong><a class="headerlink" href="#running-catkin-lint" title="Permalink to this headline">¶</a></h3>
+<p>You should also make sure that the <em>catkin_lint</em> tests pass;
+running it from the root of your catkin workspace you can run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>catkin_lint --strict --ignore CRITICAL_VAR_APPEND,LINK_DIRECTORY src/mas_domestic_robotics
+</pre></div>
+</div>
+<p>See Also:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://wiki.ros.org/roslint">roslint</a></li>
+<li><a class="reference external" href="http://fkie.github.io/catkin_lint/">catkin_lint</a></li>
+</ul>
+<p>Proposed linters:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://clang.llvm.org/extra/clang-tidy/">C++</a></li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/pep8">Python</a></li>
+<li><a class="reference external" href="http://wiki.ros.org/roslint">ROS</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="coding_style.html" class="btn btn-neutral float-right" title="Coding style" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Contributing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, www.b-it-bots.de
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

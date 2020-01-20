@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Camera &mdash; MAS Industrial Robotics latest (Kinetic) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dataset" href="dataset.html" />
+    <link rel="prev" title="Perception" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> MAS Industrial Robotics
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest (Kinetic)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Perception</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Camera</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#arm-camera-calibration">Arm camera calibration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#realsense2-camera">RealSense2 camera</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dataset.html">Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="training.html">Training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="object_segmentation.html">Object segmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="object_recognition.html">Object recognition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barrier_tape.html">Barrier tape detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cavity_detection.html">Cavity detection</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_manipulation/index.html">Manipulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_navigation/index.html">Navigation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_planning/index.html">Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_simulation/index.html">Simulation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MAS Industrial Robotics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Perception</a> &raquo;</li>
+        
+      <li>Camera</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/mir_perception/camera.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="camera">
+<span id="id1"></span><h1>Camera<a class="headerlink" href="#camera" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="arm-camera-calibration">
+<h2>Arm camera calibration<a class="headerlink" href="#arm-camera-calibration" title="Permalink to this headline">¶</a></h2>
+<p>Camera calibration</p>
+</div>
+<div class="section" id="realsense2-camera">
+<span id="id2"></span><h2>RealSense2 camera<a class="headerlink" href="#realsense2-camera" title="Permalink to this headline">¶</a></h2>
+<p>How to use the RealSense2 camera</p>
+<ol class="arabic simple">
+<li>Installation</li>
+</ol>
+<blockquote>
+<div><p>Go to the intel-ros github page. Clone the realsense repository in your catkin workspace inside src:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:intel-ros/realsense.git
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Camera Output</li>
+</ol>
+<blockquote>
+<div><p>Run the following to get access to the camera:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch realsense2_camera rs_rgbd.launch
+</pre></div>
+</div>
+<p>Open rviz to visualize the camera output.</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Configure camera output (OPTIONAL)</li>
+</ol>
+<blockquote>
+<div><p>Run the following to open the rviz configuration window:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun rqt_reconfigure rqt_reconfigure
+</pre></div>
+</div>
+<p>You can also try to change the “octree_resolution” value:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> *catkin workspace*/src/mas_perception/mcr_scene_segmentation/ros/config
+gedit scene_segmentation_constraints.yaml
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Setup Base Frame</li>
+</ol>
+<blockquote>
+<div><p>Run the following:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun tf static_transform_publisher x y z roll pitch yaw base_link camera_link <span class="m">100</span>
+</pre></div>
+</div>
+<p>where x, y, z are the distances and roll, pitch, yaw are the rotations from the base_link to the camera_link.</p>
+<p>To visualize your frames in rzviz, add the TF feature in the rviz menu.</p>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Save Point Clouds</li>
+</ol>
+<blockquote>
+<div><p>If it’s your first time saving point clouds, you need to choose where you want to save them and enable data collection:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> *catkin workspace*/src/mas_perception/mcr_scene_segmentation/ros/launch
+gedit scene_segmentation.launch
+</pre></div>
+</div>
+<p>Change the value of “dataset_collection” from “false” to “true”. Change value of “logdir” from “/temp/
+to the path in your computer where you want to save the files.</p>
+<p>Run the following to get access to the point clouds given by the camera:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mcr_scene_segmentation scene_segmentation.launch input_pointcloud_topic:<span class="o">=</span>/camera/depth_registered/points
+</pre></div>
+</div>
+<p>Publish the message ‘e-start’:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rostopic pub /mcr_perception/scene_segmentation/event_in std_msgs/String <span class="s2">&quot;data: &#39;e_start&#39;&quot;</span>
+</pre></div>
+</div>
+<p>Publish the message ‘e-add-cloud-start’:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rostopic pub /mcr_perception/scene_segmentation/event_in std_msgs/String <span class="s2">&quot;data: &#39;e_add_cloud_start&#39;&quot;</span>
+</pre></div>
+</div>
+<p>This last one will save the current point cloud of the observed object in your system.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Sometimes the camera won’t save the point cloud (don’t worry, not your fault).
+Just try a different position for the object until it works.</p>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li>Visualize Point Cloud</li>
+</ol>
+<blockquote>
+<div><p>Run the following in the folder where you saved the point clouds:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pcl_viewer *.pcd file you want to open*
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dataset.html" class="btn btn-neutral float-right" title="Dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Perception" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, www.b-it-bots.de
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

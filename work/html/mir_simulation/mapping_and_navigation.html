@@ -1,0 +1,442 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mapping and Navigation for Simulation &mdash; MAS Industrial Robotics latest (Kinetic) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Simulation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> MAS Industrial Robotics
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest (Kinetic)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mir_perception/index.html">Perception</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_manipulation/index.html">Manipulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_navigation/index.html">Navigation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_planning/index.html">Planning</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Simulation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Mapping and Navigation for Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mapping">Mapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generate-map">Generate map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#making-the-map-usable">Making the map usable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#navigation">Navigation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rviz-setup">RViz setup</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MAS Industrial Robotics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Simulation</a> &raquo;</li>
+        
+      <li>Mapping and Navigation for Simulation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/mir_simulation/mapping_and_navigation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="mapping-and-navigation-for-simulation">
+<span id="mapping-and-navigaiton"></span><h1>Mapping and Navigation for Simulation<a class="headerlink" href="#mapping-and-navigation-for-simulation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="mapping">
+<h2>Mapping<a class="headerlink" href="#mapping" title="Permalink to this headline">¶</a></h2>
+<p>Run simulation related nodes</p>
+<ul>
+<li><p class="first">Run roscore</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roscore
+</pre></div>
+</div>
+</li>
+<li><p class="first">Launch the robot (In another terminal)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_bringup_sim robot.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first">Run gazebo simulator (In another terminal)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun gazebo_ros gzclient
+</pre></div>
+</div>
+</li>
+<li><p class="first">Run rviz (In another terminal)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun rviz rviz
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To setup the RViz, please go to the bottom of this page.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="generate-map">
+<h2>Generate map<a class="headerlink" href="#generate-map" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Run 2D SLAM (In another terminal)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_2dslam 2dslam.launch
+</pre></div>
+</div>
+<p>Now there should be robot in an empty map in RViz.</p>
+</li>
+<li><p class="first">Move the robot around the map. (In another terminal)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_teleop teleop_keyboard.launch
+</pre></div>
+</div>
+<p>WSAD keys set the robot in motion and “Space bar” stops that motion.</p>
+<p>As you move the robot around, you should be able to see walls appearing in the map
+in RViz and all the other area will be free. After you have mapped the whole environment,
+you can save the map in config map directory.</p>
+</li>
+<li><p class="first">Move to map config directory (In another terminal)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roscd mcr_default_env_config
+</pre></div>
+</div>
+</li>
+<li><p class="first">Then make a directory and move inside that newly created directory</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir test_map
+<span class="nb">cd</span> test_map
+</pre></div>
+</div>
+</li>
+<li><p class="first">Now you can save the map that you just created</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun map_server map_saver
+</pre></div>
+</div>
+<p>This will ideally create 2 files namely <em>map.pgm</em> and <em>map.yml</em>.
+Now you can exit out of <em>mir_2dslam</em> execution. You can also exit from <em>mir_teleop, gazebo, mir_bringup_sim</em></p>
+</li>
+</ul>
+</div>
+<div class="section" id="making-the-map-usable">
+<h2>Making the map usable<a class="headerlink" href="#making-the-map-usable" title="Permalink to this headline">¶</a></h2>
+<p>In order to use this map in future to navigate, follow the following steps:</p>
+<ul>
+<li><p class="first">Add files where the goals will be saved (in the same directory where the map files have been saved)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch navigation_goals.yaml
+touch orientation_goals.yaml
+</pre></div>
+</div>
+</li>
+<li><p class="first">Make a copy of the existing launch file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/catkin_ws/src/mas_common_robotics/mcr_environments/mcr_gazebo_worlds/ros/launch
+cp brsu-c025-sim.launch test_map.launch
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Inside <em>test_map.launch</em>, edit the argument of <strong>robot_env</strong> (line 10).
+Replace <em>brsu-c025-sim</em> with <em>test_map</em>. Save this file.</p>
+</div>
+</li>
+<li><p class="first">Make a copy of xacro file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/catkin_ws/src/mas_common_robotics/mcr_environments/mcr_gazebo_worlds/common/worlds/
+cp brsu-c025-sim.urdf.xacro test_map.urdf.xacro
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Now your newly created map should be ready for use.</p>
+</div>
+</div>
+<div class="section" id="navigation">
+<h2>Navigation<a class="headerlink" href="#navigation" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Run the commands from “Run simulation related nodes” as mentioned above to bring the robot up.</p>
+</li>
+<li><p class="first">Launch the navigation node</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_2dnav 2Dnav.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first">Open RViz</p>
+<p>Add <em>PoseArray</em> in RViz and change its topic to <em>/particlecloud</em>.
+Now you will be able to see red arrows around the robot. These arrow show the pose of the robot.</p>
+</li>
+<li><p class="first">You now need to localize the robot to get its correct pose. Move the robot around the map. (In another terminal)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_teleop teleop_keyboard.launch
+</pre></div>
+</div>
+<p>Rotate the robot in its place using QE keys.
+You will notice the red arrows converging around the robot. Once the the robot is reasonably localised,
+you can navigate the robot around in 2 ways:</p>
+<ol class="arabic simple">
+<li>GUI (RViz)</li>
+</ol>
+<blockquote>
+<div><p>Click on the <cite>2D Nav Goal</cite> and select a goal on the map.</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Terminal based (ROS Action Server Client)</li>
+</ol>
+<blockquote>
+<div><p>For Action server client, the robot first needs name of position for source and
+destination places (It cannot use <cite>x, y, theta</cite> values)</p>
+<p>To name the poses, you have to execute <em>save_base_map_poses_to_file</em></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roscd mcr_default_env_config
+<span class="nb">cd</span> test_map
+rosrun mcr_navigation_tools save_base_map_poses_to_file
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>This program is terminal based interactive program. The program will ask you to name the position.</dt>
+<dd><ol class="first arabic simple">
+<li>You can now navigate the robot to your desired position (using GUI of RViz or <em>mir_teleop</em>).</li>
+<li>Once your robot is at the desired position, you can enter a name and press enter.</li>
+</ol>
+<blockquote>
+<div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Note : The name of the location should be ALL CAPS.
+For example, CORNER_1, MAIN_DOOR, etc. If the name contains any lower case character,
+the server will not work) You will see pose of the robot inside square brackets in
+the next line and prompted for another name.</p>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Repeat step 1 and 2 to add multiple names to different locations inside the map.</li>
+<li>To close this interactive program, press <em>Ctrl + z</em>. (Note : <em>Ctrl + c</em> won’t work.) Then kill this process.</li>
+</ol>
+<blockquote class="last">
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ps
+</pre></div>
+</div>
+<p>take a note of the <cite>pid</cite> of python process.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">kill</span> -9 &lt;pid_number&gt;
+</pre></div>
+</div>
+<p>Now stop <em>mir_2dnav</em> and start it again.</p>
+<p>Launch move base launch file (In another terminal)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_move_base_safe move_base.launch
+</pre></div>
+</div>
+<p>Run the server file. (In another terminal)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun mir_move_base_safe move_base_safe_server.py
+</pre></div>
+</div>
+<p>You can test everything by running client test file. (In another terminal)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun mir_move_base_safe move_base_safe_client_test.py SOURCE_NAME DESTINATION_NAME
+</pre></div>
+</div>
+<p>For example, if you want to move the robot from MAIN_DOOR to CORNER_1, then</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun mir_move_base_safe move_base_safe_client_test.py MAIN_DOOR CORNER_1
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The source location is irrelevant for the client test file.
+Your robot can be anywhere and the program will still work correctly.
+Just give some valid location name as a place holder.)
+The client will print <strong>success : True</strong>, if it was able to successfully navigate to the destination position.</p>
+</div>
+</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="rviz-setup">
+<h2>RViz setup<a class="headerlink" href="#rviz-setup" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Add <em>Map, RobotModel, LaserScan</em> using the “Add” button in bottom left corner of “Display” section of RViz.</li>
+<li>In <em>Map</em>, change the topic to <em>/map</em></li>
+<li>In <em>LaserScan</em>, change the topic to <em>/scan_front</em>. Add another <em>LaserScan</em> and change its topic to <em>/scan_rear</em>.</li>
+<li>In global option, change the <em>Fixed Frame</em> to <em>map</em>.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can also add another <em>PoseArray</em> and change its topic to <em>/move_base/GlobalPlannerWithOrientation</em>
+to visualise the plan created by the <em>mir_2Dnav</em> node.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Simulation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, www.b-it-bots.de
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

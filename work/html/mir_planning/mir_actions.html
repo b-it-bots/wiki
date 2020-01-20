@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Actions &mdash; MAS Industrial Robotics latest (Kinetic) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Move base safe" href="actions/move_base_safe.html" />
+    <link rel="prev" title="MIR Knowledge" href="mir_knowledge.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> MAS Industrial Robotics
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest (Kinetic)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mir_perception/index.html">Perception</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_manipulation/index.html">Manipulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_navigation/index.html">Navigation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Planning</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="refbox_parser.html">Refbox parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="planning_bringup.html">Planning bringup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="planning_core.html">Planning core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="task_planning.html">Task planning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="planner_executor.html">Planner executor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pddl_problem_generator.html">PDDL problem generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="knowledge_base_analyzer.html">Knowledge base analyzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mir_knowledge.html">MIR Knowledge</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Actions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="actions/move_base_safe.html">Move base safe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="actions/perceive_location.html">Perceive location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="actions/perceive_cavity.html">Perceive cavity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="actions/perceive_mock.html">Perceive mock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="actions/pick_object.html">Pick object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="actions/place_object.html">Place object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="actions/stage_object.html">Stage object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="actions/unstage_object.html">Unstage object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="actions/insert_object.html">Insert object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="actions/insert_cavity.html">Insert cavity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_simulation/index.html">Simulation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MAS Industrial Robotics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Planning</a> &raquo;</li>
+        
+      <li>Actions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/mir_planning/mir_actions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="actions">
+<span id="mir-actions"></span><h1>Actions<a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h1>
+<p>A bunch of action servers for performing basic robocup actions.</p>
+<p>The robocup &#64;work domain is partitioned into 6 basic actions</p>
+<ul class="simple">
+<li>move base</li>
+<li>pick</li>
+<li>perceive</li>
+<li>place</li>
+<li>stage</li>
+<li>unstage</li>
+</ul>
+<p>Each action is implemented as SMACH state machines which are wrapped with
+<code class="docutils literal notranslate"><span class="pre">ActionServer</span></code>. An <code class="docutils literal notranslate"><span class="pre">ActionClient</span></code> needs to send request using
+<code class="docutils literal notranslate"><span class="pre">GenericExecuteGoal</span></code>.</p>
+<p>This request message contains a single dictionary kind of
+message called <code class="docutils literal notranslate"><span class="pre">parameters</span></code> of type <code class="docutils literal notranslate"><span class="pre">diagnostic_msgs/KeyValue[]</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># goal definition</span>
+<span class="n">diagnostic_msgs</span><span class="o">/</span><span class="n">KeyValue</span><span class="p">[]</span> <span class="n">parameters</span>
+<span class="o">---</span>
+<span class="c1"># result definition</span>
+<span class="n">diagnostic_msgs</span><span class="o">/</span><span class="n">KeyValue</span><span class="p">[]</span> <span class="n">results</span>
+<span class="o">---</span>
+<span class="c1"># feedback</span>
+<span class="n">string</span> <span class="n">current_state</span>
+<span class="n">string</span> <span class="n">text</span>
+</pre></div>
+</div>
+<p>Each server needs different information from this request message. Please see
+the following files for detailed info:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="actions/move_base_safe.html">Move base safe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions/perceive_location.html">Perceive location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions/perceive_cavity.html">Perceive cavity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions/perceive_mock.html">Perceive mock</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions/pick_object.html">Pick object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions/place_object.html">Place object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions/stage_object.html">Stage object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions/unstage_object.html">Unstage object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions/insert_object.html">Insert object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions/insert_cavity.html">Insert cavity</a></li>
+</ul>
+</div>
+<p>Additionally, <a class="reference internal" href="planner_executor.html#mir-planner-executor"><span class="std std-ref">Planner executor</span></a> also sends <code class="docutils literal notranslate"><span class="pre">next_action</span></code> as one of the
+parameter. This can be used by action servers to have parallel execution of arm
+while the base is in motion to save som time. At the moment, only
+<a class="reference internal" href="actions/move_base_safe.html#mir-move-base-safe"><span class="std std-ref">Move base safe</span></a> is using this information.</p>
+<p>This package also contains <code class="docutils literal notranslate"><span class="pre">Utils.py</span></code> which contains utility functions for
+action servers.</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roscore
+roslaunch mir_actions run_action_servers.launch
+</pre></div>
+</div>
+<p>To execute an action, call the corresponding action client with appropriate
+arguments. For example, move base safe:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">mir_move_base_safe</span> <span class="n">move_base_safe_client_test</span><span class="o">.</span><span class="n">py</span> <span class="n">WS01</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="actions/move_base_safe.html" class="btn btn-neutral float-right" title="Move base safe" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="mir_knowledge.html" class="btn btn-neutral float-left" title="MIR Knowledge" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, www.b-it-bots.de
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

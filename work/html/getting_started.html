@@ -1,0 +1,385 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting started &mdash; MAS Industrial Robotics latest (Kinetic) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing" href="contributing/index.html" />
+    <link rel="prev" title="About" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> MAS Industrial Robotics
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest (Kinetic)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">About</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#install-ubuntu">Install Ubuntu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-version-control">Git - Version Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ros-robot-operating-system">ROS - Robot Operating System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup-catkin-workspace">Setup catkin workspace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bring-up-the-robot-and-its-basic-components">Bring up the robot and its basic components</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing/index.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="mir_perception/index.html">Perception</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mir_manipulation/index.html">Manipulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mir_navigation/index.html">Navigation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mir_planning/index.html">Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mir_simulation/index.html">Simulation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MAS Industrial Robotics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Getting started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/getting_started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<span id="id1"></span><h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="install-ubuntu">
+<span id="id2"></span><h2>Install Ubuntu<a class="headerlink" href="#install-ubuntu" title="Permalink to this headline">¶</a></h2>
+<p>The repository and its related components have been tested under the following Ubuntu distributions:</p>
+<ul class="simple">
+<li>ROS Kinetic: Ubuntu 16.04</li>
+</ul>
+<p>If you do not have a Ubuntu distribution on your computer you can download it <a class="reference external" href="http://www.ubuntu.com/download">here</a>.</p>
+</div>
+<div class="section" id="git-version-control">
+<span id="id3"></span><h2>Git - Version Control<a class="headerlink" href="#git-version-control" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Install Git Software</p>
+<p>Install the Git core components and some additional GUI’s for the version control:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install git-core gitg gitk
+</pre></div>
+</div>
+</li>
+<li><p class="first">Set Up Git</p>
+<p>Now it’s time to configure your settings. To do this you need to open a new Terminal. First you need to tell git your name, so that it can properly label the commits you make:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git config --global user.name <span class="s2">&quot;Your Name Here&quot;</span>
+</pre></div>
+</div>
+<p>Git also saves your email address into the commits you make.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git config --global user.email <span class="s2">&quot;your-email@youremail.com&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">GIT Tutorial
+If you have never worked with git before, we recommend to go through the
+<a class="reference external" href="http://excess.org/article/2008/07/ogre-git-tutorial/">basic git tutorial</a>.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="ros-robot-operating-system">
+<span id="robot-operating-system"></span><h2>ROS - Robot Operating System<a class="headerlink" href="#ros-robot-operating-system" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Install ROS</p>
+<p>The repository has been tested successfully with the following ROS distributions.
+Use the link behind a ROS distribution to get to the particular
+<a class="reference external" href="http://wiki.ros.org/kinetic/Installation/Ubuntu">ROS Kinetic installation instructions</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Do not forget to update your .bashrc!</p>
+</div>
+</li>
+<li><p class="first">ROS Tutorials</p>
+<p>If you have never worked with ROS before, we recommend to go through
+<a class="reference external" href="http://wiki.ros.org/ROS/Tutorials">the beginner tutorials provided by ROS</a>.</p>
+<p>In order to understand at least the different core components of ROS, you have to start from tutorial 1 (“Installing and Configuring Your ROS Environment”) till tutorial 7 (“Understanding ROS Services and Parameters”).</p>
+</li>
+</ul>
+</div>
+<div class="section" id="setup-catkin-workspace">
+<span id="id4"></span><h2>Setup catkin workspace<a class="headerlink" href="#setup-catkin-workspace" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Create a catkin workspace</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> /opt/ros/kinetic/setup.bash
+mkdir -p ~/kinetic/src<span class="p">;</span> <span class="nb">cd</span> ~/kinetic/src
+catkin_init_workspace
+catkin build
+</pre></div>
+</div>
+</li>
+<li><p class="first">Clone and compile the MAS industrial robotics software</p>
+<p>First of all you have to clone the repository.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/kinetic/src<span class="p">;</span>
+git clone git@github.com:b-it-bots/mas_industrial_robotics.git
+</pre></div>
+</div>
+<p>Then go on with installing further external dependencies:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/kinetic/src/mas_industrial_robotics
+./repository.debs
+<span class="nb">source</span> ~/kinetic/devel/setup.bash
+</pre></div>
+</div>
+<p>The last command should be added to the ~/.bashrc file so that they do not need to be executed everytime you open a new terminal.</p>
+<p>And finally compile the repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/kinetic
+catkin build
+</pre></div>
+</div>
+<p>If no errors appear everything is ready to use. Great job!</p>
+</li>
+<li><p class="first">Setting the Environment Variables</p>
+<ul>
+<li><p class="first">ROBOT variable</p>
+<p>With the ROBOT variable you can choose which hardware configuration should be loaded when starting the robot. The following line will add the variable to your .bashrc:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;export ROBOT=youbot-brsu-1&quot;</span> &gt;&gt; ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+</pre></div>
+</div>
+</li>
+<li><p class="first">ROBOT_ENV Variable</p>
+<p>The ROBOT_ENV variable can be used to switch between different environments. The following line will add the variable to your .bashrc:</p>
+<ul class="simple">
+<li>Real robot</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;export ROBOT_ENV=brsu-c025&quot;</span> &gt;&gt; ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+</pre></div>
+</div>
+<ul class="simple">
+<li>Simulation</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;export ROBOT_ENV=brsu-c025-sim&quot;</span> &gt;&gt; ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="bring-up-the-robot-and-its-basic-components">
+<span id="bringup-robot"></span><h2>Bring up the robot and its basic components<a class="headerlink" href="#bring-up-the-robot-and-its-basic-components" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">In Simulation</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_bringup_sim robot.launch
+</pre></div>
+</div>
+<p>In a new terminal you can open the Gazebo GUI to see the environment and the robot</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun gazebo_ros gzclient
+</pre></div>
+</div>
+</li>
+<li><p class="first">At the Real Robot</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_bringup robot.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first">Test the base</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_teleop teleop_keyboard.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first">Visualize the robot state and sensor data</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun rviz rviz
+</pre></div>
+</div>
+</li>
+<li><p class="first">Build a map for base navigation</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_2dslam 2dslam.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first">Use autonomous navigation</p>
+<ul>
+<li><p class="first">Omni-directional navigation</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_2dnav 2dnav.launch nav_mode:<span class="o">=</span>dwa
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<p>Click on the menu bar “File -&gt; Open Config”, navigate to “~/indigo/src/mas_industrial_robotics” and select the “youbot.rviz” file.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contributing/index.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="introduction.html" class="btn btn-neutral float-left" title="About" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, www.b-it-bots.de
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

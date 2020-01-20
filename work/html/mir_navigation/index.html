@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Navigation &mdash; MAS Industrial Robotics latest (Kinetic) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Planning" href="../mir_planning/index.html" />
+    <link rel="prev" title="Manipulation" href="../mir_manipulation/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> MAS Industrial Robotics
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest (Kinetic)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mir_perception/index.html">Perception</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_manipulation/index.html">Manipulation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Navigation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#on-workstation-or-your-pc">On workstation or your PC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-slam">2D SLAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-navigation">2D Navigation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_planning/index.html">Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_simulation/index.html">Simulation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MAS Industrial Robotics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Navigation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/mir_navigation/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="navigation">
+<span id="mir-navigation"></span><h1>Navigation<a class="headerlink" href="#navigation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="on-workstation-or-your-pc">
+<h2>On workstation or your PC<a class="headerlink" href="#on-workstation-or-your-pc" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">To shh the youbot (in all terminals):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>yb4
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">alias yb4=ssh -X <a class="reference external" href="mailto:robocup&#37;&#52;&#48;youbot-brsu-4-pc2">robocup<span>&#64;</span>youbot-brsu-4-pc2</a></p>
+</div>
+</li>
+<li><p class="first">Export the youbot ssh alias</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>export_yb4
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">alias export_yb4=export ROS_MASTER_URI=http://youbot-brsu-4-pc2:11311</p>
+</div>
+</li>
+<li><p class="first">Run rviz</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun rviz rviz
+</pre></div>
+</div>
+<p>Set the global frame to <cite>base_link</cite></p>
+</li>
+</ul>
+</div>
+<div class="section" id="d-slam">
+<span id="id1"></span><h2>2D SLAM<a class="headerlink" href="#d-slam" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Run roscore</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roscore
+</pre></div>
+</div>
+</li>
+<li><p class="first">Launch the robot</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_bringup robot.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first">Run 2D SLAM</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_2dslam 2dslam.launch
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The map is built using the front laser’s only</p>
+</div>
+</li>
+<li><p class="first">Run the map saver</p>
+<p>Go to the map configuration directory</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roscd mcr_default_env_config
+</pre></div>
+</div>
+<p>By using <cite>ls</cite> you can see several folders corresponding to existing environments.
+You can either use an existing map or create a new one:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir <span class="o">[</span>map_name<span class="o">]</span>
+<span class="nb">cd</span> <span class="o">[</span>map_name<span class="o">]</span>
+</pre></div>
+</div>
+<p>And then run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun map_server map_saver
+</pre></div>
+</div>
+<p>This will create two files: a <cite>map.pgm</cite> and <cite>map.yml</cite>.</p>
+<p>Finally, to use the map that you just created you need to check which map will be loaded by the navigation stack:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$ROBOT_ENV</span>
+</pre></div>
+</div>
+<p>If you need to change it:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">ROBOT_ENV</span><span class="o">=[</span>map_name<span class="o">]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Usually the <cite>.rosc</cite> script is used to set the environment, among other variables.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="d-navigation">
+<span id="id2"></span><h2>2D Navigation<a class="headerlink" href="#d-navigation" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Bringup the robot</p>
+<p>First export the environment to be used:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">ROBOT_ENV</span><span class="o">=</span>brsu-C025
+</pre></div>
+</div>
+<p>Launch the robot:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_bringup robot.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first">Launch the navigation node</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_2dnav 2Dnav.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first">Create navigation goals and orientations</p>
+<p>First you need to create the files where goals will be saved:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch navigation_goals.yaml
+touch orientation_goals.yaml
+</pre></div>
+</div>
+</li>
+<li><p class="first">Localize the robot</p>
+<p>In rviz:</p>
+<ol class="arabic simple">
+<li>Select the 2D pose estimate</li>
+<li>Click the position near the robot</li>
+<li>Move with joystick</li>
+<li>Launch navigation tools in yb2</li>
+</ol>
+</li>
+<li><p class="first">Save the navigation and orientation goals</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roscd mcr_default_env_config
+<span class="nb">cd</span> brsu-C025
+rosrun mcr_navigation_tools save_map_poses_to_file
+</pre></div>
+</div>
+</li>
+<li><p class="first">Test navigation goal using move_base</p>
+</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun mir_move_base_safe move_base_safe_server.py
+rosrun mir_move_base_safe move_base_safe_client_test.py <span class="o">[</span>source<span class="o">]</span> <span class="o">[</span>dest<span class="o">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Navigation test using refbox</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mir_basic_navigation_test refbox_parser.py
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../mir_planning/index.html" class="btn btn-neutral float-right" title="Planning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../mir_manipulation/index.html" class="btn btn-neutral float-left" title="Manipulation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, www.b-it-bots.de
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

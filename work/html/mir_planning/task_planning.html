@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Task planning &mdash; MAS Industrial Robotics latest (Kinetic) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Planner executor" href="planner_executor.html" />
+    <link rel="prev" title="Planning core" href="planning_core.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> MAS Industrial Robotics
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest (Kinetic)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mir_perception/index.html">Perception</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_manipulation/index.html">Manipulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_navigation/index.html">Navigation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Planning</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="refbox_parser.html">Refbox parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="planning_bringup.html">Planning bringup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="planning_core.html">Planning core</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Task planning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#additional-files">Additional files</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="planner_executor.html">Planner executor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pddl_problem_generator.html">PDDL problem generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="knowledge_base_analyzer.html">Knowledge base analyzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mir_knowledge.html">MIR Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mir_actions.html">Actions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mir_simulation/index.html">Simulation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MAS Industrial Robotics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Planning</a> &raquo;</li>
+        
+      <li>Task planning</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/mir_planning/task_planning.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="task-planning">
+<span id="mir-task-planning-pkg"></span><h1>Task planning<a class="headerlink" href="#task-planning" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://github.com/b-it-bots/mas_industrial_robotics/tree/kinetic/mir_planning/mir_task_planning">mir_task_planning</a>
+generates task plan using classical planner.</p>
+<p>This module provides</p>
+<ul>
+<li><p class="first">ros independent wrapping for planners (currently <code class="docutils literal notranslate"><span class="pre">mercury</span></code>
+and <code class="docutils literal notranslate"><span class="pre">lama</span></code>) in <code class="docutils literal notranslate"><span class="pre">/common/planner_wrapper/</span></code>.</p>
+<blockquote>
+<div><p>Based on the <code class="docutils literal notranslate"><span class="pre">planner</span></code> requested, this module executes a shell command as
+mentioned in config file (see <a class="reference internal" href="#task-planning-config"><span class="std std-ref">Configuration</span></a>). This generates a
+bunch of files in <code class="docutils literal notranslate"><span class="pre">/tmp/plan/</span></code> directory. The wrapper parses the most optimal
+plan file and returns as a list of string. Remaining files are deleted for a
+fresh start for next request.</p>
+</div></blockquote>
+</li>
+<li><p class="first">ros wrapper on top of the previously mentioned module is available in
+<code class="docutils literal notranslate"><span class="pre">/ros</span></code> folder. The ros wrapper is implemented as an <code class="docutils literal notranslate"><span class="pre">ActionServer</span></code>.</p>
+<blockquote>
+<div><p>Upon request from an <code class="docutils literal notranslate"><span class="pre">ActionClient</span></code> containing <code class="docutils literal notranslate"><span class="pre">domain_file</span></code>, <code class="docutils literal notranslate"><span class="pre">problem_file</span></code>,
+<code class="docutils literal notranslate"><span class="pre">planner</span></code> and <code class="docutils literal notranslate"><span class="pre">mode</span></code>, the server tries to plan with those provided configuration
+and returns a <code class="docutils literal notranslate"><span class="pre">CompletePlan</span></code>.</p>
+<ul>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">domain_file</span></code> - file path of domain file (it should be a <code class="docutils literal notranslate"><span class="pre">.pddl</span></code> file)</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">problem_file</span></code> - file path of problem file (it should be a <code class="docutils literal notranslate"><span class="pre">.pddl</span></code> file)</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">planner</span></code> - name of planner to use (<code class="docutils literal notranslate"><span class="pre">lama</span></code> or <code class="docutils literal notranslate"><span class="pre">mercury</span></code>)</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">mode</span></code> - <code class="docutils literal notranslate"><span class="pre">PlanGoal.NORMAL</span></code> or <code class="docutils literal notranslate"><span class="pre">PlanGoal.FAST</span></code> (fast mode implies that first
+plan found will be returned. No further optimisation will be performed by the
+planner.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This should only be use when a small number of goals are
+provided as it will produce a very bad and non optimal plan.</p>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first"><a class="reference external" href="https://github.com/b-it-bots/mercury_planner">mercury_planner</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="https://github.com/b-it-bots/lama_planner">lama_planner</a></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">g++-multilib</span></code> is needed to install these packages.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Without ROS</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python planner_wrapper.py
+</pre></div>
+</div>
+</li>
+<li><p class="first">With ROS</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roscore
+roslaunch mir_task_planning task_planner.launch
+roslaunch mir_task_planning task_planner_client_test.launch
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="configuration">
+<span id="task-planning-config"></span><h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># shell commands to execute planners</span>
+<span class="nt">planner_commands</span><span class="p">:</span>
+    <span class="c1"># all CAPS words will be replaced in the code</span>
+    <span class="nt">mercury</span><span class="p">:</span> 
+<span class="hll">        <span class="nt">command</span><span class="p">:</span> <span class="s">&#39;timeout</span><span class="nv"> </span><span class="s">TIMELIMIT</span><span class="nv"> </span><span class="s">EXECUTABLE</span><span class="nv"> </span><span class="s">DOMAIN</span><span class="nv"> </span><span class="s">PROBLEM</span><span class="nv"> </span><span class="s">FILENAME&#39;</span>
+</span>        <span class="nt">rospkg_name</span><span class="p">:</span> <span class="s">&#39;mercury_planner&#39;</span>
+        <span class="nt">executable_path</span><span class="p">:</span> <span class="s">&#39;build/Mercury-fixed/seq-sat-mercury/plan&#39;</span>
+    <span class="nt">lama</span><span class="p">:</span> 
+<span class="hll">        <span class="nt">command</span><span class="p">:</span> <span class="s">&#39;EXECUTABLE</span><span class="nv"> </span><span class="s">--search-time-limit</span><span class="nv"> </span><span class="s">TIMELIMIT</span><span class="nv"> </span><span class="s">--alias</span><span class="nv"> </span><span class="s">seq-sat-lama-2011</span><span class="nv"> </span><span class="s">--plan-file</span><span class="nv"> </span><span class="s">FILENAME</span><span class="nv"> </span><span class="s">DOMAIN</span><span class="nv"> </span><span class="s">PROBLEM&#39;</span>
+</span>        <span class="nt">rospkg_name</span><span class="p">:</span> <span class="s">&#39;lama_planner&#39;</span>
+        <span class="nt">executable_path</span><span class="p">:</span> <span class="s">&#39;build/LAMA/fast-downward.py&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="additional-files">
+<h2>Additional files<a class="headerlink" href="#additional-files" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">ros/launch/upload_problem.launch</span></code> and <code class="docutils literal notranslate"><span class="pre">ros/test/upload_problem</span></code> can be used
+for testing whole planning pipeline without Refbox. This launch file will act
+as <em>refbox</em>, <em>refbox client</em> and <em>refbox parser</em>. It reads a <code class="docutils literal notranslate"><span class="pre">.pddl</span></code> problem file
+and uploads instances and facts to <em>knowledge base</em>. To test the whole
+planning pipeline without refbox, following things need to be executed</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roscore
+roslaunch mir_planning_core task_planning_components.launch
+rosrun mir_task_executor task_executor_mockup
+roslaunch mir_task_planning upload_problem.launch
+roslaunch mir_planning_core task_planning_sm.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">common/pddl</span></code> contains robocup’s domain file and a bunch of problem files for
+testing.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This folder is needed by default if
+<code class="docutils literal notranslate"><span class="pre">common/planner_wrapper/planner_wrapper.py</span></code> is running standalone.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="planner_executor.html" class="btn btn-neutral float-right" title="Planner executor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="planning_core.html" class="btn btn-neutral float-left" title="Planning core" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, www.b-it-bots.de
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
