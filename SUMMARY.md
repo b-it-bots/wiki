@@ -51,4 +51,8 @@
 
 ## @work
 
-[Documentations](work/html/index.html)
+* [2018-05-06-navigation-atwork](work/2018-05-06-navigation-atwork.md)
+* [2018-05-06-simulation\_mapping](work/2018-05-06-simulation_mapping.md)
+* [How to use the RealSense2 camera](work/pointcloud.md)
+* [Getting the classifier from a data set](work/classifier.md)
+
