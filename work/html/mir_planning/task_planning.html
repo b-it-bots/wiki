@@ -268,11 +268,11 @@ roslaunch mir_task_planning task_planner_client_test.launch
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># shell commands to execute planners</span>
 <span class="nt">planner_commands</span><span class="p">:</span>
     <span class="c1"># all CAPS words will be replaced in the code</span>
-    <span class="nt">mercury</span><span class="p">:</span> 
+    <span class="nt">mercury</span><span class="p">:</span>
 <span class="hll">        <span class="nt">command</span><span class="p">:</span> <span class="s">&#39;timeout</span><span class="nv"> </span><span class="s">TIMELIMIT</span><span class="nv"> </span><span class="s">EXECUTABLE</span><span class="nv"> </span><span class="s">DOMAIN</span><span class="nv"> </span><span class="s">PROBLEM</span><span class="nv"> </span><span class="s">FILENAME&#39;</span>
 </span>        <span class="nt">rospkg_name</span><span class="p">:</span> <span class="s">&#39;mercury_planner&#39;</span>
         <span class="nt">executable_path</span><span class="p">:</span> <span class="s">&#39;build/Mercury-fixed/seq-sat-mercury/plan&#39;</span>
-    <span class="nt">lama</span><span class="p">:</span> 
+    <span class="nt">lama</span><span class="p">:</span>
 <span class="hll">        <span class="nt">command</span><span class="p">:</span> <span class="s">&#39;EXECUTABLE</span><span class="nv"> </span><span class="s">--search-time-limit</span><span class="nv"> </span><span class="s">TIMELIMIT</span><span class="nv"> </span><span class="s">--alias</span><span class="nv"> </span><span class="s">seq-sat-lama-2011</span><span class="nv"> </span><span class="s">--plan-file</span><span class="nv"> </span><span class="s">FILENAME</span><span class="nv"> </span><span class="s">DOMAIN</span><span class="nv"> </span><span class="s">PROBLEM&#39;</span>
 </span>        <span class="nt">rospkg_name</span><span class="p">:</span> <span class="s">&#39;lama_planner&#39;</span>
         <span class="nt">executable_path</span><span class="p">:</span> <span class="s">&#39;fast-downward/fast-downward.py&#39;</span>
