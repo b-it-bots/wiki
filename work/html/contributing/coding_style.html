@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Coding style &mdash; MAS Industrial Robotics latest (Kinetic) documentation</title>
+  <title>Coding guidelines &mdash; MAS Industrial Robotics latest (Kinetic) documentation</title>
   
 
   
@@ -91,9 +91,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Contributing</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="ros.html">Robot Operating System (ROS)</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Coding style</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#c-c">C/C++</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#python">Python</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Coding guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#style-label">Coding style</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#c-c">C/C++</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#python">Python</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#editors-for-software-development">Editors for software development</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configuring-editors">Configuring editors</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="toolkit.html">Toolkit</a></li>
@@ -163,7 +170,7 @@
         
           <li><a href="index.html">Contributing</a> &raquo;</li>
         
-      <li>Coding style</li>
+      <li>Coding guidelines</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -182,47 +189,199 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="coding-style">
-<span id="id1"></span><h1>Coding style<a class="headerlink" href="#coding-style" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="coding-guidelines">
+<span id="coding-style"></span><h1>Coding guidelines<a class="headerlink" href="#coding-guidelines" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Make sure that your text editor is properly configured to use <strong>spaces</strong> instead of tabs.</p>
+<p class="last">Make sure that your text editor is properly configured to use <strong>spaces</strong> instead of tabs.
+All C/C++ code should be written and formatted according to the <strong>Google style guide</strong> (with an exception to column limit
+and breaking braces.
+See <a class="reference external" href="https://github.com/b-it-bots/mas_industrial_robotics/blob/kinetic/.clang-format">.clang-format</a> for more details).
+All Python code should adhere to the <strong>PEP-8 style guide</strong>.</p>
 </div>
+<div class="section" id="style-label">
+<span id="id1"></span><h2>Coding style<a class="headerlink" href="#style-label" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="c-c">
-<h2>C/C++<a class="headerlink" href="#c-c" title="Permalink to this headline">¶</a></h2>
+<h3>C/C++<a class="headerlink" href="#c-c" title="Permalink to this headline">¶</a></h3>
 <ul>
-<li><p class="first">Filenames</p>
-<p>Filenames should be all lowercase and words are separated by underscores ( _ ). For instance:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>whole_body_controller.cpp
-whole_body_controller.h
+<li><p class="first">Linting</p>
+<p><a class="reference external" href="https://github.com/cpplint/cpplint">cpplint</a> is used to lint C++ code according to the
+<a class="reference external" href="https://google.github.io/styleguide/cppguide.html">Google style guide</a>.
+cpplint can be installed using pip (in a python 3.7 environment)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install cpplint
+</pre></div>
+</div>
+<p>Run cpplint on a file/directory as follows</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cpplint &lt;filename/directory&gt;
 </pre></div>
 </div>
 </li>
-<li><p class="first">Class names</p>
-<p>Class names should be nouns in <a class="reference external" href="https://www.wikiwand.com/en/Camel_case">UpperCamelCase</a>,
-i.e. the first letter of every word capitalised. Use whole words and avoid acronyms or
-abbreviations (unless the abbreviation is much more widely used than the long form, such as SVM or ROS).</p>
-</li>
-<li><p class="first">Function names</p>
-<p>Regular functions have mixed case. The first word (which is usually a verb) starts
-with lowercase and the remaining words follow the <a class="reference external" href="https://www.wikiwand.com/en/Camel_case">CamelCase</a> practice.
-For instance:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">getEuclideanDistance2d</span> <span class="p">(</span> <span class="kt">double</span> <span class="n">x1</span> <span class="p">,</span> <span class="kt">double</span> <span class="n">y1</span> <span class="p">,</span> <span class="kt">double</span> <span class="n">x2</span> <span class="p">,</span> <span class="kt">double</span> <span class="n">y2</span> <span class="p">)</span>
+<li><p class="first">Code formatting</p>
+<p><a class="reference external" href="https://clang.llvm.org/docs/ClangFormat.html">Clang format</a> is used to format C/C++ code.
+Install clang format as follows.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install clang-format
+</pre></div>
+</div>
+<p>All configurations are present in .clang-format file and its is mandatory to use this file to format
+the code in this repository.
+Please note that it is necessary to run clang-format from the repository’s root folder so that it
+uses the repository’s .clang-format file. To run clang-format on a single C++ file, use</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clang-format -i &lt;C++ filename&gt;
+</pre></div>
+</div>
+<p>To run clang-format on files inside a directory recursively, use</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find . -regex <span class="s1">&#39;.*\.\(cpp\|hpp\|cu\|c\|h\)&#39;</span> -exec clang-format -i <span class="o">{}</span> <span class="se">\;</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Variable Names</p>
-<p>Variable names are all lowercase, with underscores between words. Class member
-variables have trailing underscores. For instance:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">double</span> <span class="n">current_velocity_joint_1</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">.</span> <span class="mi">0</span> <span class="p">;</span> <span class="c1">// non member class variable</span>
-<span class="kt">double</span> <span class="n">current_velocity_joint_1_</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">.</span> <span class="mi">0</span> <span class="p">;</span> <span class="c1">// member class variable</span>
+<li><p class="first">Static code analysis</p>
+<p><a class="reference external" href="http://cppcheck.sourceforge.net/">Cppcheck</a> is used for static code analysis in order to detect
+bugs and undefined behaviors due to bad coding constructs. Install cppcheck using</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install cppcheck
+</pre></div>
+</div>
+<p>To run cppcheck on a file or directory, run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cppcheck &lt;filename/directory&gt;
 </pre></div>
 </div>
 </li>
 </ul>
 </div>
 <div class="section" id="python">
-<h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Linting</p>
+<p>Python code should follow the <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP-8</a> style guide.
+Installing linters in your python environment ensures compliance with the PEP-8 style guide.
+The precommit hooks for this repository uses pylint in a <strong>python 3.7 environment</strong> and can lint
+python 2 code. Pylint can
+be easily installed using pip.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install pylint
+</pre></div>
+</div>
+<p>In order to analyze file/s for linting errors, manually run pylint using the following command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pylint &lt;python filename or directory name&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">Sorting imports</p>
+<p><a class="reference external" href="https://timothycrosley.github.io/isort/">isort</a> organizes and sorts imports in python files.
+Install isort using pip.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install isort
+</pre></div>
+</div>
+<p>To run isort on a python file use</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>isort &lt;python filename&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">Code formatter</p>
+<p><a class="reference external" href="https://black.readthedocs.io/en/stable/installation_and_usage.html">Black</a> is used to format python
+code. Please ensure that your code is formatted using black before committing your changes.
+Black can be installed using pip (again in a <strong>python 3.7 environment</strong>).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install black
+</pre></div>
+</div>
+<p>To format existing python code using black, run the following</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>black &lt;python filename/directory&gt;
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><a class="reference external" href="https://pre-commit.com/#intro">Pre-commit</a> hooks has been added to this repository.
+Please note that you will not be able to locally commit your changes to git until all the
+checks in the .pre-commit-config.yaml pass. Some serious violations of the standard coding
+guidelines will result in errors while running git commit and have to be manually fixed.
+<strong>Users will not be able to commit their code, until these errors are fixed.</strong>
+Please ensure that <strong>git commit</strong> or <strong>pre-commit hooks</strong> (and not the code itself) is run in a <strong>python 3.7 environment</strong>
+as configured in .pre-commit-config.yaml.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>Alternatively, one could also verify if the pre-commit hooks pass before actually committing
+the code to git. To do so please run the following command after making necessary changes to
+your code.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pre-commit run --all-files
+</pre></div>
+</div>
+<p class="last">This is however currently discouraged because there are several linting errors in the whole
+repository yet to be fixed and one doesn’t want to end up fixing thousands of errors when
+just trying to add their contribution.</p>
+</div>
+</div>
+</div>
+<div class="section" id="editors-for-software-development">
+<h2>Editors for software development<a class="headerlink" href="#editors-for-software-development" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Visual Studio Code</li>
+<li>Vim</li>
+<li>Pycharm</li>
+</ul>
+<p>Install the necessary python, C++ and ROS plugins after installing a desired editor.
+Other editors which support ROS are listed <a class="reference external" href="http://wiki.ros.org/IDEs">here</a>.</p>
+<div class="section" id="configuring-editors">
+<h3>Configuring editors<a class="headerlink" href="#configuring-editors" title="Permalink to this headline">¶</a></h3>
+<p>It is important to configure your editor settings so that linters, code formatters and
+code checkers check for errors (and solve them if possible) automatically upon saving
+your changes in a file.
+Below is an illustration of the settings configurations that need to modified in Visual Studio Code to avoid
+manually performing the checks described in <a class="reference internal" href="#style-label"><span class="std std-ref">Coding style</span></a>. Similar configurations can be done in
+other editors too.</p>
+<p>The settings can be configured through the Settings option in File menu or in
+settings.json.</p>
+<ul>
+<li><dl class="first docutils">
+<dt>Python linting</dt>
+<dd><p class="first last">By default pylint is enabled in Visual Studio Code, however pylint has to be installed
+using pip in your chosen python interpreter path. Please do not enable other linters as
+this could create a conflict while running pre-commit hooks. Please checkout the
+<a class="reference external" href="https://code.visualstudio.com/docs/python/linting">VS Code website</a> for more information.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python code formatting</dt>
+<dd><p class="first">Since pre-commit hooks uses black to format python code, this can be very conveniently
+added to your editor so that the file is auto-formatted by black upon saving. Add the following
+to your settings.json to enable black code formatting.</p>
+<div class="last highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;python.formatting.blackArgs&quot;</span>: <span class="o">[</span>
+<span class="s2">&quot;--line-length=79&quot;</span>
+<span class="o">]</span>,
+<span class="s2">&quot;python.formatting.provider&quot;</span>: <span class="s2">&quot;black&quot;</span>,
+<span class="s2">&quot;[python]&quot;</span>: <span class="o">{</span>
+<span class="s2">&quot;editor.codeActionsOnSave&quot;</span>: <span class="o">{</span>
+<span class="s2">&quot;source.organizeImports&quot;</span>: <span class="nb">true</span>
+<span class="o">}</span>
+<span class="o">}</span>,
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>C++ linting</dt>
+<dd><p class="first last">Install the cpplint extension to VS Code to enable the cpplinter. This then highlights the linting
+errors in the C++ code with squiggly lines.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>C++ code formatting</dt>
+<dd><p class="first">Clang-format is used to format C++ code. This can be configured in settings.json
+after installing the official Microsoft C/C++ extension. Add the following lines to your
+settings.json file so that the configurations from .clang-format in the repository are
+used by VS Code to format the C++ files.</p>
+<div class="last highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;C_Cpp.clang_format_style&quot;</span>: <span class="s2">&quot;file&quot;</span>,
+<span class="s2">&quot;C_Cpp.formatting&quot;</span>: <span class="s2">&quot;clangFormat&quot;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
 </div>
 </div>
 
