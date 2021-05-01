@@ -10,7 +10,8 @@
     * [Configuring your editor](home/_getting-started/running-mas-software/configuring-your-editor.md)
     * [Using ssh](home/_getting-started/running-mas-software/tips.md)
   * [Adding your first contribution](home/_getting-started/adding-your-first-contribution.md)
-* [Research](home/research.md)
+* [Tutorials](home/tutorials/README.md)
+  * [Architecture](home/tutorials/architecture.md)
 * [Guides](home/_conventions/README.md)
   * [git](home/_conventions/git/README.md)
     * [Making good commits](home/_conventions/git/making-good-commits.md)
@@ -35,19 +36,6 @@
 * [Resources](home/_resources.md)
 * [FAQ](home/_faq/README.md)
   * [git](home/_faq/git.md)
-* [Archive](home/archive/README.md)
-  * [Care-O-Bot 3 Guides](home/archive/care-o-bot-3-guides/README.md)
-    * [2018-05-06-working-on-jenny](home/archive/care-o-bot-3-guides/2018-05-06-working-on-jenny.md)
-    * [2018-05-06-getting-to-know-jenny](home/archive/care-o-bot-3-guides/2018-05-06-getting-to-know-jenny.md)
-    * [Object Perception](home/archive/care-o-bot-3-guides/2018-05-06-object-perception.md)
-    * [Speech](home/archive/care-o-bot-3-guides/2018-05-06-speech.md)
-    * [2018-05-06-navigation-athome](home/archive/care-o-bot-3-guides/2018-05-06-navigation-athome.md)
-    * [2018-05-06-mapping-athome](home/archive/care-o-bot-3-guides/2018-05-06-mapping-athome.md)
-    * [2018-05-06-Turning-Jenny-on-and-off](home/archive/care-o-bot-3-guides/2018-05-06-turning-jenny-on-and-off.md)
-    * [2018-05-06-use-ssh-without-password](home/archive/care-o-bot-3-guides/2018-05-06-use-ssh-without-password.md)
-    * [2018-05-06-how-to-start-jenny](home/archive/care-o-bot-3-guides/2018-05-06-how-to-start-jenny.md)
-    * [Starting and controlling 7DOF arm on Jenny](home/archive/care-o-bot-3-guides/2018-05-06-manipulation.md)
-    * [CAN Devices Not Recognised](home/archive/care-o-bot-3-guides/2018-05-06-common-errors.md)
 
 ## @work
 
@@ -55,4 +43,3 @@
 * [2018-05-06-simulation\_mapping](work/2018-05-06-simulation_mapping.md)
 * [How to use the RealSense2 camera](work/pointcloud.md)
 * [Getting the classifier from a data set](work/classifier.md)
-
